@@ -183,10 +183,6 @@
 		<dataSet xsi:type="DataSetQuery">
 			<name>ОстатокНаНачалоГСМ</name>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>ГСМ</dataPath>
-				<field>ГСМ</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
 				<dataPath>Техника</dataPath>
 				<field>Техника</field>
 				<role>
@@ -197,16 +193,40 @@
 				<dataPath>ОстатокНаНачало1С</dataPath>
 				<field>ОстатокНаНачало1С</field>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номенклатура</dataPath>
+				<field>Номенклатура</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СерияНоменклатуры</dataPath>
+				<field>СерияНоменклатуры</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ХарактеристикаНоменклатуры</dataPath>
+				<field>ХарактеристикаНоменклатуры</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Качество</dataPath>
+				<field>Качество</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Склад</dataPath>
+				<field>Склад</field>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка) КАК Техника,
-	0 КАК ОстатокНаНачало1С
+	ТоварыНаСкладахОстатки.Склад КАК Техника,
+	ТоварыНаСкладахОстатки.КоличествоОстаток КАК ОстатокНаНачало1С
+ИЗ
+	РегистрНакопления.ТоварыНаСкладах.Остатки({(&amp;НачалоПериода1)},) КАК ТоварыНаСкладахОстатки
 
 ОБЪЕДИНИТЬ ВСЕ
 
 ВЫБРАТЬ
-	ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка),
-	0</query>
+	ТоварыНаСкладахОстатки.Склад,
+	ТоварыНаСкладахОстатки.КоличествоОстаток
+ИЗ
+	РегистрНакопления.ТоварыНаСкладах.Остатки({(&amp;НачалоПериода1)},) КАК ТоварыНаСкладахОстатки</query>
 		</dataSet>
 		<dataSet xsi:type="DataSetQuery">
 			<name>ОстатокНаКонецГСМ</name>
@@ -218,19 +238,49 @@
 				</role>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>ОстатокНаКонец1С</dataPath>
-				<field>ОстатокНаКонец1С</field>
+				<dataPath>Номенклатура</dataPath>
+				<field>Номенклатура</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОстатокНаНачало1С</dataPath>
+				<field>ОстатокНаНачало1С</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Остаток на начало1 С</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СерияНоменклатуры</dataPath>
+				<field>СерияНоменклатуры</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ХарактеристикаНоменклатуры</dataPath>
+				<field>ХарактеристикаНоменклатуры</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Качество</dataPath>
+				<field>Качество</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Склад</dataPath>
+				<field>Склад</field>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка) КАК Техника,
-	0 КАК ОстатокНаКонец1С
+	ТоварыНаСкладахОстатки.Склад КАК Техника,
+	ТоварыНаСкладахОстатки.КоличествоОстаток КАК ОстатокНаНачало1С
+ИЗ
+	РегистрНакопления.ТоварыНаСкладах.Остатки({(&amp;КонецПериода1)},) КАК ТоварыНаСкладахОстатки
 
 ОБЪЕДИНИТЬ ВСЕ
 
 ВЫБРАТЬ
-	ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка),
-	0</query>
+	ТоварыНаСкладахОстатки.Склад,
+	ТоварыНаСкладахОстатки.КоличествоОстаток
+ИЗ
+	РегистрНакопления.ТоварыНаСкладах.Остатки({(&amp;КонецПериода1)},) КАК ТоварыНаСкладахОстатки</query>
 		</dataSet>
 		<dataSetLink>
 			<sourceDataSet>ТЗДанных</sourceDataSet>
@@ -319,10 +369,6 @@
 		<totalField>
 			<dataPath>Заправка1С</dataPath>
 			<expression>Сумма(Заправка1С)</expression>
-		</totalField>
-		<totalField>
-			<dataPath>ОстатокНаКонец1С</dataPath>
-			<expression>Сумма(ОстатокНаКонец1С)</expression>
 		</totalField>
 		<totalField>
 			<dataPath>ОстатокНаКонецСМТ</dataPath>
