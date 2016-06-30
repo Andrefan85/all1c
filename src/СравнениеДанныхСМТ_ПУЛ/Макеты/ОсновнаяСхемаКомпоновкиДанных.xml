@@ -52,24 +52,6 @@
 				</valueType>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Заправка1С</dataPath>
-				<field>Заправка1С</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Заправка 1С</d5p1:content>
-					</d5p1:item>
-				</title>
-				<valueType>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
-					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<Digits>12</Digits>
-						<FractionDigits>2</FractionDigits>
-						<AllowedSign>Any</AllowedSign>
-					</NumberQualifiers>
-				</valueType>
-			</field>
-			<field xsi:type="DataSetFieldField">
 				<dataPath>ЗаправакаПоПоказаниямСМТ</dataPath>
 				<field>ЗаправакаПоПоказаниямСМТ</field>
 				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
@@ -177,19 +159,25 @@
 					</NumberQualifiers>
 				</valueType>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СкладТехника</dataPath>
+				<field>СкладТехника</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Склад техника</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Склады</Type>
+				</valueType>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<objectName>ТЗДанныеПутевыелисты</objectName>
 		</dataSet>
 		<dataSet xsi:type="DataSetQuery">
 			<name>ОстатокНаНачалоГСМ</name>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Техника</dataPath>
-				<field>Техника</field>
-				<role>
-					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
-				</role>
-			</field>
-			<field xsi:type="DataSetFieldField">
 				<dataPath>ОстатокНаНачало1С</dataPath>
 				<field>ОстатокНаНачало1С</field>
 			</field>
@@ -213,43 +201,32 @@
 				<dataPath>Склад</dataPath>
 				<field>Склад</field>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СкладТехника</dataPath>
+				<field>СкладТехника</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Склад техника</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	ТоварыНаСкладахОстатки.Склад КАК Техника,
+	ТоварыНаСкладахОстатки.Склад КАК СкладТехника,
 	ТоварыНаСкладахОстатки.КоличествоОстаток КАК ОстатокНаНачало1С
 ИЗ
 	РегистрНакопления.ТоварыНаСкладах.Остатки({(&amp;НачалоПериода1)},) КАК ТоварыНаСкладахОстатки
-
-ОБЪЕДИНИТЬ ВСЕ
-
-ВЫБРАТЬ
-	ТоварыНаСкладахОстатки.Склад,
-	ТоварыНаСкладахОстатки.КоличествоОстаток
-ИЗ
-	РегистрНакопления.ТоварыНаСкладах.Остатки({(&amp;НачалоПериода1)},) КАК ТоварыНаСкладахОстатки</query>
+</query>
 		</dataSet>
 		<dataSet xsi:type="DataSetQuery">
 			<name>ОстатокНаКонецГСМ</name>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Техника</dataPath>
-				<field>Техника</field>
-				<role>
-					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
-				</role>
-			</field>
-			<field xsi:type="DataSetFieldField">
 				<dataPath>Номенклатура</dataPath>
 				<field>Номенклатура</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>ОстатокНаНачало1С</dataPath>
-				<field>ОстатокНаНачало1С</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Остаток на начало1 С</d5p1:content>
-					</d5p1:item>
-				</title>
 			</field>
 			<field xsi:type="DataSetFieldField">
 				<dataPath>СерияНоменклатуры</dataPath>
@@ -267,32 +244,90 @@
 				<dataPath>Склад</dataPath>
 				<field>Склад</field>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СкладТехника</dataPath>
+				<field>СкладТехника</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Склад техника</d5p1:content>
+					</d5p1:item>
+				</title>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОстатокНаКонец1С</dataPath>
+				<field>ОстатокНаКонец1С</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Остаток на конец1 С</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	ТоварыНаСкладахОстатки.Склад КАК Техника,
-	ТоварыНаСкладахОстатки.КоличествоОстаток КАК ОстатокНаНачало1С
+	ТоварыНаСкладахОстатки.Склад КАК СкладТехника,
+	ТоварыНаСкладахОстатки.КоличествоОстаток КАК ОстатокНаКонец1С
 ИЗ
 	РегистрНакопления.ТоварыНаСкладах.Остатки({(&amp;КонецПериода1)},) КАК ТоварыНаСкладахОстатки
-
-ОБЪЕДИНИТЬ ВСЕ
-
-ВЫБРАТЬ
-	ТоварыНаСкладахОстатки.Склад,
-	ТоварыНаСкладахОстатки.КоличествоОстаток
+</query>
+		</dataSet>
+		<dataSet xsi:type="DataSetQuery">
+			<name>Заправлено</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Заправка1С</dataPath>
+				<field>Заправка1С</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Заправка1 С</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СкладТехника</dataPath>
+				<field>СкладТехника</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Склад техника</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	ТоварыНаСкладах.Склад КАК СкладТехника,
+	СУММА(ТоварыНаСкладах.Количество) КАК Заправка1С
 ИЗ
-	РегистрНакопления.ТоварыНаСкладах.Остатки({(&amp;КонецПериода1)},) КАК ТоварыНаСкладахОстатки</query>
+	РегистрНакопления.ТоварыНаСкладах КАК ТоварыНаСкладах
+ГДЕ
+	ТоварыНаСкладах.ВидДвижения = ЗНАЧЕНИЕ(ВидДВиженияНакопления.Приход)
+	И ТоварыНаСкладах.Период МЕЖДУ &amp;НачалоПериода1 И &amp;КонецПериода1
+	И ТоварыНаСкладах.Регистратор.Организация = &amp;Организация
+
+СГРУППИРОВАТЬ ПО
+	ТоварыНаСкладах.Склад</query>
 		</dataSet>
 		<dataSetLink>
 			<sourceDataSet>ТЗДанных</sourceDataSet>
 			<destinationDataSet>ОстатокНаНачалоГСМ</destinationDataSet>
-			<sourceExpression>Техника</sourceExpression>
-			<destinationExpression>Техника</destinationExpression>
+			<sourceExpression>СкладТехника</sourceExpression>
+			<destinationExpression>СкладТехника</destinationExpression>
 		</dataSetLink>
 		<dataSetLink>
 			<sourceDataSet>ТЗДанных</sourceDataSet>
 			<destinationDataSet>ОстатокНаКонецГСМ</destinationDataSet>
-			<sourceExpression>Техника</sourceExpression>
-			<destinationExpression>Техника</destinationExpression>
+			<sourceExpression>СкладТехника</sourceExpression>
+			<destinationExpression>СкладТехника</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>ТЗДанных</sourceDataSet>
+			<destinationDataSet>Заправлено</destinationDataSet>
+			<sourceExpression>СкладТехника</sourceExpression>
+			<destinationExpression>СкладТехника</destinationExpression>
 		</dataSetLink>
 		<calculatedField>
 			<dataPath>ОтклонениеОстатокНаНачало</dataPath>
@@ -371,6 +406,10 @@
 			<expression>Сумма(Заправка1С)</expression>
 		</totalField>
 		<totalField>
+			<dataPath>ОстатокНаКонец1С</dataPath>
+			<expression>Сумма(ОстатокНаКонец1С)</expression>
+		</totalField>
+		<totalField>
 			<dataPath>ОстатокНаКонецСМТ</dataPath>
 			<expression>Сумма(ОстатокНаКонецСМТ)</expression>
 		</totalField>
@@ -381,22 +420,6 @@
 		<totalField>
 			<dataPath>ОстатокНаНачалоСМТ</dataPath>
 			<expression>Сумма(ОстатокНаНачалоСМТ)</expression>
-		</totalField>
-		<totalField>
-			<dataPath>РасходГСМПоНорме1С</dataPath>
-			<expression>Сумма(РасходГСМПоНорме1С)</expression>
-		</totalField>
-		<totalField>
-			<dataPath>РасходГСМПоПоказателямСМТ</dataPath>
-			<expression>Сумма(РасходГСМПоПоказателямСМТ)</expression>
-		</totalField>
-		<totalField>
-			<dataPath>РасходГСМПоФакту1С</dataPath>
-			<expression>Сумма(РасходГСМПоФакту1С)</expression>
-		</totalField>
-		<totalField>
-			<dataPath>СливТопливаПоСМТ</dataPath>
-			<expression>Сумма(СливТопливаПоСМТ)</expression>
 		</totalField>
 		<totalField>
 			<dataPath>ОтклонениеЗаправки1СОтСМТЛитры</dataPath>
@@ -417,6 +440,22 @@
 		<totalField>
 			<dataPath>ОтклонениеРасхода1СОтСМТПроценты</dataPath>
 			<expression>Среднее(ОтклонениеРасхода1СОтСМТПроценты)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>РасходГСМПоНорме1С</dataPath>
+			<expression>Сумма(РасходГСМПоНорме1С)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>РасходГСМПоПоказателямСМТ</dataPath>
+			<expression>Сумма(РасходГСМПоПоказателямСМТ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>РасходГСМПоФакту1С</dataPath>
+			<expression>Сумма(РасходГСМПоФакту1С)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СливТопливаПоСМТ</dataPath>
+			<expression>Сумма(СливТопливаПоСМТ)</expression>
 		</totalField>
 		<parameter>
 			<name>НачалоПериода1</name>
