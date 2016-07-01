@@ -663,11 +663,13 @@
 			<use>false</use>
 			<left xsi:type="dcscor:Field">Техника</left>
 			<comparisonType>Equal</comparisonType>
+			<userSettingID>e06d2fce-90d2-4ebf-9ac0-1a321cd3dbdb</userSettingID>
 		</item>
 		<item xsi:type="FilterItemComparison">
 			<use>false</use>
 			<left xsi:type="dcscor:Field">ТрактористВодитель</left>
 			<comparisonType>Equal</comparisonType>
+			<userSettingID>9fa446f7-51bc-42f7-a575-e9d436a17f44</userSettingID>
 		</item>
 	</filter>
 	<dataParameters>
@@ -722,6 +724,34 @@
 					</item>
 					<item xsi:type="FilterItemComparison">
 						<left xsi:type="dcscor:Field">ОтклонениеРасхода1СОтСМТПроценты</left>
+						<comparisonType>Less</comparisonType>
+						<right xsi:type="xs:decimal">-10</right>
+					</item>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ЦветТекста</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">web:IndianRed</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+		<item>
+			<selection>
+				<item>
+					<field>ОтклонениеЗаправки1СОтСМТПроценты</field>
+				</item>
+			</selection>
+			<filter>
+				<item xsi:type="FilterItemGroup">
+					<groupType>OrGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ОтклонениеЗаправки1СОтСМТПроценты</left>
+						<comparisonType>Greater</comparisonType>
+						<right xsi:type="xs:decimal">10</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ОтклонениеЗаправки1СОтСМТПроценты</left>
 						<comparisonType>Less</comparisonType>
 						<right xsi:type="xs:decimal">-10</right>
 					</item>
