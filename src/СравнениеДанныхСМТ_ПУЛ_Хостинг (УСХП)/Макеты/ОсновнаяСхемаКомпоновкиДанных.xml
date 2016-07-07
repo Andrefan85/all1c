@@ -1,0 +1,691 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetObject">
+			<name>ТЗДанных</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Техника</dataPath>
+				<field>Техника</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Техника</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ОсновныеСредства</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТрактористВодитель</dataPath>
+				<field>ТрактористВодитель</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>ФИО Тракториста (водителя)</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.СотрудникиОрганизаций</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОстатокНаНачалоСМТ</dataPath>
+				<field>ОстатокНаНачалоСМТ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Остаток на начало СМТ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>12</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Заправка1С</dataPath>
+				<field>Заправка1С</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Заправка 1С</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>12</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ЗаправакаПоПоказаниямСМТ</dataPath>
+				<field>ЗаправакаПоПоказаниямСМТ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Заправка по показаниям СМТ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>12</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>РасходГСМПоНорме1С</dataPath>
+				<field>РасходГСМПоНорме1С</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Расход ГСМ по норме 1С</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>12</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>РасходГСМПоФакту1С</dataPath>
+				<field>РасходГСМПоФакту1С</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Расход ГСМ по факту 1С</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>12</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>РасходГСМПоПоказателямСМТ</dataPath>
+				<field>РасходГСМПоПоказателямСМТ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Расход по показателям СМТ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>12</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОстатокНаКонецСМТ</dataPath>
+				<field>ОстатокНаКонецСМТ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Остаток на конец СМТ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>12</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СливТопливаПоСМТ</dataPath>
+				<field>СливТопливаПоСМТ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Слив топлива по СМТ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>12</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<objectName>ТЗДанныеПутевыелисты</objectName>
+		</dataSet>
+		<dataSet xsi:type="DataSetQuery">
+			<name>ОстатокНаНачалоГСМ</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГСМ</dataPath>
+				<field>ГСМ</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Техника</dataPath>
+				<field>Техника</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОстатокНаНачало1С</dataPath>
+				<field>ОстатокНаНачало1С</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ИнтекоИспользованиеГСМОстатки.Техника,
+	ИнтекоИспользованиеГСМОстатки.КоличествоОстаток КАК ОстатокНаНачало1С
+ИЗ
+	РегистрНакопления.ИнтекоИспользованиеГСМ.Остатки({(&amp;НачалоПериода1)}, ) КАК ИнтекоИспользованиеГСМОстатки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ИнтекоУчетГСМОстатки.Техника,
+	ИнтекоУчетГСМОстатки.КоличествоОстаток
+ИЗ
+	РегистрНакопления.ИнтекоУчетГСМ.Остатки({(&amp;НачалоПериода1)}, ) КАК ИнтекоУчетГСМОстатки</query>
+		</dataSet>
+		<dataSet xsi:type="DataSetQuery">
+			<name>ОстатокНаКонецГСМ</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГСМ</dataPath>
+				<field>ГСМ</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Техника</dataPath>
+				<field>Техника</field>
+				<role>
+					<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОстатокНаКонец1С</dataPath>
+				<field>ОстатокНаКонец1С</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ИнтекоИспользованиеГСМОстатки.Техника,
+	ИнтекоИспользованиеГСМОстатки.КоличествоОстаток КАК ОстатокНаКонец1С
+ИЗ
+	РегистрНакопления.ИнтекоИспользованиеГСМ.Остатки({(&amp;КонецПериода1)}, ) КАК ИнтекоИспользованиеГСМОстатки
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ИнтекоУчетГСМОстатки.Техника,
+	ИнтекоУчетГСМОстатки.КоличествоОстаток
+ИЗ
+	РегистрНакопления.ИнтекоУчетГСМ.Остатки({(&amp;КонецПериода1)}, ) КАК ИнтекоУчетГСМОстатки</query>
+		</dataSet>
+		<dataSetLink>
+			<sourceDataSet>ТЗДанных</sourceDataSet>
+			<destinationDataSet>ОстатокНаНачалоГСМ</destinationDataSet>
+			<sourceExpression>Техника</sourceExpression>
+			<destinationExpression>Техника</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>ТЗДанных</sourceDataSet>
+			<destinationDataSet>ОстатокНаКонецГСМ</destinationDataSet>
+			<sourceExpression>Техника</sourceExpression>
+			<destinationExpression>Техника</destinationExpression>
+		</dataSetLink>
+		<calculatedField>
+			<dataPath>ОтклонениеОстатокНаНачало</dataPath>
+			<expression>ВЫБОР КОГДА ОстатокНаНачалоСМТ = 0 Тогда 0 КОГДА ОстатокНаНачало1С ТОГДА 0 Иначе 100 -  (ОстатокНаНачалоСМТ/ОстатокНаНачало1С)*100 КОНЕЦ</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Отклонение по остатку на начало период 1С от СМТ (%)</d4p1:content>
+				</d4p1:item>
+			</title>
+			<appearance>
+				<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+					<parameter>Формат</parameter>
+					<value xsi:type="xs:string">ЧДЦ=2</value>
+				</item>
+			</appearance>
+		</calculatedField>
+		<calculatedField>
+			<dataPath>ОтклонениеЗаправки1СОтСМТЛитры</dataPath>
+			<expression>Заправка1С - ЗаправакаПоПоказаниямСМТ</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Отклонение заправки 1С от СМТ</d4p1:content>
+				</d4p1:item>
+			</title>
+		</calculatedField>
+		<calculatedField>
+			<dataPath>ОтклонениеЗаправки1СОтСМТПроценты</dataPath>
+			<expression>ВЫБОР КОГДА Заправка1С = 0 Тогда 0 КОГДА ЗаправакаПоПоказаниямСМТ = 0 Тогда 0 Иначе 100-(ЗаправакаПоПоказаниямСМТ/Заправка1С)*100 КОНЕЦ</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Отклонение заправки 1С от СМТ (%)</d4p1:content>
+				</d4p1:item>
+			</title>
+			<appearance>
+				<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+					<parameter>Формат</parameter>
+					<value xsi:type="xs:string">ЧДЦ=2</value>
+				</item>
+			</appearance>
+		</calculatedField>
+		<calculatedField>
+			<dataPath>ОтклонениеРасхода1СОтСМТЛитры</dataPath>
+			<expression>РасходГСМПоФакту1С - РасходГСМПоПоказателямСМТ</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Отклонение расхода 1С от СМТ</d4p1:content>
+				</d4p1:item>
+			</title>
+		</calculatedField>
+		<calculatedField>
+			<dataPath>ОтклонениеРасхода1СОтСМТПроценты</dataPath>
+			<expression>ВЫБОР КОГДА РасходГСМПоФакту1С = 0 Тогда 0  КОГДА РасходГСМПоПоказателямСМТ = 0 Тогда 0 Иначе 100-(РасходГСМПоПоказателямСМТ/РасходГСМПоФакту1С)*100 КОНЕЦ</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Отклонение расхода 1С от СМТ (%)</d4p1:content>
+				</d4p1:item>
+			</title>
+			<appearance>
+				<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+					<parameter>Формат</parameter>
+					<value xsi:type="xs:string">ЧДЦ=2</value>
+				</item>
+			</appearance>
+		</calculatedField>
+		<totalField>
+			<dataPath>ЗаправакаПоПоказаниямСМТ</dataPath>
+			<expression>Сумма(ЗаправакаПоПоказаниямСМТ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Заправка1С</dataPath>
+			<expression>Сумма(Заправка1С)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОстатокНаКонец1С</dataPath>
+			<expression>Сумма(ОстатокНаКонец1С)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОстатокНаКонецСМТ</dataPath>
+			<expression>Сумма(ОстатокНаКонецСМТ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОстатокНаНачало1С</dataPath>
+			<expression>Сумма(ОстатокНаНачало1С)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОстатокНаНачалоСМТ</dataPath>
+			<expression>Сумма(ОстатокНаНачалоСМТ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>РасходГСМПоНорме1С</dataPath>
+			<expression>Сумма(РасходГСМПоНорме1С)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>РасходГСМПоПоказателямСМТ</dataPath>
+			<expression>Сумма(РасходГСМПоПоказателямСМТ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>РасходГСМПоФакту1С</dataPath>
+			<expression>Сумма(РасходГСМПоФакту1С)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СливТопливаПоСМТ</dataPath>
+			<expression>Сумма(СливТопливаПоСМТ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОтклонениеЗаправки1СОтСМТЛитры</dataPath>
+			<expression>Сумма(ОтклонениеЗаправки1СОтСМТЛитры)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОтклонениеЗаправки1СОтСМТПроценты</dataPath>
+			<expression>Среднее(ОтклонениеЗаправки1СОтСМТПроценты)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОтклонениеОстатокНаНачало</dataPath>
+			<expression>Сумма(ОтклонениеОстатокНаНачало)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОтклонениеРасхода1СОтСМТЛитры</dataPath>
+			<expression>Сумма(ОтклонениеРасхода1СОтСМТЛитры)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОтклонениеРасхода1СОтСМТПроценты</dataPath>
+			<expression>Среднее(ОтклонениеРасхода1СОтСМТПроценты)</expression>
+		</totalField>
+		<parameter>
+			<name>НачалоПериода1</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Начало периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>КонецПериода1</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Конец периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>Организация</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Организация</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.Организации</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>СистемныеПоля.НомерПоПорядку</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Техника</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ТрактористВодитель</field>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток на начало</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>ОстатокНаНачало1С</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>1С</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>ОстатокНаНачалоСМТ</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>СМТ</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заправка</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>Заправка1С</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>1С</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>ЗаправакаПоПоказаниямСМТ</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>СМТ</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расход</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>РасходГСМПоНорме1С</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Норма 1С</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>РасходГСМПоФакту1С</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Факт 1С</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>РасходГСМПоПоказателямСМТ</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>СМТ</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemFolder">
+			<lwsTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Остаток на конец</v8:content>
+				</v8:item>
+			</lwsTitle>
+			<item xsi:type="SelectedItemField">
+				<field>ОстатокНаКонец1С</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>1С</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>ОстатокНаКонецСМТ</field>
+				<lwsTitle>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>СМТ</v8:content>
+					</v8:item>
+				</lwsTitle>
+			</item>
+			<placement>Auto</placement>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОтклонениеОстатокНаНачало</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОтклонениеЗаправки1СОтСМТЛитры</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОтклонениеЗаправки1СОтСМТПроценты</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОтклонениеРасхода1СОтСМТЛитры</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОтклонениеРасхода1СОтСМТПроценты</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СливТопливаПоСМТ</field>
+		</item>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Техника</left>
+			<comparisonType>Equal</comparisonType>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ТрактористВодитель</left>
+			<comparisonType>Equal</comparisonType>
+		</item>
+	</filter>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>Организация</dcscor:parameter>
+			<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
+		</dcscor:item>
+	</dataParameters>
+	<conditionalAppearance>
+		<item>
+			<selection>
+				<item>
+					<field>ОтклонениеЗаправки1СОтСМТПроценты</field>
+				</item>
+			</selection>
+			<filter>
+				<item xsi:type="FilterItemGroup">
+					<groupType>OrGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ОтклонениеЗаправки1СОтСМТПроценты</left>
+						<comparisonType>Greater</comparisonType>
+						<right xsi:type="xs:decimal">10</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ОтклонениеЗаправки1СОтСМТПроценты</left>
+						<comparisonType>Less</comparisonType>
+						<right xsi:type="xs:decimal">-10</right>
+					</item>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ЦветТекста</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">web:IndianRed</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+		<item>
+			<selection>
+				<item>
+					<field>ОтклонениеРасхода1СОтСМТПроценты</field>
+				</item>
+			</selection>
+			<filter>
+				<item xsi:type="FilterItemGroup">
+					<groupType>OrGroup</groupType>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ОтклонениеРасхода1СОтСМТПроценты</left>
+						<comparisonType>Greater</comparisonType>
+						<right xsi:type="xs:decimal">10</right>
+					</item>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">ОтклонениеРасхода1СОтСМТПроценты</left>
+						<comparisonType>Less</comparisonType>
+						<right xsi:type="xs:decimal">-10</right>
+					</item>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ЦветТекста</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">web:IndianRed</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+	</conditionalAppearance>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">Output</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Заголовок</dcscor:parameter>
+			<dcscor:value xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сравнение данных СМТ и Путевых листов</v8:content>
+				</v8:item>
+			</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemGroup">
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
