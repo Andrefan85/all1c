@@ -4784,17 +4784,17 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,0},0,0},9,2,0,0,1,1,
 {5,9af966bb-199f-4445-9e14-398bb93c298a,2,1,2,
-{6,ef3bdbd3-95d5-4e59-90dc-0b059a148921,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
+{6,6cd8b92d-c63a-4c09-bc05-f2a4abba20db,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
 {6,0,00000000-0000-0000-0000-000000000000,85,
 {1,99,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0},0,1},0},
-{6,2ec59b84-acda-40e5-9206-b6bca2dcdd9e,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
+{6,fd505fc8-f960-4b61-8f7c-4bd4928da615,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
 {6,0,00000000-0000-0000-0000-000000000000,86,
 {1,99,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0},0,1},0},1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,ef3bdbd3-95d5-4e59-90dc-0b059a148921,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,6cd8b92d-c63a-4c09-bc05-f2a4abba20db,
 {8,"Действие",0,1,
 {1,1,
 {"#","Действие"}
-},0,9af966bb-199f-4445-9e14-398bb93c298a,1,1e2,0,0,1,0,0,0,0},2ec59b84-acda-40e5-9206-b6bca2dcdd9e,
+},0,9af966bb-199f-4445-9e14-398bb93c298a,1,1e2,0,0,1,0,0,0,0},fd505fc8-f960-4b61-8f7c-4bd4928da615,
 {8,"Действие1",0,1,
 {1,1,
 {"#","Действие1"}
@@ -4938,36 +4938,44 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,0},0,0},9,1,0,2,1,1,
 {5,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,45,1,16,
-{6,54ef154b-5afa-45ff-8c60-84308ac81245,1,e1692cc2-605b-4535-84dd-28440238746c,
-{3,"ДействияФормыРедактироватьОписаниеИПользователей",
-{1,"ДействияФормыРедактироватьОписаниеИПользователей",
+{6,33d8eba1-f840-4679-9cfa-7dfcfb628049,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,22},7,
 {1,1,
-{"ru","Действия формы редактировать описание и пользователей"}
+{"ru","Настройка варианта отчета"}
 },
 {1,1,
-{"ru","Действия формы редактировать описание и пользователей"}
+{"ru","Настройка варианта отчета"}
+},
+{4,1,
+{0,3a8a8b02-dff9-4ca1-b4ee-a892ff26ab96},"",10,9,1,0,""}
+},
+{6,6a56213f-4a40-4df2-a186-f65706e07937,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"ДействияСРезультатомЗаголовок",
+{1,"ДействияСРезультатомЗаголовок",
+{1,1,
+{"ru","Действия с результатом заголовок"}
 },
 {1,1,
-{"ru","Действия формы редактировать описание и пользователей"}
+{"ru","Действия с результатом заголовок"}
+},
+{1,1,
+{"ru","Действия с результатом заголовок"}
 },
 {4,0,
 {0},"",-1,-1,1,0,""},
 {0,0,0}
 }
-},15,
+},7,
 {1,1,
-{"ru","Описание и Пользователи варианта отчета"}
+{"ru","Отображать заголовок у отчета"}
 },
 {1,1,
-{"ru","Описание и Пользователи варианта отчета"}
+{"ru","Отображать заголовок у отчета"}
 },
 {4,1,
-{0,ac60cdba-712e-40eb-afc3-fc30cdd39fd6},"",13,9,1,0,""},
-{0,0,0}
+{0,a004965c-3836-48fd-b046-e3b746877889},"",13,0,1,0,""}
 },
-{6,f9e63ba5-f642-4247-93cd-b05a28d06e11,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
-{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,1b49e829-b5f7-4cc0-b6c3-9de4fbba9dbe,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,4f2eba8d-d5a3-47e0-8c91-135ba59848c6,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"ДействияФормыРедактироватьПанельПользователя",
 {1,"ДействияФормыРедактироватьПанельПользователя",
 {1,1,
@@ -4994,63 +5002,7 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {0,a4aab62c-3563-4f86-bc9f-0574d19e4b1b},"",6,0,1,0,""},
 {0,0,0}
 },
-{6,0cd6000c-4d61-4262-adcb-5cc3cabbe28c,1,e1692cc2-605b-4535-84dd-28440238746c,
-{3,"ДействияСРезультатомСохранитьРезультатВНастройке",
-{1,"ДействияСРезультатомСохранитьРезультатВНастройке",
-{1,1,
-{"ru","Действия с результатом сохранить результат в настройке"}
-},
-{1,1,
-{"ru","Действия с результатом сохранить результат в настройке"}
-},
-{1,1,
-{"ru","Действия с результатом сохранить результат в настройке"}
-},
-{4,0,
-{0},"",-1,-1,1,0,""},
-{0,0,0}
-}
-},7,
-{1,1,
-{"ru","Сохранить сформированный отчет для сравнения"}
-},
-{1,1,
-{"ru","Сохранить сформированный отчет для сравнения"}
-},
-{4,1,
-{0,fe865924-c01b-4a09-8238-4351aac5672d},"",12,4,1,0,""}
-},
-{6,63afdcb8-99b5-4fee-9e9f-1cdb2533fec6,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
-{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,ec8ca03f-8bf4-4d67-8b88-889f606c91b9,1,e1692cc2-605b-4535-84dd-28440238746c,
-{3,"КнопкаСписокВариантовНажатие",
-{1,"КнопкаСписокВариантовНажатие",
-{1,1,
-{"ru","Кнопка список вариантов нажатие"}
-},
-{1,1,
-{"ru","Кнопка список вариантов нажатие"}
-},
-{1,1,
-{"ru","Кнопка список вариантов нажатие"}
-},
-{4,0,
-{0},"",-1,-1,1,0,""},
-{0,0,0}
-}
-},7,
-{1,1,
-{"ru","Открыть список вариантов отчетов"}
-},
-{1,1,
-{"ru","Открыть список вариантов отчетов"}
-},
-{4,1,
-{0,785362cb-3756-48ed-87d2-292ded17054a},"",-1,-1,1,0,""}
-},
-{6,7f6a2c61-1cf2-489d-973e-9a2d5e973d85,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
-{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
-{6,9db49aca-20b5-4347-94a7-074aeda229fd,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{6,a7a803a0-5b75-4cb7-abe3-15a2405144aa,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
 {1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,28},7,
 {1,1,
 {"ru","Сохранить вариант отчета"}
@@ -5061,7 +5013,47 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {4,1,
 {0,894cf65b-4109-4533-a1d7-c87b1fcc80a3},"",-1,-1,1,0,""}
 },
-{6,27766c52-a4ed-46ff-ade7-217a115d5e98,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,e04d316d-7c6c-4198-aba6-b3208445b0e4,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,38},7,
+{1,1,
+{"ru","Действия со сформированным отчетом"}
+},
+{1,1,
+{"ru","Действия со сформированным отчетом"}
+},
+{4,1,
+{0,a5087171-6f62-48cd-88bb-e8ebb8092975},"",13,3,1,0,""}
+},
+{6,33b25f50-1a2a-4346-b574-052fe33722e4,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"ДействияФормыРедактироватьОписаниеИПользователей",
+{1,"ДействияФормыРедактироватьОписаниеИПользователей",
+{1,1,
+{"ru","Действия формы редактировать описание и пользователей"}
+},
+{1,1,
+{"ru","Действия формы редактировать описание и пользователей"}
+},
+{1,1,
+{"ru","Действия формы редактировать описание и пользователей"}
+},
+{4,0,
+{0},"",-1,-1,1,0,""},
+{0,0,0}
+}
+},15,
+{1,1,
+{"ru","Описание и Пользователи варианта отчета"}
+},
+{1,1,
+{"ru","Описание и Пользователи варианта отчета"}
+},
+{4,1,
+{0,ac60cdba-712e-40eb-afc3-fc30cdd39fd6},"",13,9,1,0,""},
+{0,0,0}
+},
+{6,d327ba1d-bf51-4d64-8c78-464984973a21,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
+{6,30ba2cc6-0114-475d-9b04-f7f3a4cb41d3,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"ДействияСРезультатомВывестиКопиюРезультатаВТабличныйДокумент",
 {1,"ДействияСРезультатомВывестиКопиюРезультатаВТабличныйДокумент",
 {1,1,
@@ -5087,17 +5079,17 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {4,1,
 {0,e61c2fcd-9e5c-4858-b9e7-0a76c3700ec7},"",12,2,1,0,""}
 },
-{6,b62be717-a1b2-44b2-bd1e-eeaa5f5d0dd9,1,e1692cc2-605b-4535-84dd-28440238746c,
-{3,"ДействияСРезультатомЗаголовок",
-{1,"ДействияСРезультатомЗаголовок",
+{6,52bdc35b-b70b-4d9a-b85d-4092eb35f628,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"ДействияСРезультатомСохранитьРезультатВНастройке",
+{1,"ДействияСРезультатомСохранитьРезультатВНастройке",
 {1,1,
-{"ru","Действия с результатом заголовок"}
+{"ru","Действия с результатом сохранить результат в настройке"}
 },
 {1,1,
-{"ru","Действия с результатом заголовок"}
+{"ru","Действия с результатом сохранить результат в настройке"}
 },
 {1,1,
-{"ru","Действия с результатом заголовок"}
+{"ru","Действия с результатом сохранить результат в настройке"}
 },
 {4,0,
 {0},"",-1,-1,1,0,""},
@@ -5105,36 +5097,25 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 }
 },7,
 {1,1,
-{"ru","Отображать заголовок у отчета"}
+{"ru","Сохранить сформированный отчет для сравнения"}
 },
 {1,1,
-{"ru","Отображать заголовок у отчета"}
+{"ru","Сохранить сформированный отчет для сравнения"}
 },
 {4,1,
-{0,a004965c-3836-48fd-b046-e3b746877889},"",13,0,1,0,""}
+{0,fe865924-c01b-4a09-8238-4351aac5672d},"",12,4,1,0,""}
 },
-{6,29936136-1775-4890-907d-d1830814d190,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
-{1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,22},7,
+{6,545186cc-1397-47cb-90e7-9a82f71feb6d,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"КнопкаСписокВариантовНажатие",
+{1,"КнопкаСписокВариантовНажатие",
 {1,1,
-{"ru","Настройка варианта отчета"}
-},
-{1,1,
-{"ru","Настройка варианта отчета"}
-},
-{4,1,
-{0,3a8a8b02-dff9-4ca1-b4ee-a892ff26ab96},"",10,9,1,0,""}
-},
-{6,32755a50-9cca-43c6-a705-3591cf4c3fc5,1,e1692cc2-605b-4535-84dd-28440238746c,
-{3,"ДействияФормыРедактироватьНастройкуСтруктуры",
-{1,"ДействияФормыРедактироватьНастройкуСтруктуры",
-{1,1,
-{"ru","Действия формы редактировать настройку структуры"}
+{"ru","Кнопка список вариантов нажатие"}
 },
 {1,1,
-{"ru","Действия формы редактировать настройку структуры"}
+{"ru","Кнопка список вариантов нажатие"}
 },
 {1,1,
-{"ru","Действия формы редактировать настройку структуры"}
+{"ru","Кнопка список вариантов нажатие"}
 },
 {4,0,
 {0},"",-1,-1,1,0,""},
@@ -5142,15 +5123,15 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 }
 },7,
 {1,1,
-{"ru","Редактировать структуру отчета"}
+{"ru","Открыть список вариантов отчетов"}
 },
 {1,1,
-{"ru","Редактировать структуру отчета"}
+{"ru","Открыть список вариантов отчетов"}
 },
 {4,1,
-{0,fb6b623e-45cd-4dfc-a5a1-0ce6a0cbbfe6},"",14,1,1,0,""}
+{0,785362cb-3756-48ed-87d2-292ded17054a},"",-1,-1,1,0,""}
 },
-{6,8909fbdd-1e78-4113-b697-5c828d9e10ba,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,f2098ba1-ed87-4db2-9ae7-733c772f7dd2,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"ДействияСРезультатомСравнитьТекущийРезультатССохраненным",
 {1,"ДействияСРезультатомСравнитьТекущийРезультатССохраненным",
 {1,1,
@@ -5176,18 +5157,37 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {4,1,
 {0,b6f03e7c-2fd4-4ac3-a57a-3aefbde4870e},"",3,3,1,0,""}
 },
-{6,431c8b5f-4ed3-4707-86d1-f1a979323fff,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
-{1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,38},7,
+{6,d628d674-fd92-4a1f-b5a1-c87d59959dd9,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"ДействияФормыРедактироватьНастройкуСтруктуры",
+{1,"ДействияФормыРедактироватьНастройкуСтруктуры",
 {1,1,
-{"ru","Действия со сформированным отчетом"}
+{"ru","Действия формы редактировать настройку структуры"}
 },
 {1,1,
-{"ru","Действия со сформированным отчетом"}
+{"ru","Действия формы редактировать настройку структуры"}
+},
+{1,1,
+{"ru","Действия формы редактировать настройку структуры"}
+},
+{4,0,
+{0},"",-1,-1,1,0,""},
+{0,0,0}
+}
+},7,
+{1,1,
+{"ru","Редактировать структуру отчета"}
+},
+{1,1,
+{"ru","Редактировать структуру отчета"}
 },
 {4,1,
-{0,a5087171-6f62-48cd-88bb-e8ebb8092975},"",13,3,1,0,""}
+{0,fb6b623e-45cd-4dfc-a5a1-0ce6a0cbbfe6},"",14,1,1,0,""}
 },
-{6,7f0a7a00-4357-4e9d-8bb3-fed181fa227d,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,26b40337-ceca-4e43-bf71-0e2f15125422,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
+{6,2f9bfb07-7f14-4a1b-b72e-b35c8d35e896,1,abde0c9a-18a6-4e0c-bbaa-af26b911b3e6,
+{1,9d0a2e40-b978-11d4-84b6-008048da06df,0},0},
+{6,fbf8a836-a801-4ce1-b91b-2356f80851f2,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"ДействияФормыСохранитьНастройку",
 {1,"ДействияФормыСохранитьНастройку",
 {1,1,
@@ -5214,7 +5214,7 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {0,894cf65b-4109-4533-a1d7-c87b1fcc80a3},"",-1,-1,1,0,""},
 {0,0,0}
 },
-{6,10c0eb7b-cbed-4766-be02-92bab129f5bc,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,5c07ee8e-8ebb-4590-bd43-8e30f49e2069,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"ДействияФормыСохранитьНастройкуКак",
 {1,"ДействияФормыСохранитьНастройкуКак",
 {1,1,
@@ -5241,31 +5241,31 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {0},"",-1,-1,1,0,""},
 {0,0,0}
 },4,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,7,431c8b5f-4ed3-4707-86d1-f1a979323fff,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,7,e04d316d-7c6c-4198-aba6-b3208445b0e4,
 {8,"ДействияСоСформированнымОтчетом",0,2,
 {1,1,
 {"ru","Действия со сформированным отчетом"}
-},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,37,1e2,1,0,1,0,0,0,0},b62be717-a1b2-44b2-bd1e-eeaa5f5d0dd9,
+},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,37,1e2,1,0,1,0,0,0,0},6a56213f-4a40-4df2-a186-f65706e07937,
 {8,"Заголовок",0,3,
 {1,1,
 {"ru","Заголовок"}
-},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,36,1e2,0,0,1,0,0,0,0},f9e63ba5-f642-4247-93cd-b05a28d06e11,
+},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,36,1e2,0,0,1,0,0,0,0},2f9bfb07-7f14-4a1b-b72e-b35c8d35e896,
 {8,"Разделитель1",0,2,
 {1,1,
 {"ru","Действие1"}
-},0,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,35,1e2,2,0,1,0,0,0,0},29936136-1775-4890-907d-d1830814d190,
+},0,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,35,1e2,2,0,1,0,0,0,0},33d8eba1-f840-4679-9cfa-7dfcfb628049,
 {8,"ИзменитьВариант",0,1,
 {1,1,
 {"ru","Настройка варианта отчета"}
-},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,21,1e2,1,2,1,0,0,0,0},63afdcb8-99b5-4fee-9e9f-1cdb2533fec6,
+},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,21,1e2,1,2,1,0,0,0,0},d327ba1d-bf51-4d64-8c78-464984973a21,
 {8,"Разделитель",0,3,
 {1,1,
 {"ru","Действие1"}
-},0,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,45,1e2,2,0,1,0,0,0,0},ec8ca03f-8bf4-4d67-8b88-889f606c91b9,
+},0,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,45,1e2,2,0,1,0,0,0,0},545186cc-1397-47cb-90e7-9a82f71feb6d,
 {8,"СписокВариантов",0,2,
 {1,1,
 {"ru","Список вариантов отчетов"}
-},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,26,1e2,0,0,1,0,0,0,0},9db49aca-20b5-4347-94a7-074aeda229fd,
+},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,26,1e2,0,0,1,0,0,0,0},a7a803a0-5b75-4cb7-abe3-15a2405144aa,
 {8,"Сохранить",0,2,
 {1,1,
 {"#","Сохранить"}
@@ -5274,15 +5274,15 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {3,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,37,0,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,21,0,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,27,0}
 }
 },
-{5,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,22,0,3,32755a50-9cca-43c6-a705-3591cf4c3fc5,
+{5,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,22,0,3,d628d674-fd92-4a1f-b5a1-c87d59959dd9,
 {8,"РедактироватьСтруктуруОтчетаАдминистратора",0,4,
 {1,1,
 {"ru","Настройка структуры"}
-},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,23,1e2,0,0,1,0,0,0,0},1b49e829-b5f7-4cc0-b6c3-9de4fbba9dbe,
+},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,23,1e2,0,0,1,0,0,0,0},4f2eba8d-d5a3-47e0-8c91-135ba59848c6,
 {8,"РедактироватьПараметрыПанели",0,4,
 {1,1,
 {"ru","Панель пользователя"}
-},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,24,1e2,0,0,1,0,0,0,0},54ef154b-5afa-45ff-8c60-84308ac81245,
+},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,24,1e2,0,0,1,0,0,0,0},33b25f50-1a2a-4346-b574-052fe33722e4,
 {8,"РедактироватьПолномочия",0,6,
 {1,1,
 {"ru","Описание и Пользователи"}
@@ -5291,11 +5291,11 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {0}
 }
 },
-{5,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,28,0,2,7f0a7a00-4357-4e9d-8bb3-fed181fa227d,
+{5,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,28,0,2,fbf8a836-a801-4ce1-b91b-2356f80851f2,
 {8,"СохранитьНастройку",0,4,
 {1,1,
 {"ru","Сохранить вариант"}
-},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,29,1e2,0,0,1,0,0,0,0},10c0eb7b-cbed-4766-be02-92bab129f5bc,
+},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,29,1e2,0,0,1,0,0,0,0},5c07ee8e-8ebb-4590-bd43-8e30f49e2069,
 {8,"СкопироватьТекущуюНастройку",0,4,
 {1,1,
 {"ru","Сохранить вариант как..."}
@@ -5304,19 +5304,19 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {0}
 }
 },
-{5,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,38,0,4,27766c52-a4ed-46ff-ade7-217a115d5e98,
+{5,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,38,0,4,30ba2cc6-0114-475d-9b04-f7f3a4cb41d3,
 {8,"ВывестиКопиюРезультатаВТабличныйДокумент",0,3,
 {1,1,
 {"ru","Показать сформированный отчет в отдельном окне"}
-},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,39,1e2,0,0,1,0,0,0,0},7f6a2c61-1cf2-489d-973e-9a2d5e973d85,
+},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,39,1e2,0,0,1,0,0,0,0},26b40337-ceca-4e43-bf71-0e2f15125422,
 {8,"Разделитель",0,3,
 {1,1,
 {"ru","Действие"}
-},0,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,40,1e2,2,0,1,0,0,0,0},0cd6000c-4d61-4262-adcb-5cc3cabbe28c,
+},0,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,40,1e2,2,0,1,0,0,0,0},52bdc35b-b70b-4d9a-b85d-4092eb35f628,
 {8,"СохранитьРезультатВНастройке",0,3,
 {1,1,
 {"ru","Сохранить сформированный отчет для сравнения"}
-},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,41,1e2,0,0,1,0,0,0,0},8909fbdd-1e78-4113-b697-5c828d9e10ba,
+},1,2195bd82-a70b-44a5-b08f-3c4254fcf6ba,41,1e2,0,0,1,0,0,0,0},f2098ba1-ed87-4db2-9ae7-733c772f7dd2,
 {8,"СравнитьТекущийРезультатССохраненным",0,3,
 {1,1,
 {"ru","Сравнить сформированный отчет с сохраненным"}
@@ -5510,120 +5510,7 @@ ka7qzuoQyGkbzPFESHVLXrov8xuZgP/keCO3RIkiAeIL},0}
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,0},0,0},9,2,0,0,1,1,
 {5,1f4cfaa1-419f-447b-9826-0c07a890e483,10,1,3,
-{6,73e89549-2502-40ac-b905-693e8296a883,1,e1692cc2-605b-4535-84dd-28440238746c,
-{3,"ДействияФормыРедактироватьНастройкуСтруктуры",
-{1,"ДействияФормыРедактироватьНастройкуСтруктуры",
-{1,1,
-{"ru","Действия формы редактировать настройку структуры"}
-},
-{1,1,
-{"ru","Действия формы редактировать настройку структуры"}
-},
-{1,1,
-{"ru","Действия формы редактировать настройку структуры"}
-},
-{4,0,
-{0},"",-1,-1,1,0,""},
-{0,0,0}
-}
-},7,
-{1,1,
-{"ru","Редактировать структуру отчета"}
-},
-{1,1,
-{"ru","Редактировать структуру отчета"}
-},
-{4,3,
-{0,4c7d6f04-e758-4d1d-be98-91273c17ce3b},"",14,1,1,
-{
-{#base64:Qk02BQAAAAAAADYEAAAoAAAAEAAAABAAAAABAAgAAAAAAAABAAAAAAAAAAAAAAAA
-AAAAAAAA////AP8A/wB1dXUA2dnZAP/67ADKvLgAiOD/AP/++wCU5P8AvKWWAMu1
-pQCfnZ0AmvOaANrKtQBxlaIA//z0AP/45QCSlVQA2tDNAP/23gDOuKkArPWtAJOR
-kQCBgYAAwqycAHp6egBjSTUAgoGAAIqJiQCt9a0AyreiAJqZmABwVkQAjeL/AJr0
-mQCs9q0AZEo1AGVKNwC5o5IAmoNxAHlhTgDg0skA39HHAMixogCk9KMAw62eALyl
-lQCSe2gAZ005AK2VhQD/998Ax6+hAJTl/wCHhoYAvqeYAIZtWgDZyLwAjeH/AHNa
-RgDMtqcAw6ycAE9LUQCa85kAmYBvAM+5qgCt9qwAuqOTALGaiQCxmogAoYh4AGpQ
-PACgiHcAi3NhAI2MjADayrYApY19ANPCtQC4oZEApPWjAP/++gCa9JoAaE46AMGq
-mgDXxbkA//bfAMmzowD/994Ag0IPAL+omAB9fHwA//rtAHh4dwDXxroApo58AKuU
-ggB/ZVMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAS1HR0c6AgICAgICAgIBAQEqJhgqOhsM
-UD4MIgwCAQMDKkQmGDo1TlcREREsAiBRMCpERCY6SSNBFR0VHQIoE1YqREQmOgsL
-HxYcFxkCNxAeKkRERDoNDQ0CAgMBAS9aVComXTdRHAQEAgIDAQFHVCoYREREJyAt
-AgICAgICMQMYREREREQnKAYGBgYGAk0qREdDWEwYRDo9Dg4OIQIYKkQ6AEIAKkQ6
-NAgICAgCLipEOgBDACpEOh8WHBcZAhgDRDoAJgAqREsAACcDAQFVVEQ6PFJYRBID
-CQlFAwEBUwAAAABMAAAAAAAASwMBASk4QBQUKlw7CgoKCl4BAQE=}
-},0,""}
-},
-{6,19132eaa-74a6-42c1-9a85-e550a1dfe228,1,e1692cc2-605b-4535-84dd-28440238746c,
-{3,"ДействияФормыРедактироватьПанельПользователя",
-{1,"ДействияФормыРедактироватьПанельПользователя",
-{1,1,
-{"ru","Действия формы редактировать панель пользователя"}
-},
-{1,1,
-{"ru","Действия формы редактировать панель пользователя"}
-},
-{1,1,
-{"ru","Действия формы редактировать панель пользователя"}
-},
-{4,0,
-{0},"",-1,-1,1,0,""},
-{0,0,0}
-}
-},15,
-{1,1,
-{"ru","Редактировать параметры панели настроек"}
-},
-{1,1,
-{"ru","Редактировать параметры панели настроек"}
-},
-{4,3,
-{0,ae9c08dc-91e0-465f-8248-160c23677127},"",4,1,1,
-{
-{#base64:Qk02BQAAAAAAADYEAAAoAAAAEAAAABAAAAABAAgAAAAAAAAAAAASCwAAEgsAAAAA
-AAAAAAAA/wD/AKp7awDZ2dkA8OfkAP79/QDMr6YA7+bjAPjz8gD38/IA9O7sAPbx
-8AD38fAA+/j3AMipnwDbx8EA7OLfAPj18wCugXIAtIp9APn19AB3VksAsYV3APz7
-+wD49PMA9/LwAP37+gD07ewAv5qOAMalmgDKraIA/f39APz7+gD8+voA/Pr5APHq
-6ACpe2sArH5uAPLq6AD49fQAu5WIAMKflQCvqqcAu5WJAO/l4gD6+PcA5t/dAObk
-4wDo29cA59jTAMakmgDBoJQA////APby8ADLrKMAtbSzAP/+/gDDvbsA9e7sAKx9
-bgCSkZEA/v79AOTk5AD69/YA5NXRAOnd2gD07esA/fz8ALW0tADr4NwA+fXzAO3i
-3wDZ0tAA/fv7ALeQggC3j4IAo6KhAO7k4QD9/fwAnJmXAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAgICAgIC
-AgICAgI9ADoBAQEBAQEBAQEBAQEBAgARQQcIBwgHCAgHCAcHAQIAFT8GAQUOBgYG
-BgYGEwECABIwJQEPBSJOOClHLT4BAgBJLxoUAQUaCQkJCTkMAQIAKkALCzQKGAoY
-CgsKIQECABtEJgEFDhcQEBMXRRYBAgAoRiwBDwUMOzZLQy5CAQIAHEwZFAEFMyAf
-FkgZBAECAA0rBAQeBDwEBE0EBDcBAgA1AwMDAwMDAwMDAwMDAQIABQUdDTEyGydK
-EhURJCMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=}
-},0,""},
-{0,0,0}
-},
-{6,ea858309-9aee-4012-88c9-e38bf75d5056,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,d86ff78b-b1c5-42c7-b69f-47d129eb7aa4,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"ДействияФормыРедактироватьОписаниеИПользователей",
 {1,"ДействияФормыРедактироватьОписаниеИПользователей",
 {1,1,
@@ -5679,16 +5566,129 @@ q6Tl5ubm5ubMzM6jo8x6q8+k4+bm5ubmzMzMqMzMo3mkeeDm5ubm5uXMzMzMzMyk
 eU955ubm5ubmqM7Ozs7Ozs7M5ebm5ubm5ublzs7OqKij5ubm5uY=}
 },0,""},
 {0,0,0}
+},
+{6,1323e5a2-4ebc-465b-ab9c-a89d0571b343,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"ДействияФормыРедактироватьНастройкуСтруктуры",
+{1,"ДействияФормыРедактироватьНастройкуСтруктуры",
+{1,1,
+{"ru","Действия формы редактировать настройку структуры"}
+},
+{1,1,
+{"ru","Действия формы редактировать настройку структуры"}
+},
+{1,1,
+{"ru","Действия формы редактировать настройку структуры"}
+},
+{4,0,
+{0},"",-1,-1,1,0,""},
+{0,0,0}
+}
+},7,
+{1,1,
+{"ru","Редактировать структуру отчета"}
+},
+{1,1,
+{"ru","Редактировать структуру отчета"}
+},
+{4,3,
+{0,4c7d6f04-e758-4d1d-be98-91273c17ce3b},"",14,1,1,
+{
+{#base64:Qk02BQAAAAAAADYEAAAoAAAAEAAAABAAAAABAAgAAAAAAAABAAAAAAAAAAAAAAAA
+AAAAAAAA////AP8A/wB1dXUA2dnZAP/67ADKvLgAiOD/AP/++wCU5P8AvKWWAMu1
+pQCfnZ0AmvOaANrKtQBxlaIA//z0AP/45QCSlVQA2tDNAP/23gDOuKkArPWtAJOR
+kQCBgYAAwqycAHp6egBjSTUAgoGAAIqJiQCt9a0AyreiAJqZmABwVkQAjeL/AJr0
+mQCs9q0AZEo1AGVKNwC5o5IAmoNxAHlhTgDg0skA39HHAMixogCk9KMAw62eALyl
+lQCSe2gAZ005AK2VhQD/998Ax6+hAJTl/wCHhoYAvqeYAIZtWgDZyLwAjeH/AHNa
+RgDMtqcAw6ycAE9LUQCa85kAmYBvAM+5qgCt9qwAuqOTALGaiQCxmogAoYh4AGpQ
+PACgiHcAi3NhAI2MjADayrYApY19ANPCtQC4oZEApPWjAP/++gCa9JoAaE46AMGq
+mgDXxbkA//bfAMmzowD/994Ag0IPAL+omAB9fHwA//rtAHh4dwDXxroApo58AKuU
+ggB/ZVMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEBAS1HR0c6AgICAgICAgIBAQEqJhgqOhsM
+UD4MIgwCAQMDKkQmGDo1TlcREREsAiBRMCpERCY6SSNBFR0VHQIoE1YqREQmOgsL
+HxYcFxkCNxAeKkRERDoNDQ0CAgMBAS9aVComXTdRHAQEAgIDAQFHVCoYREREJyAt
+AgICAgICMQMYREREREQnKAYGBgYGAk0qREdDWEwYRDo9Dg4OIQIYKkQ6AEIAKkQ6
+NAgICAgCLipEOgBDACpEOh8WHBcZAhgDRDoAJgAqREsAACcDAQFVVEQ6PFJYRBID
+CQlFAwEBUwAAAABMAAAAAAAASwMBASk4QBQUKlw7CgoKCl4BAQE=}
+},0,""}
+},
+{6,5ca23b0c-d5b9-489b-9085-41be5a6bfd5f,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"ДействияФормыРедактироватьПанельПользователя",
+{1,"ДействияФормыРедактироватьПанельПользователя",
+{1,1,
+{"ru","Действия формы редактировать панель пользователя"}
+},
+{1,1,
+{"ru","Действия формы редактировать панель пользователя"}
+},
+{1,1,
+{"ru","Действия формы редактировать панель пользователя"}
+},
+{4,0,
+{0},"",-1,-1,1,0,""},
+{0,0,0}
+}
+},15,
+{1,1,
+{"ru","Редактировать параметры панели настроек"}
+},
+{1,1,
+{"ru","Редактировать параметры панели настроек"}
+},
+{4,3,
+{0,ae9c08dc-91e0-465f-8248-160c23677127},"",4,1,1,
+{
+{#base64:Qk02BQAAAAAAADYEAAAoAAAAEAAAABAAAAABAAgAAAAAAAAAAAASCwAAEgsAAAAA
+AAAAAAAA/wD/AKp7awDZ2dkA8OfkAP79/QDMr6YA7+bjAPjz8gD38/IA9O7sAPbx
+8AD38fAA+/j3AMipnwDbx8EA7OLfAPj18wCugXIAtIp9APn19AB3VksAsYV3APz7
++wD49PMA9/LwAP37+gD07ewAv5qOAMalmgDKraIA/f39APz7+gD8+voA/Pr5APHq
+6ACpe2sArH5uAPLq6AD49fQAu5WIAMKflQCvqqcAu5WJAO/l4gD6+PcA5t/dAObk
+4wDo29cA59jTAMakmgDBoJQA////APby8ADLrKMAtbSzAP/+/gDDvbsA9e7sAKx9
+bgCSkZEA/v79AOTk5AD69/YA5NXRAOnd2gD07esA/fz8ALW0tADr4NwA+fXzAO3i
+3wDZ0tAA/fv7ALeQggC3j4IAo6KhAO7k4QD9/fwAnJmXAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAICAgICAgIC
+AgICAgI9ADoBAQEBAQEBAQEBAQEBAgARQQcIBwgHCAgHCAcHAQIAFT8GAQUOBgYG
+BgYGEwECABIwJQEPBSJOOClHLT4BAgBJLxoUAQUaCQkJCTkMAQIAKkALCzQKGAoY
+CgsKIQECABtEJgEFDhcQEBMXRRYBAgAoRiwBDwUMOzZLQy5CAQIAHEwZFAEFMyAf
+FkgZBAECAA0rBAQeBDwEBE0EBDcBAgA1AwMDAwMDAwMDAwMDAQIABQUdDTEyGydK
+EhURJCMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=}
+},0,""},
+{0,0,0}
 },1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,73e89549-2502-40ac-b905-693e8296a883,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,1323e5a2-4ebc-465b-ab9c-a89d0571b343,
 {8,"РедактироватьСтруктуруОтчетаАдминистратора",0,4,
 {1,1,
 {"ru","Настройка структуры"}
-},1,1f4cfaa1-419f-447b-9826-0c07a890e483,8,1e2,0,3,1,0,0,0,0},19132eaa-74a6-42c1-9a85-e550a1dfe228,
+},1,1f4cfaa1-419f-447b-9826-0c07a890e483,8,1e2,0,3,1,0,0,0,0},5ca23b0c-d5b9-489b-9085-41be5a6bfd5f,
 {8,"РедактироватьПараметрыПанели",0,4,
 {1,1,
 {"ru","Панель пользователя"}
-},1,1f4cfaa1-419f-447b-9826-0c07a890e483,9,1e2,0,3,1,0,0,0,0},ea858309-9aee-4012-88c9-e38bf75d5056,
+},1,1f4cfaa1-419f-447b-9826-0c07a890e483,9,1e2,0,3,1,0,0,0,0},d86ff78b-b1c5-42c7-b69f-47d129eb7aa4,
 {8,"РедактироватьПолномочия",0,6,
 {1,1,
 {"ru","Описание и Пользователи"}
@@ -6278,33 +6278,7 @@ eU955ubm5ubmqM7Ozs7Ozs7M5ebm5ubm5ublzs7OqKij5ubm5uY=}
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,0},0,0},9,2,0,0,1,1,
 {5,93871060-4445-42d5-bd5b-f2aeacc9f731,3,1,2,
-{6,3518c0e3-8795-4fee-8a70-1487361101a4,1,e1692cc2-605b-4535-84dd-28440238746c,
-{3,"КоманднаяПанель1Настройка",
-{1,"КоманднаяПанель1Настройка",
-{1,1,
-{"ru","Настройка"}
-},
-{1,1,
-{"ru","Настройка"}
-},
-{1,1,
-{"ru","Настройка"}
-},
-{4,0,
-{0},"",-1,-1,1,0,""},
-{0,0,0}
-}
-},7,
-{1,1,
-{"ru","Настройки системы мониторинга"}
-},
-{1,1,
-{"ru","Настройки системы мониторинга"}
-},
-{4,1,
-{0,942e0303-a3ec-4fe8-887c-5aea8516d424},"",-1,-1,1,0,""}
-},
-{6,d77eefaa-f704-40c5-a1fb-75721173e7b6,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,250dd3ec-8743-4e52-9c74-e5c44a66878b,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"ДействияСРезультатомПечатьНажатие",
 {1,"ДействияСРезультатомПечатьНажатие",
 {1,1,
@@ -6329,12 +6303,38 @@ eU955ubm5ubmqM7Ozs7Ozs7M5ebm5ubm5ublzs7OqKij5ubm5uY=}
 },
 {4,1,
 {0,0abdab67-5c90-4296-8168-239d22024d11},"",-1,-1,1,0,""}
+},
+{6,03b1eead-009a-4416-b304-eed4b3b36878,1,e1692cc2-605b-4535-84dd-28440238746c,
+{3,"КоманднаяПанель1Настройка",
+{1,"КоманднаяПанель1Настройка",
+{1,1,
+{"ru","Настройка"}
+},
+{1,1,
+{"ru","Настройка"}
+},
+{1,1,
+{"ru","Настройка"}
+},
+{4,0,
+{0},"",-1,-1,1,0,""},
+{0,0,0}
+}
+},7,
+{1,1,
+{"ru","Настройки системы мониторинга"}
+},
+{1,1,
+{"ru","Настройки системы мониторинга"}
+},
+{4,1,
+{0,942e0303-a3ec-4fe8-887c-5aea8516d424},"",-1,-1,1,0,""}
 },1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,3518c0e3-8795-4fee-8a70-1487361101a4,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,2,03b1eead-009a-4416-b304-eed4b3b36878,
 {8,"Настройка",0,2,
 {1,1,
 {"ru","Настройки СМТ"}
-},1,93871060-4445-42d5-bd5b-f2aeacc9f731,3,1e2,0,3,1,0,0,0,0},d77eefaa-f704-40c5-a1fb-75721173e7b6,
+},1,93871060-4445-42d5-bd5b-f2aeacc9f731,3,1e2,0,3,1,0,0,0,0},250dd3ec-8743-4e52-9c74-e5c44a66878b,
 {8,"Действие",0,2,
 {1,1,
 {"ru","Печать"}
@@ -6403,7 +6403,7 @@ eU955ubm5ubmqM7Ozs7Ozs7M5ebm5ubm5ublzs7OqKij5ubm5uY=}
 {0},0,0,0,48312c09-257f-4b29-b280-284dd89efc1e},
 {1,0},0,0},9,2,0,2,1,1,
 {5,93871060-4445-42d5-bd5b-f2aeacc9f731,4,1,3,
-{6,b5bd27e0-fc68-4dad-90d0-675767aaa65e,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,96f2b504-276b-4e21-b728-48a5a8c25d21,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КоманднаяПанельПанельПользователя",
 {1,"КоманднаяПанельПанельПользователя",
 {1,1,
@@ -6429,10 +6429,10 @@ eU955ubm5ubmqM7Ozs7Ozs7M5ebm5ubm5ublzs7OqKij5ubm5uY=}
 {4,1,
 {0,afc0bdff-f1ed-41f4-b0c4-51d602163a2e},"",4,1,1,0,""}
 },
-{6,76e9b656-113c-47ef-9afd-a2c7f5672fe4,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
+{6,770ae70d-1b31-4415-8fb1-f9fb7cd86f64,1,fbe38877-b914-4fd5-8540-07dde06ba2e1,
 {6,0,00000000-0000-0000-0000-000000000000,300,
 {1,99,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0},0,1},0},
-{6,64102a38-353d-433c-a9e3-43779ad59f41,1,e1692cc2-605b-4535-84dd-28440238746c,
+{6,59b11a60-5433-441b-99fb-3525672fdc76,1,e1692cc2-605b-4535-84dd-28440238746c,
 {3,"КоманднаяПанельПанельВариантов",
 {1,"КоманднаяПанельПанельВариантов",
 {1,1,
@@ -6458,15 +6458,15 @@ eU955ubm5ubmqM7Ozs7Ozs7M5ebm5ubm5ublzs7OqKij5ubm5uY=}
 {4,1,
 {0,ad20692a-b2c1-4991-b849-c7ac5af7d013},"",-1,-1,0,0,""}
 },1,
-{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,64102a38-353d-433c-a9e3-43779ad59f41,
+{5,b78f2e80-ec68-11d4-9dcf-0050bae2bc79,4,0,3,59b11a60-5433-441b-99fb-3525672fdc76,
 {8,"ПанельВариантов",0,4,
 {1,1,
 {"#","Панель вариантов"}
-},0,93871060-4445-42d5-bd5b-f2aeacc9f731,4,1e2,0,0,1,1,0,0,0},b5bd27e0-fc68-4dad-90d0-675767aaa65e,
+},0,93871060-4445-42d5-bd5b-f2aeacc9f731,4,1e2,0,0,1,1,0,0,0},96f2b504-276b-4e21-b728-48a5a8c25d21,
 {8,"ПанельПользователя",0,4,
 {1,1,
 {"ru","Настройки"}
-},1,93871060-4445-42d5-bd5b-f2aeacc9f731,3,1e2,0,3,1,1,0,0,0},76e9b656-113c-47ef-9afd-a2c7f5672fe4,
+},1,93871060-4445-42d5-bd5b-f2aeacc9f731,3,1e2,0,3,1,1,0,0,0},770ae70d-1b31-4415-8fb1-f9fb7cd86f64,
 {8,"Действие1",0,2,
 {1,1,
 {"#","Действие1"}
@@ -6506,7 +6506,7 @@ eU955ubm5ubmqM7Ozs7Ozs7M5ebm5ubm5ublzs7OqKij5ubm5uY=}
 {0}
 }
 }
-},838,538,1,0,0,4,4,2397},
+},838,538,1,0,0,4,4,2398},
 {
 {1},87,
 {17,
