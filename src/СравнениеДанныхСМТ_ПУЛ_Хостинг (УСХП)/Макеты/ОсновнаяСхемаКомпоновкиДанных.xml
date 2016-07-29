@@ -264,59 +264,8 @@
 		<dataSet xsi:type="DataSetObject">
 			<name>ТЗЗаправки</name>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Заправщик</dataPath>
-				<field>Заправщик</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Заправщик</d5p1:content>
-					</d5p1:item>
-				</title>
-				<valueType>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<Length>0</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
-				</valueType>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>ТипЗаправщика</dataPath>
-				<field>ТипЗаправщика</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Тип заправщика</d5p1:content>
-					</d5p1:item>
-				</title>
-				<valueType>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<Length>0</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
-				</valueType>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>НомерЗаправки</dataPath>
-				<field>НомерЗаправки</field>
-				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
-					<d5p1:item>
-						<d5p1:lang>ru</d5p1:lang>
-						<d5p1:content>Номер заправки</d5p1:content>
-					</d5p1:item>
-				</title>
-				<valueType>
-					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
-					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
-						<Length>0</Length>
-						<AllowedLength>Variable</AllowedLength>
-					</StringQualifiers>
-				</valueType>
-			</field>
-			<field xsi:type="DataSetFieldField">
-				<dataPath>ЗаправленоАЗК</dataPath>
-				<field>ЗаправленоАЗК</field>
+				<dataPath>ЗаправленоАТЗ</dataPath>
+				<field>ЗаправленоАТЗ</field>
 				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
 					<d5p1:item>
 						<d5p1:lang>ru</d5p1:lang>
@@ -368,7 +317,78 @@
 				</valueType>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
-			<objectName>ТЗЗаправки</objectName>
+			<objectName>ТЗЗаправкиСМТ</objectName>
+		</dataSet>
+		<dataSet xsi:type="DataSetObject">
+			<name>ЗаправкиБезСоответствия</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бсЗаправщик</dataPath>
+				<field>Заправщик</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Заправщик</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ОсновныеСредства</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бсИмяКлюча</dataPath>
+				<field>ИмяКлюча</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Кого заправлял (ключ в СМТ)</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бсЗаправленоАТЗ</dataPath>
+				<field>ЗаправленоАТЗ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Выдача с АТЗ по СМТ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>0</Digits>
+						<FractionDigits>0</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>бсЗаправленоАЗС</dataPath>
+				<field>ЗаправленоАЗС</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Выдача с АЗС по СМТ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>0</Digits>
+						<FractionDigits>0</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<objectName>ТЗЗаправкиСМТБезСоответствия</objectName>
 		</dataSet>
 		<dataSetLink>
 			<sourceDataSet>ТЗДанных</sourceDataSet>
@@ -517,12 +537,20 @@
 			<expression>Среднее(ОтклонениеРасхода1СОтСМТПроценты)</expression>
 		</totalField>
 		<totalField>
-			<dataPath>ЗаправленоАЗК</dataPath>
-			<expression>Сумма(ЗаправленоАЗК)</expression>
+			<dataPath>ЗаправленоАЗС</dataPath>
+			<expression>Количество(ЗаправленоАЗС)</expression>
 		</totalField>
 		<totalField>
-			<dataPath>ЗаправленоАЗС</dataPath>
-			<expression>Сумма(ЗаправленоАЗС)</expression>
+			<dataPath>ЗаправленоАТЗ</dataPath>
+			<expression>Количество(ЗаправленоАТЗ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>бсЗаправленоАЗС</dataPath>
+			<expression>Сумма(бсЗаправленоАЗС)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>бсЗаправленоАТЗ</dataPath>
+			<expression>Сумма(бсЗаправленоАТЗ)</expression>
 		</totalField>
 		<parameter>
 			<name>НачалоПериода1</name>
@@ -832,21 +860,21 @@
 		</selection>
 	</item>
 	<item xsi:type="StructureItemGroup">
+		<groupItems>
+			<item xsi:type="GroupItemField">
+				<field>бсЗаправщик</field>
+				<groupType>Items</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+		</groupItems>
 		<order>
 			<item xsi:type="OrderItemAuto"/>
 		</order>
 		<selection>
 			<item xsi:type="SelectedItemField">
-				<field>Заправщик</field>
-			</item>
-			<item xsi:type="SelectedItemField">
-				<field>ИмяКлюча</field>
-			</item>
-			<item xsi:type="SelectedItemField">
-				<field>ЗаправленоАЗС</field>
-			</item>
-			<item xsi:type="SelectedItemField">
-				<field>ЗаправленоАЗК</field>
+				<field>бсЗаправщик</field>
 			</item>
 		</selection>
 		<outputParameters>
@@ -864,6 +892,22 @@
 				</dcscor:value>
 			</dcscor:item>
 		</outputParameters>
+		<item xsi:type="StructureItemGroup">
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemField">
+					<field>бсИмяКлюча</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>бсЗаправленоАЗС</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>бсЗаправленоАТЗ</field>
+				</item>
+			</selection>
+		</item>
 	</item>
 </Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
 <SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
