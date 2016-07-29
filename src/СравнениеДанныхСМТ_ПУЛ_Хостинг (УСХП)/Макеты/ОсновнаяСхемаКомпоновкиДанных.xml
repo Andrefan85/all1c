@@ -876,8 +876,19 @@
 			<item xsi:type="SelectedItemField">
 				<field>бсЗаправщик</field>
 			</item>
+			<item xsi:type="SelectedItemField">
+				<field>бсЗаправленоАЗС</field>
+			</item>
+			<item xsi:type="SelectedItemField">
+				<field>бсЗаправленоАТЗ</field>
+			</item>
 		</selection>
 		<outputParameters>
+			<dcscor:item xsi:type="SettingsParameterValue">
+				<dcscor:use>false</dcscor:use>
+				<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+				<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+			</dcscor:item>
 			<dcscor:item xsi:type="SettingsParameterValue">
 				<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
 				<dcscor:value xsi:type="DataCompositionTextOutputType">Output</dcscor:value>
