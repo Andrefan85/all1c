@@ -1,0 +1,12 @@
+﻿31b8bb0b-c59f-44e4-82a6-ae0f353a3e44-->und\31b8bb0b-c59f-44e4-82a6-ae0f353a3e44
+copyinfo-->und\copyinfo
+dc4b1a51-53f5-41a2-ba97-3ddd69e0ba2a.0\info-->und\dc4b1a51-53f5-41a2-ba97-3ddd69e0ba2a.0\info
+dc4b1a51-53f5-41a2-ba97-3ddd69e0ba2a.0\text-->ObjectModule.bsl
+dc4b1a51-53f5-41a2-ba97-3ddd69e0ba2a.1-->und\dc4b1a51-53f5-41a2-ba97-3ddd69e0ba2a.1
+ee367342-7f29-492b-a82f-98ff66a7c515-->und\ee367342-7f29-492b-a82f-98ff66a7c515
+ee367342-7f29-492b-a82f-98ff66a7c515.0-->Form\ФормаОтчета
+f1b9f714-26d7-4808-b6b6-a7e37697f37d-->und\f1b9f714-26d7-4808-b6b6-a7e37697f37d
+f1b9f714-26d7-4808-b6b6-a7e37697f37d.0-->und\f1b9f714-26d7-4808-b6b6-a7e37697f37d.0
+root-->und\root
+version-->und\version
+versions-->und\versions
