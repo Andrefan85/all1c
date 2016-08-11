@@ -1,0 +1,704 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>ОтборБезПустыхСтрок</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Культура</dataPath>
+				<field>Культура</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Поле</dataPath>
+				<field>Поле</field>
+				<presentationExpression>Поле.Код</presentationExpression>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГодУрожая</dataPath>
+				<field>ГодУрожая</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подразделение</dataPath>
+				<field>Подразделение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>урожайность</dataPath>
+				<field>урожайность</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Урожайность</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Номенклатура</dataPath>
+				<field>Номенклатура</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПринятыйУрожайВТ</dataPath>
+				<field>ПринятыйУрожайВТ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Принятый урожай, т.</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<role>
+					<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+					<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+				</role>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КультураПредшественникОдинГод</dataPath>
+				<field>КультураПредшественникОдинГод</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Культура предшественник один год</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КультураПредшественникЧетыреГод</dataPath>
+				<field>КультураПредшественникЧетыреГод</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Культура предшественник четыре год</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КультураПредшественникТриГода</dataPath>
+				<field>КультураПредшественникТриГода</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Культура предшественник три года</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КультураПредшественникДваГода</dataPath>
+				<field>КультураПредшественникДваГода</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Культура предшественник два года</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КультураПредшественникПятьЛет</dataPath>
+				<field>КультураПредшественникПятьЛет</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Культура предшественник пять лет</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	цУчетВыполненныхОпераций.Культура,
+	цУчетВыполненныхОпераций.Поле.Владелец КАК Подразделение,
+	цУчетВыполненныхОпераций.ГодУрожая,
+	цУчетВыполненныхОпераций.Поле,
+	"" КАК Номенклатура,
+	0 КАК ПринятыйУрожайВЦ,
+	0 КАК урожайность,
+	цУчетВыполненныхОпераций.Регистратор
+ПОМЕСТИТЬ ВТ
+ИЗ
+	РегистрНакопления.цУчетВыполненныхОпераций КАК цУчетВыполненныхОпераций
+ГДЕ
+	цУчетВыполненныхОпераций.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И цУчетВыполненныхОпераций.ВидРаботы.СобытиеИзмененияСостоянияПолей = ЗНАЧЕНИЕ(Справочник.цСобытиеИзмененияСостоянияПолей.Уборка)
+	И цУчетВыполненныхОпераций.ГодУрожая = &amp;ГодУрожая
+
+СГРУППИРОВАТЬ ПО
+	цУчетВыполненныхОпераций.Культура,
+	цУчетВыполненныхОпераций.Подразделение,
+	цУчетВыполненныхОпераций.ГодУрожая,
+	цУчетВыполненныхОпераций.Поле,
+	цУчетВыполненныхОпераций.Поле.Владелец,
+	цУчетВыполненныхОпераций.Регистратор
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	цРеестрПриемаЗерна.Культура,
+	цРеестрПриемаЗерна.Поле.Владелец,
+	цРеестрПриемаЗерна.ГодУрожая,
+	цРеестрПриемаЗерна.Поле,
+	цРеестрПриемаЗерна.Номенклатура,
+	СУММА(цРеестрПриемаЗерна.Масса / 10),
+	СУММА(ВЫБОР
+			КОГДА НЕ цРеестрПриемаЗерна.Поле.ПосевнаяПлощадь = 0
+				ТОГДА цРеестрПриемаЗерна.Масса / ВЫБОР
+						КОГДА цРеестрПриемаЗерна.Регистратор.ЕдиницаИзмерения.Наименование = "ц"
+							ТОГДА 10
+						КОГДА цРеестрПриемаЗерна.Регистратор.ЕдиницаИзмерения.Наименование = "кг"
+							ТОГДА 1000
+						ИНАЧЕ 1
+					КОНЕЦ / цРеестрПриемаЗерна.Поле.ПосевнаяПлощадь
+			ИНАЧЕ 0
+		КОНЕЦ),
+	цРеестрПриемаЗерна.Регистратор
+ИЗ
+	РегистрСведений.цРеестрПриемаЗерна КАК цРеестрПриемаЗерна
+ГДЕ
+	цРеестрПриемаЗерна.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И НЕ цРеестрПриемаЗерна.Номенклатура.ПобочныйПродукт_РАВ
+	И цРеестрПриемаЗерна.ГодУрожая = &amp;ГодУрожая
+
+СГРУППИРОВАТЬ ПО
+	цРеестрПриемаЗерна.Культура,
+	цРеестрПриемаЗерна.Подразделение,
+	цРеестрПриемаЗерна.ГодУрожая,
+	цРеестрПриемаЗерна.Поле,
+	цРеестрПриемаЗерна.Номенклатура,
+	цРеестрПриемаЗерна.Поле.Владелец,
+	цРеестрПриемаЗерна.Регистратор
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ.Культура,
+	ВТ.Подразделение,
+	ВТ.ГодУрожая,
+	ВТ.Поле,
+	ВТ.Номенклатура,
+	ВТ.ПринятыйУрожайВЦ КАК ПринятыйУрожайВТ,
+	ВТ.урожайность,
+	ВТ.Регистратор,
+	ЕСТЬNULL(СтруктураФактМинусГод.Культура, ЗНАЧЕНИЕ(Справочник.цКультуры.ПустаяСсылка)) КАК КультураПредшественникОдинГод,
+	ЕСТЬNULL(СтруктураФактМинусДва.Культура, ЗНАЧЕНИЕ(Справочник.цКультуры.ПустаяСсылка)) КАК КультураПредшественникДваГода,
+	ЕСТЬNULL(СтруктураФактМинусТри.Культура, ЗНАЧЕНИЕ(Справочник.цКультуры.ПустаяСсылка)) КАК КультураПредшественникТриГода,
+	ЕСТЬNULL(СтруктураФактМинусЧетыре.Культура, ЗНАЧЕНИЕ(Справочник.цКультуры.ПустаяСсылка)) КАК КультураПредшественникЧетыреГод,
+	ЕСТЬNULL(СтруктураФактМинусПять.Культура, ЗНАЧЕНИЕ(Справочник.цКультуры.ПустаяСсылка)) КАК КультураПредшественникПятьЛет
+ИЗ
+	ВТ КАК ВТ
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.цСтруктураПосевныхПлощадей.СрезПоследних({&amp;КонецПериода}, ГодУрожая = &amp;ПредыдущийГодОдин) КАК СтруктураФактМинусГод
+		ПО ВТ.Поле = СтруктураФактМинусГод.Поле
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.цСтруктураПосевныхПлощадей.СрезПоследних({&amp;КонецПериода}, ГодУрожая = &amp;ПредыдущийГодДва) КАК СтруктураФактМинусДва
+		ПО ВТ.Поле = СтруктураФактМинусДва.Поле
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.цСтруктураПосевныхПлощадей.СрезПоследних({(&amp;КонецПериода)}, ГодУрожая = &amp;ПредыдущийГодТри) КАК СтруктураФактМинусТри
+		ПО ВТ.Поле = СтруктураФактМинусТри.Поле
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.цСтруктураПосевныхПлощадей.СрезПоследних({(&amp;КонецПериода)}, ГодУрожая = &amp;ПредыдущийГодЧетыре) КАК СтруктураФактМинусЧетыре
+		ПО ВТ.Поле = СтруктураФактМинусЧетыре.Поле
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.цСтруктураПосевныхПлощадей.СрезПоследних({(&amp;КонецПериода)}, ГодУрожая = &amp;ПредыдущийГодПять) КАК СтруктураФактМинусПять
+		ПО ВТ.Поле = СтруктураФактМинусПять.Поле
+ГДЕ
+	ВТ.Номенклатура &lt;&gt; ""</query>
+		</dataSet>
+		<dataSet xsi:type="DataSetQuery">
+			<name>ОперацииГруппировка</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГодУрожая</dataPath>
+				<field>ГодУрожая</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОбработаноГа</dataPath>
+				<field>ОбработаноГа</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Обработано га</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Подразделение</dataPath>
+				<field>Подразделение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Поле</dataPath>
+				<field>Поле</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Га</dataPath>
+				<field>Га</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Га</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ
+	цУчетВыполненныхОпераций.Подразделение,
+	цУчетВыполненныхОпераций.ГодУрожая,
+	цУчетВыполненныхОпераций.Поле,
+	СУММА(цУчетВыполненныхОпераций.Количество) КАК ОбработаноГа,
+	цУчетВыполненныхОпераций.Поле.ПосевнаяПлощадь КАК Га
+ИЗ
+	РегистрНакопления.цУчетВыполненныхОпераций КАК цУчетВыполненныхОпераций
+ГДЕ
+	цУчетВыполненныхОпераций.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И цУчетВыполненныхОпераций.ВидРаботы.СобытиеИзмененияСостоянияПолей = ЗНАЧЕНИЕ(Справочник.цСобытиеИзмененияСостоянияПолей.Уборка)
+	И цУчетВыполненныхОпераций.ГодУрожая = &amp;ГодУрожая
+
+СГРУППИРОВАТЬ ПО
+	цУчетВыполненныхОпераций.Подразделение,
+	цУчетВыполненныхОпераций.ГодУрожая,
+	цУчетВыполненныхОпераций.Поле,
+	цУчетВыполненныхОпераций.Поле.ПосевнаяПлощадь</query>
+		</dataSet>
+		<dataSetLink>
+			<sourceDataSet>ОтборБезПустыхСтрок</sourceDataSet>
+			<destinationDataSet>ОперацииГруппировка</destinationDataSet>
+			<sourceExpression>Поле</sourceExpression>
+			<destinationExpression>Поле</destinationExpression>
+		</dataSetLink>
+		<calculatedField>
+			<dataPath>УрожайностьОбработка</dataPath>
+			<expression>ВЫБОР КОГДА ОбработаноГа&lt;&gt;0 ТОГДА ПринятыйУрожайВТ/ОбработаноГа ИНАЧЕ 0 КОНЕЦ</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Урожайность, т/га</d4p1:content>
+				</d4p1:item>
+			</title>
+			<appearance>
+				<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+					<parameter>Формат</parameter>
+					<value xsi:type="xs:string">ЧДЦ=2</value>
+				</item>
+			</appearance>
+		</calculatedField>
+		<totalField>
+			<dataPath>урожайность</dataPath>
+			<expression>Сумма(урожайность)</expression>
+			<group>Номенклатура</group>
+			<group>Номенклатура Иерархия</group>
+			<group>Поле</group>
+			<group>Поле Иерархия</group>
+		</totalField>
+		<totalField>
+			<dataPath>урожайность</dataPath>
+			<expression>Среднее(урожайность)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Га</dataPath>
+			<expression>Сумма(Га)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ПринятыйУрожайВТ</dataPath>
+			<expression>Сумма(ПринятыйУрожайВТ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>УрожайностьОбработка</dataPath>
+			<expression>Среднее(УрожайностьОбработка)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>УрожайностьОбработка</dataPath>
+			<expression>Сумма(УрожайностьОбработка)</expression>
+			<group>Номенклатура</group>
+			<group>Номенклатура Иерархия</group>
+			<group>Поле</group>
+			<group>Поле Иерархия</group>
+		</totalField>
+		<totalField>
+			<dataPath>ОбработаноГа</dataPath>
+			<expression>Сумма(ОбработаноГа)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КультураПредшественникОдинГод</dataPath>
+			<expression>Максимум(КультураПредшественникОдинГод)</expression>
+			<group>Поле</group>
+		</totalField>
+		<totalField>
+			<dataPath>КультураПредшественникДваГода</dataPath>
+			<expression>Максимум(КультураПредшественникДваГода)</expression>
+			<group>Поле</group>
+		</totalField>
+		<totalField>
+			<dataPath>КультураПредшественникПятьЛет</dataPath>
+			<expression>Максимум(КультураПредшественникПятьЛет)</expression>
+			<group>Поле</group>
+		</totalField>
+		<totalField>
+			<dataPath>КультураПредшественникТриГода</dataPath>
+			<expression>Максимум(КультураПредшественникТриГода)</expression>
+			<group>Поле</group>
+		</totalField>
+		<totalField>
+			<dataPath>КультураПредшественникЧетыреГод</dataPath>
+			<expression>Максимум(КультураПредшественникЧетыреГод)</expression>
+			<group>Поле</group>
+		</totalField>
+		<parameter>
+			<name>ПериодФормированияОтчета</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период формирования отчета</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">StandardPeriod</Type>
+			</valueType>
+			<value xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:StandardPeriod">
+				<d4p1:variant xsi:type="d4p1:StandardPeriodVariant">Custom</d4p1:variant>
+				<d4p1:startDate>0001-01-01T00:00:00</d4p1:startDate>
+				<d4p1:endDate>0001-01-01T00:00:00</d4p1:endDate>
+			</value>
+			<useRestriction>false</useRestriction>
+			<denyIncompleteValues>true</denyIncompleteValues>
+		</parameter>
+		<parameter>
+			<name>КонецПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Конец периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+			<expression>&amp;ПериодФормированияОтчета.ДатаОкончания </expression>
+		</parameter>
+		<parameter>
+			<name>НачалоПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Начало периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+			<expression>&amp;ПериодФормированияОтчета.ДатаНачала </expression>
+		</parameter>
+		<parameter>
+			<name>ПредыдущийГодДва</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Предыдущий год два</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.цГодыУрожая</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ПредыдущийГодОдин</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Предыдущий год один</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.цГодыУрожая</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ПредыдущийГодПять</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Предыдущий год пять</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.цГодыУрожая</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ПредыдущийГодТри</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Предыдущий год три</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.цГодыУрожая</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ПредыдущийГодЧетыре</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Предыдущий год четыре</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.цГодыУрожая</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<parameter>
+			<name>ГодУрожая</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Год урожая</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d5p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d5p1:CatalogRef.цГодыУрожая</Type>
+			</valueType>
+			<value xsi:nil="true"/>
+			<useRestriction>false</useRestriction>
+			<denyIncompleteValues>true</denyIncompleteValues>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>ПринятыйУрожайВТ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Урожайность</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>УрожайностьОбработка</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОбработаноГа</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОсталосьУбрать</field>
+		</item>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<left xsi:type="dcscor:Field">Поле</left>
+			<comparisonType>InList</comparisonType>
+			<right xsi:nil="true"/>
+			<right xsi:nil="true"/>
+		</item>
+	</filter>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>НачалоПериода</dcscor:parameter>
+			<dcscor:value xsi:type="dcscor:DesignTimeValue">Справочник.цФактическиеОперации.ПустаяСсылка</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ПредыдущийГодДва</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+			<userSettingID>9ebe0df5-ef54-44ee-a1e6-88909228765c</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ПредыдущийГодОдин</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+			<userSettingID>af2a0578-eb91-4454-8f53-6bf3a75e03ae</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ПредыдущийГодПять</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+			<userSettingID>92a2c523-5fd1-4ddf-816b-ad5eef09dcd9</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ПредыдущийГодТри</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+			<userSettingID>3efa91f6-268b-4eea-bb0d-172bbcb78931</userSettingID>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>ПредыдущийГодЧетыре</dcscor:parameter>
+			<dcscor:value xsi:nil="true"/>
+			<userSettingID>3db6b440-e730-4888-a12b-48a37010a321</userSettingID>
+		</dcscor:item>
+	</dataParameters>
+	<conditionalAppearance>
+		<item>
+			<selection>
+				<item>
+					<field>ПринятыйУрожайВЦ</field>
+				</item>
+				<item>
+					<field>СредняяУрожайность</field>
+				</item>
+				<item>
+					<field>СредняяУрожайностьПоКультуре</field>
+				</item>
+				<item>
+					<field>Урожайность</field>
+				</item>
+			</selection>
+			<filter/>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+		<item>
+			<selection/>
+			<filter/>
+			<appearance/>
+		</item>
+	</conditionalAppearance>
+	<item xsi:type="StructureItemGroup">
+		<groupItems>
+			<item xsi:type="GroupItemField">
+				<field>Подразделение</field>
+				<groupType>Hierarchy</groupType>
+				<periodAdditionType>None</periodAdditionType>
+				<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+				<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+			</item>
+		</groupItems>
+		<order>
+			<item xsi:type="OrderItemAuto"/>
+		</order>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+		<item xsi:type="StructureItemGroup">
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Культура</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemAuto"/>
+			</selection>
+			<conditionalAppearance>
+				<item>
+					<selection>
+						<item>
+							<field>Урожайность</field>
+						</item>
+					</selection>
+					<filter/>
+					<appearance>
+						<dcscor:item xsi:type="SettingsParameterValue">
+							<dcscor:parameter>Текст</dcscor:parameter>
+							<dcscor:value xsi:type="dcscor:Field">СредняяУрожайностьПоКультуре</dcscor:value>
+						</dcscor:item>
+					</appearance>
+				</item>
+			</conditionalAppearance>
+			<item xsi:type="StructureItemGroup">
+				<groupItems>
+					<item xsi:type="GroupItemField">
+						<field>Поле</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+					<item xsi:type="GroupItemField">
+						<field>Га</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+				</groupItems>
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemAuto"/>
+					<item xsi:type="SelectedItemField">
+						<field>КультураПредшественникОдинГод</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>КультураПредшественникДваГода</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>КультураПредшественникТриГода</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>КультураПредшественникЧетыреГод</field>
+					</item>
+					<item xsi:type="SelectedItemField">
+						<field>КультураПредшественникПятьЛет</field>
+					</item>
+				</selection>
+				<conditionalAppearance>
+					<item>
+						<selection>
+							<item>
+								<field>Урожайность</field>
+							</item>
+						</selection>
+						<filter/>
+						<appearance>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:parameter>Текст</dcscor:parameter>
+								<dcscor:value xsi:type="dcscor:Field">СредняяУрожайность</dcscor:value>
+							</dcscor:item>
+						</appearance>
+					</item>
+				</conditionalAppearance>
+				<item xsi:type="StructureItemGroup">
+					<groupItems>
+						<item xsi:type="GroupItemField">
+							<field>Номенклатура</field>
+							<groupType>Items</groupType>
+							<periodAdditionType>None</periodAdditionType>
+							<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+							<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+						</item>
+					</groupItems>
+					<order>
+						<item xsi:type="OrderItemAuto"/>
+					</order>
+					<selection>
+						<item xsi:type="SelectedItemAuto"/>
+					</selection>
+				</item>
+			</item>
+		</item>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
