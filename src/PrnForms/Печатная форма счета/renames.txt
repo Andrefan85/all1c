@@ -1,0 +1,11 @@
+﻿09386f44-5e9a-4a32-9e48-5f785f556690-->und\09386f44-5e9a-4a32-9e48-5f785f556690
+3a2e6341-aae0-4b16-bfa0-52035fd4f339-->und\3a2e6341-aae0-4b16-bfa0-52035fd4f339
+3a2e6341-aae0-4b16-bfa0-52035fd4f339.0-->Form\Форма
+6173d164-8022-434d-a293-7716c9be694a.0\info-->und\6173d164-8022-434d-a293-7716c9be694a.0\info
+6173d164-8022-434d-a293-7716c9be694a.0\text-->ObjectModule.bsl
+copyinfo-->und\copyinfo
+ff0863c5-35bb-4b15-8bef-9518d6a9ce50-->und\ff0863c5-35bb-4b15-8bef-9518d6a9ce50
+ff0863c5-35bb-4b15-8bef-9518d6a9ce50.0-->und\ff0863c5-35bb-4b15-8bef-9518d6a9ce50.0
+root-->und\root
+version-->und\version
+versions-->und\versions

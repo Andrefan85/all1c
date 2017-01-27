@@ -1,0 +1,975 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИсточникДанных1</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных1</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРаботы</dataPath>
+				<field>ВидРаботы</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Тех. операция</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИнвНомер</dataPath>
+				<field>ИнвНомер</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Инв номер</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КлючСтроки</dataPath>
+				<field>КлючСтроки</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Ключ строки</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоГа</dataPath>
+				<field>КоличествоГа</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Кол-во га</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоЧасов</dataPath>
+				<field>КоличествоЧасов</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Кол-во часов</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Культура</dataPath>
+				<field>Культура</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Культура</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>МаркаТехники</dataPath>
+				<field>МаркаТехники</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Марка техники</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>РасходГСМНорма</dataPath>
+				<field>РасходГСМНорма</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Расход ГСМ по норме</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>РасходГСМФакт</dataPath>
+				<field>РасходГСМФакт</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Расход ГСМ факт</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Учетный лист тракториста</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаДоплаты</dataPath>
+				<field>СуммаДоплаты</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Доплаты</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаИтого</dataPath>
+				<field>СуммаИтого</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Всего оплата</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СуммаПоРасценке</dataPath>
+				<field>СуммаПоРасценке</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Осн. оплата</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Тракторист</dataPath>
+				<field>Тракторист</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Тракторист</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГосударственныйНомер</dataPath>
+				<field>ГосударственныйНомер</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоУГА</dataPath>
+				<field>КоличествоУГА</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаРабот</dataPath>
+				<field>ДатаРабот</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Организация</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Организации</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоЧасов1</dataPath>
+				<field>КоличествоЧасов1</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПолеФерма</dataPath>
+				<field>ПолеФерма</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоТонн</dataPath>
+				<field>КоличествоТонн</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоТонноКилометров</dataPath>
+				<field>КоличествоТонноКилометров</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НочныхЧасов</dataPath>
+				<field>НочныхЧасов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Месяц</dataPath>
+				<field>Месяц</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Месяц</d5p1:content>
+					</d5p1:item>
+				</title>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ДЛФ=DD</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоДнейРабот</dataPath>
+				<field>КоличествоДнейРабот</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество дней работ</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	цУчетныйЛистТрактористаМашинистаВыработка.ТехнологическаяОперация КАК ВидРаботы,
+	цУчетныйЛистТрактористаМашинистаВыработка.Культура КАК Культура,
+	ВЫБОР
+		КОГДА цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор ССЫЛКА Справочник.ОсновныеСредства
+			ТОГДА цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка)
+	КОНЕЦ КАК ИнвНомер,
+	Техника.МаркаТехники КАК МаркаТехники,
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.ТрактористСотрудник КАК Тракторист,
+	ВЫБОР
+		КОГДА цУчетныйЛистТрактористаМашинистаВыработка.ОплатаВсего &gt; 0
+			ТОГДА цУчетныйЛистТрактористаМашинистаВыработка.ОтработаноЧасов
+		ИНАЧЕ 0
+	КОНЕЦ КАК КоличествоЧасов1,
+	цУчетныйЛистТрактористаМашинистаВыработка.ОбъемВыработки КАК КоличествоГа,
+	цУчетныйЛистТрактористаМашинистаВыработка.РасходГорючегоНорма КАК РасходГСМНорма,
+	цУчетныйЛистТрактористаМашинистаВыработка.Количество КАК РасходГСМФакт,
+	цУчетныйЛистТрактористаМашинистаВыработка.ОплатаОсновная КАК СуммаПоРасценке,
+	цУчетныйЛистТрактористаМашинистаВыработка.ОплатаДополнительная КАК СуммаДоплаты,
+	цУчетныйЛистТрактористаМашинистаВыработка.ОплатаВсего КАК СуммаИтого,
+	цУчетныйЛистТрактористаМашинистаВыработка.КлючСтроки,
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка КАК Регистратор,
+	цУчетныйЛистТрактористаМашинистаВыработка.КоличествоУГА,
+	Техника.ГосударственныйНомер,
+	НАЧАЛОПЕРИОДА(цУчетныйЛистТрактористаМашинистаВыработка.ДатаРабот, ДЕНЬ) КАК ДатаРабот,
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Организация,
+	цУчетныйЛистТрактористаМашинистаВыработка.ОтработаноЧасов КАК КоличествоЧасов,
+	цУчетныйЛистТрактористаМашинистаВыработка.НочныхЧасов,
+	цУчетныйЛистТрактористаМашинистаВыработка.ПолеФерма,
+	цУчетныйЛистТрактористаМашинистаВыработка.КоличествоТонн,
+	цУчетныйЛистТрактористаМашинистаВыработка.КоличествоТонноКилометров,
+	НАЧАЛОПЕРИОДА(цУчетныйЛистТрактористаМашинистаВыработка.ДатаРабот, МЕСЯЦ) КАК Месяц,
+	НАЧАЛОПЕРИОДА(цУчетныйЛистТрактористаМашинистаВыработка.ДатаРабот, ДЕНЬ) КАК КоличествоДнейРабот
+{ВЫБРАТЬ
+	Культура.*,
+	ВидРаботы.*,
+	МаркаТехники.*,
+	КоличествоЧасов1,
+	КоличествоГа,
+	РасходГСМНорма,
+	РасходГСМФакт,
+	СуммаПоРасценке,
+	СуммаДоплаты,
+	СуммаИтого}
+ИЗ
+	Документ.цУчетныйЛистТрактористаМашиниста.Выработка КАК цУчетныйЛистТрактористаМашинистаВыработка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.цСведенияОТехнике КАК Техника
+		ПО цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор = Техника.ОсновноеСредство
+ГДЕ
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Проведен = ИСТИНА
+	И цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.ВидОперации = ЗНАЧЕНИЕ(Перечисление.цВидыОперацийУчетныйПутевойЛист.Собственный)
+{ГДЕ
+	цУчетныйЛистТрактористаМашинистаВыработка.ТехнологическаяОперация.* КАК ВидРаботы,
+	цУчетныйЛистТрактористаМашинистаВыработка.Культура.*,
+	(ВЫРАЗИТЬ(Техника.МаркаТехники КАК Справочник.цМаркиТехники)).* КАК МаркаТехники,
+	(ВЫБОР
+			КОГДА цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор ССЫЛКА Справочник.ОсновныеСредства
+				ТОГДА цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка)
+		КОНЕЦ).* КАК ИнвНомер,
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Организация.*}</query>
+		</dataSet>
+		<dataSet xsi:type="DataSetQuery">
+			<name>НаборДанных2</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИнвНомерСХОрудия</dataPath>
+				<field>ИнвНомерСХОрудия</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Инв номер СХОрудия</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КлючСтрокиВыработка</dataPath>
+				<field>КлючСтрокиВыработка</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Ключ строки выработка</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>МаркаСХОрудия</dataPath>
+				<field>МаркаСХОрудия</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Марка с/х орудия</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Регистратор</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВЫБОР
+		КОГДА цУчетныйЛистТрактористаМашинистаСписокАгрегатов.Агрегат ССЫЛКА Справочник.ОсновныеСредства
+			ТОГДА цУчетныйЛистТрактористаМашинистаСписокАгрегатов.Агрегат
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка)
+	КОНЕЦ КАК ИнвНомерСХОрудия,
+	Сельхозорудия.МаркаТехники КАК МаркаСХОрудия,
+	цУчетныйЛистТрактористаМашинистаСписокАгрегатов.Ссылка КАК Регистратор,
+	цУчетныйЛистТрактористаМашинистаСписокАгрегатов.КлючСтрокиВыработка КАК КлючСтрокиВыработка
+{ВЫБРАТЬ
+	ИнвНомерСХОрудия.*,
+	МаркаСХОрудия.*}
+ИЗ
+	Документ.цУчетныйЛистТрактористаМашиниста.СписокАгрегатов КАК цУчетныйЛистТрактористаМашинистаСписокАгрегатов
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.цСведенияОТехнике КАК Сельхозорудия
+		ПО цУчетныйЛистТрактористаМашинистаСписокАгрегатов.Агрегат = Сельхозорудия.ОсновноеСредство
+ГДЕ
+	цУчетныйЛистТрактористаМашинистаСписокАгрегатов.Ссылка.Проведен = ИСТИНА
+	И цУчетныйЛистТрактористаМашинистаСписокАгрегатов.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И цУчетныйЛистТрактористаМашинистаСписокАгрегатов.Ссылка.ВидОперации = ЗНАЧЕНИЕ(Перечисление.цВидыОперацийУчетныйПутевойЛист.Собственный)
+{ГДЕ
+	(ВЫРАЗИТЬ(цУчетныйЛистТрактористаМашинистаСписокАгрегатов.Агрегат КАК Справочник.ОсновныеСредства)).* КАК ИнвНомерСХОрудия,
+	(ВЫРАЗИТЬ(Сельхозорудия.МаркаТехники КАК Справочник.цМаркиСельхозОрудий)).* КАК МаркаСХОрудия}</query>
+		</dataSet>
+		<dataSet xsi:type="DataSetQuery">
+			<name>ИнтервалыДат</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.Организации</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИнвНомер</dataPath>
+				<field>ИнвНомер</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Инв номер</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРаботы</dataPath>
+				<field>ВидРаботы</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Вид работы</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Культура</dataPath>
+				<field>Культура</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОкончаниеРабот</dataPath>
+				<field>ОкончаниеРабот</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Окончание работ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+					<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<DateFractions>Date</DateFractions>
+					</DateQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НачалоРабот</dataPath>
+				<field>НачалоРабот</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Начало работ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+					<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<DateFractions>Date</DateFractions>
+					</DateQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПолеФерма</dataPath>
+				<field>ПолеФерма</field>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	цУчетныйЛистТрактористаМашинистаВыработка.ТехнологическаяОперация КАК ВидРаботы,
+	цУчетныйЛистТрактористаМашинистаВыработка.Культура КАК Культура,
+	МИНИМУМ(НАЧАЛОПЕРИОДА(цУчетныйЛистТрактористаМашинистаВыработка.ДатаРабот, ДЕНЬ)) КАК НачалоРабот,
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Организация КАК Организация,
+	МАКСИМУМ(НАЧАЛОПЕРИОДА(цУчетныйЛистТрактористаМашинистаВыработка.ДатаРабот, ДЕНЬ)) КАК ОкончаниеРабот,
+	цУчетныйЛистТрактористаМашинистаВыработка.ПолеФерма
+{ВЫБРАТЬ
+	ВидРаботы.*,
+	Культура.*,
+	НачалоРабот,
+	Организация.*,
+	ОкончаниеРабот}
+ИЗ
+	Документ.цУчетныйЛистТрактористаМашиниста.Выработка КАК цУчетныйЛистТрактористаМашинистаВыработка
+ГДЕ
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Проведен = ИСТИНА
+	И цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.ВидОперации = ЗНАЧЕНИЕ(Перечисление.цВидыОперацийУчетныйПутевойЛист.Собственный)
+{ГДЕ
+	цУчетныйЛистТрактористаМашинистаВыработка.ТехнологическаяОперация.* КАК ВидРаботы,
+	цУчетныйЛистТрактористаМашинистаВыработка.Культура.*,
+	(ВЫБОР
+			КОГДА цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор ССЫЛКА Справочник.ОсновныеСредства
+				ТОГДА цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка)
+		КОНЕЦ).* КАК ИнвНомер,
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Организация.*}
+
+СГРУППИРОВАТЬ ПО
+	цУчетныйЛистТрактористаМашинистаВыработка.ТехнологическаяОперация,
+	цУчетныйЛистТрактористаМашинистаВыработка.Культура,
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Организация,
+	цУчетныйЛистТрактористаМашинистаВыработка.ПолеФерма</query>
+		</dataSet>
+		<dataSet xsi:type="DataSetObject">
+			<name>ВнешняяТЗ</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>УЛТМ</dataPath>
+				<field>УЛТМ</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>УЛТМ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:DocumentRef.цУчетныйЛистТрактористаМашиниста</Type>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:DocumentRef.цУчетныйЛистТрудаИВыполненныхРабот</Type>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:DocumentRef.цПутевойЛистГрузовогоАвтомобиля</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>РасходГСМБУСтоимость</dataPath>
+				<field>РасходГСМБУСтоимость</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Стоимость ГСМ (БУ)</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>10</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Nonnegative</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КлючСтроки</dataPath>
+				<field>КлючСтроки</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Ключ строки</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>4</Digits>
+						<FractionDigits>0</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоУЛТМ</dataPath>
+				<field>Количество</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество УЛТМ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>10</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Nonnegative</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>РасходГСМБУКоличество</dataPath>
+				<field>РасходГСМБУКоличество</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Количество ГСМ (БУ)</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>10</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Nonnegative</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<objectName>ВнешняяТЗ</objectName>
+		</dataSet>
+		<dataSetLink>
+			<sourceDataSet>НаборДанных1</sourceDataSet>
+			<destinationDataSet>НаборДанных2</destinationDataSet>
+			<sourceExpression>Регистратор</sourceExpression>
+			<destinationExpression>Регистратор</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>НаборДанных1</sourceDataSet>
+			<destinationDataSet>НаборДанных2</destinationDataSet>
+			<sourceExpression>КлючСтроки</sourceExpression>
+			<destinationExpression>КлючСтрокиВыработка</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>НаборДанных1</sourceDataSet>
+			<destinationDataSet>ИнтервалыДат</destinationDataSet>
+			<sourceExpression>Культура</sourceExpression>
+			<destinationExpression>Культура</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>НаборДанных1</sourceDataSet>
+			<destinationDataSet>ИнтервалыДат</destinationDataSet>
+			<sourceExpression>Организация</sourceExpression>
+			<destinationExpression>Организация</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>НаборДанных1</sourceDataSet>
+			<destinationDataSet>ИнтервалыДат</destinationDataSet>
+			<sourceExpression>ВидРаботы</sourceExpression>
+			<destinationExpression>ВидРаботы</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>НаборДанных1</sourceDataSet>
+			<destinationDataSet>ИнтервалыДат</destinationDataSet>
+			<sourceExpression>ПолеФерма</sourceExpression>
+			<destinationExpression>ПолеФерма</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>НаборДанных1</sourceDataSet>
+			<destinationDataSet>ВнешняяТЗ</destinationDataSet>
+			<sourceExpression>Регистратор</sourceExpression>
+			<destinationExpression>УЛТМ</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>НаборДанных1</sourceDataSet>
+			<destinationDataSet>ВнешняяТЗ</destinationDataSet>
+			<sourceExpression>КлючСтроки</sourceExpression>
+			<destinationExpression>КлючСтроки</destinationExpression>
+		</dataSetLink>
+		<calculatedField>
+			<dataPath>ОтклонениеГСМ</dataPath>
+			<expression>РасходГСМНорма - РасходГСМФакт</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Отклонение расхода ГСМ</d4p1:content>
+				</d4p1:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</calculatedField>
+		<totalField>
+			<dataPath>КоличествоГа</dataPath>
+			<expression>Сумма(КоличествоГа)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КоличествоУГА</dataPath>
+			<expression>Сумма(КоличествоУГА)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КоличествоЧасов</dataPath>
+			<expression>Сумма(КоличествоЧасов)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КоличествоЧасов1</dataPath>
+			<expression>Сумма(КоличествоЧасов1)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОтклонениеГСМ</dataPath>
+			<expression>Сумма(ОтклонениеГСМ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>РасходГСМНорма</dataPath>
+			<expression>Сумма(РасходГСМНорма)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>РасходГСМФакт</dataPath>
+			<expression>Сумма(РасходГСМФакт)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаДоплаты</dataPath>
+			<expression>Сумма(СуммаДоплаты)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаИтого</dataPath>
+			<expression>Сумма(СуммаИтого)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>СуммаПоРасценке</dataPath>
+			<expression>Сумма(СуммаПоРасценке)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КоличествоТонн</dataPath>
+			<expression>Сумма(КоличествоТонн)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КоличествоТонноКилометров</dataPath>
+			<expression>Сумма(КоличествоТонноКилометров)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>НочныхЧасов</dataPath>
+			<expression>Сумма(НочныхЧасов)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КоличествоДнейРабот</dataPath>
+			<expression>Количество(Различные КоличествоДнейРабот)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>РасходГСМБУСтоимость</dataPath>
+			<expression>Сумма(РасходГСМБУСтоимость)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>КоличествоУЛТМ</dataPath>
+			<expression>Сумма(КоличествоУЛТМ)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>РасходГСМБУКоличество</dataPath>
+			<expression>Сумма(РасходГСМБУКоличество)</expression>
+		</totalField>
+		<parameter>
+			<name>КонецПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Конец периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<parameter>
+			<name>НачалоПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Начало периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>true</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>ГосударственныйНомер</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ДатаРабот</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Культура</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ПолеФерма</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>МаркаТехники</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>МаркаСХОрудия</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Организация</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ВидРаботы</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>Тракторист</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаИтого</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаДоплаты</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КоличествоГа</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КоличествоЧасов</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>НочныхЧасов</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>СуммаПоРасценке</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>ОтклонениеГСМ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>РасходГСМНорма</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>РасходГСМФакт</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КоличествоТонн</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КоличествоТонноКилометров</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>РасходГСМБУСтоимость</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>КоличествоУЛТМ</field>
+		</item>
+		<item xsi:type="SelectedItemField">
+			<field>РасходГСМБУКоличество</field>
+		</item>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Организация</left>
+			<comparisonType>Equal</comparisonType>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Тракторист</left>
+			<comparisonType>Equal</comparisonType>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ГосударственныйНомер</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="xs:string"/>
+		</item>
+	</filter>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>НачалоПериода</dcscor:parameter>
+			<dcscor:value xsi:type="dcscor:DesignTimeValue">Перечисление.Периодичность.ПустаяСсылка</dcscor:value>
+		</dcscor:item>
+	</dataParameters>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Организация</field>
+			<orderType>Asc</orderType>
+		</item>
+		<item xsi:type="OrderItemField">
+			<field>ДатаРабот</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<conditionalAppearance>
+		<item>
+			<selection>
+				<item>
+					<field>Культура</field>
+				</item>
+				<item>
+					<field>ВидРаботы</field>
+				</item>
+				<item>
+					<field>ПолеФерма</field>
+				</item>
+				<item>
+					<field>МаркаСХОрудия</field>
+				</item>
+				<item>
+					<field>МаркаТехники</field>
+				</item>
+			</selection>
+			<filter/>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">20</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+	</conditionalAppearance>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>МакетОформления</dcscor:parameter>
+			<dcscor:value xsi:type="xs:string">Main</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Заголовок</dcscor:parameter>
+			<dcscor:value xsi:type="xs:string">Отчет по видам работ трактористов-машинистов</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemTable">
+		<row>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Организация</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemAuto"/>
+			</selection>
+			<item>
+				<groupItems>
+					<item xsi:type="GroupItemField">
+						<field>Тракторист</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+				</groupItems>
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemAuto"/>
+				</selection>
+				<item>
+					<groupItems>
+						<item xsi:type="GroupItemField">
+							<field>ДатаРабот</field>
+							<groupType>Items</groupType>
+							<periodAdditionType>None</periodAdditionType>
+							<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+							<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+						</item>
+					</groupItems>
+					<order>
+						<item xsi:type="OrderItemAuto"/>
+					</order>
+					<selection>
+						<item xsi:type="SelectedItemAuto"/>
+					</selection>
+					<item>
+						<groupItems>
+							<item xsi:type="GroupItemField">
+								<field>ВидРаботы</field>
+								<groupType>Items</groupType>
+								<periodAdditionType>None</periodAdditionType>
+								<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+								<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+							</item>
+						</groupItems>
+						<order>
+							<item xsi:type="OrderItemAuto"/>
+						</order>
+						<selection>
+							<item xsi:type="SelectedItemAuto"/>
+						</selection>
+						<item>
+							<order>
+								<item xsi:type="OrderItemAuto"/>
+							</order>
+							<selection>
+								<item xsi:type="SelectedItemAuto"/>
+							</selection>
+						</item>
+					</item>
+				</item>
+			</item>
+		</row>
+		<selection>
+			<item xsi:type="SelectedItemAuto"/>
+		</selection>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>

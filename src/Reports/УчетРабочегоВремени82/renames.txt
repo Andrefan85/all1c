@@ -1,0 +1,16 @@
+﻿8d1aa100-7054-49c0-af40-7c5d316cfded-->und\8d1aa100-7054-49c0-af40-7c5d316cfded
+8d1aa100-7054-49c0-af40-7c5d316cfded.0-->Form\ФормаОтчета
+a873578e-fe23-4cf3-b8bc-9de710b6433e-->und\a873578e-fe23-4cf3-b8bc-9de710b6433e
+a873578e-fe23-4cf3-b8bc-9de710b6433e.0-->und\a873578e-fe23-4cf3-b8bc-9de710b6433e.0
+b3221aa5-4100-4828-bee1-60ef6be2fd2b-->und\b3221aa5-4100-4828-bee1-60ef6be2fd2b
+copyinfo-->und\copyinfo
+d57e4bf4-11f4-4247-9a47-7d28de75dccc-->und\d57e4bf4-11f4-4247-9a47-7d28de75dccc
+d57e4bf4-11f4-4247-9a47-7d28de75dccc.0-->und\d57e4bf4-11f4-4247-9a47-7d28de75dccc.0
+dcc3e36f-2cda-4681-996b-5760fc6a6c46-->und\dcc3e36f-2cda-4681-996b-5760fc6a6c46
+dcc3e36f-2cda-4681-996b-5760fc6a6c46.0-->und\dcc3e36f-2cda-4681-996b-5760fc6a6c46.0
+e2fa1432-4989-43c8-92db-6510187a034f.0\info-->und\e2fa1432-4989-43c8-92db-6510187a034f.0\info
+e2fa1432-4989-43c8-92db-6510187a034f.0\text-->ObjectModule.bsl
+e2fa1432-4989-43c8-92db-6510187a034f.1-->und\e2fa1432-4989-43c8-92db-6510187a034f.1
+root-->und\root
+version-->und\version
+versions-->und\versions

@@ -1,0 +1,1070 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetUnion">
+		<name>Объединение регистраторов</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидРаботы</dataPath>
+			<field>ВидРаботы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тех. операция</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Водитель</dataPath>
+			<field>Водитель</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Водитель</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРаботы</dataPath>
+			<field>ДатаРаботы</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата работы</v8:content>
+				</v8:item>
+			</title>
+			<valueType>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</valueType>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ИнвНомер</dataPath>
+			<field>ИнвНомер</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инв номер</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Культура</dataPath>
+			<field>Культура</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Культура</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<group>true</group>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>МаркаТехники</dataPath>
+			<field>МаркаТехники</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Марка техники</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<order>true</order>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОплатаВсего</dataPath>
+			<field>ОплатаВсего</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оплата всего</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОплатаДоп</dataPath>
+			<field>ОплатаДоп</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оплата доп</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОплатаОсновная</dataPath>
+			<field>ОплатаОсновная</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оплата основная</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтработаноЧасов</dataPath>
+			<field>ОтработаноЧасов</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отработано часов</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТехнологическаяОперация</dataPath>
+			<field>ТехнологическаяОперация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Технологическая операция</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Регистратор</dataPath>
+			<field>Регистратор</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путевой лист</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаРабот</dataPath>
+			<field>ДатаРабот</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата работ</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Месяц</dataPath>
+			<field>Месяц</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>КоличествоГа</dataPath>
+			<field>КоличествоГа</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество га</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Сотрудник</dataPath>
+			<field>Сотрудник</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидДокумента</dataPath>
+			<field>ВидДокумента</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вид документа</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<item xsi:type="DataSetQuery">
+			<name>Путевые листы</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРаботы</dataPath>
+				<field>ВидРаботы</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Тех. операция</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Водитель</dataPath>
+				<field>Водитель</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Водитель</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаРаботы</dataPath>
+				<field>ДатаРаботы</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дата работы</v8:content>
+					</v8:item>
+				</title>
+				<valueType>
+					<v8:Type>xs:dateTime</v8:Type>
+					<v8:DateQualifiers>
+						<v8:DateFractions>Date</v8:DateFractions>
+					</v8:DateQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИнвНомер</dataPath>
+				<field>ИнвНомер</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Инв номер</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Культура</dataPath>
+				<field>Культура</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Культура</v8:content>
+					</v8:item>
+				</title>
+				<useRestriction>
+					<group>true</group>
+				</useRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>МаркаТехники</dataPath>
+				<field>МаркаТехники</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Марка техники</v8:content>
+					</v8:item>
+				</title>
+				<useRestriction>
+					<order>true</order>
+				</useRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплатаВсего</dataPath>
+				<field>ОплатаВсего</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Оплата всего</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплатаДоп</dataPath>
+				<field>ОплатаДоп</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Оплата доп</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплатаОсновная</dataPath>
+				<field>ОплатаОсновная</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Оплата основная</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОтработаноЧасов</dataPath>
+				<field>ОтработаноЧасов</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отработано часов</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ТехнологическаяОперация</dataPath>
+				<field>ТехнологическаяОперация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Технологическая операция</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Путевой лист</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаРабот</dataPath>
+				<field>ДатаРабот</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дата работ</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Организация</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Месяц</dataPath>
+				<field>Месяц</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Месяц</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидДокумента</dataPath>
+				<field>ВидДокумента</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид документа</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	цПутевойЛистГрузовогоАвтомобиляВыработка.ДатаРабот КАК ДатаРаботы,
+	цПутевойЛистГрузовогоАвтомобиляВыработка.ТехнологическаяОперация КАК ВидРаботы,
+	ВЫБОР
+		КОГДА цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка.Автомобиль ССЫЛКА Справочник.ОсновныеСредства
+			ТОГДА цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка.Автомобиль
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка)
+	КОНЕЦ КАК ИнвНомер,
+	Техника.МаркаТехники КАК МаркаТехники,
+	цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка.ВодительСотрудник КАК Водитель,
+	цПутевойЛистГрузовогоАвтомобиляВыработка.ОтработаноЧасов КАК ОтработаноЧасов,
+	цПутевойЛистГрузовогоАвтомобиляВыработка.ОплатаОсновная КАК ОплатаОсновная,
+	цПутевойЛистГрузовогоАвтомобиляВыработка.ОплатаДоп КАК ОплатаДоп,
+	цПутевойЛистГрузовогоАвтомобиляВыработка.ОплатаВсего КАК ОплатаВсего,
+	цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка КАК Регистратор,
+	цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка.Организация,
+	КОНЕЦПЕРИОДА(цПутевойЛистГрузовогоАвтомобиляВыработка.ДатаРабот, МЕСЯЦ) КАК Месяц,
+	"Путевой лист автомобиля" КАК ВидДокумента
+{ВЫБРАТЬ
+	ВидРаботы.*,
+	МаркаТехники.*,
+	ОтработаноЧасов,
+	ОплатаОсновная,
+	ОплатаДоп,
+	ОплатаВсего}
+ИЗ
+	Документ.цПутевойЛистГрузовогоАвтомобиля.Выработка КАК цПутевойЛистГрузовогоАвтомобиляВыработка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.цСведенияОТехнике КАК Техника
+		ПО цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка.Автомобиль = Техника.ОсновноеСредство
+ГДЕ
+	цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка.Проведен = ИСТИНА
+	И цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка.ВидОперации = ЗНАЧЕНИЕ(Перечисление.цВидыОперацийУчетныйПутевойЛист.Собственный)
+	И (цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка.Организация = &amp;Организация
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка))
+{ГДЕ
+	цПутевойЛистГрузовогоАвтомобиляВыработка.ДатаРабот,
+	цПутевойЛистГрузовогоАвтомобиляВыработка.Культура.*,
+	цПутевойЛистГрузовогоАвтомобиляВыработка.ТехнологическаяОперация.*,
+	(ВЫРАЗИТЬ(Техника.МаркаТехники КАК Справочник.цМаркиТехники)).* КАК МаркаТехники,
+	(ВЫБОР
+			КОГДА цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка.Автомобиль ССЫЛКА Справочник.ОсновныеСредства
+				ТОГДА цПутевойЛистГрузовогоАвтомобиляВыработка.Ссылка.Автомобиль
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка)
+		КОНЕЦ).* КАК ИнвНомер}
+{ХАРАКТЕРИСТИКИ
+	ТИП(Справочник.СотрудникиОрганизаций)
+	ВИДЫХАРАКТЕРИСТИК (ВЫБРАТЬ
+			СвойстваОбъектов.Ссылка,
+			" Дополнительное свойство: " + СвойстваОбъектов.Наименование КАК Наименование,
+			СвойстваОбъектов.ТипЗначения
+		ИЗ
+			ПланВидовХарактеристик.СвойстваОбъектов КАК СвойстваОбъектов
+		ГДЕ
+			СвойстваОбъектов.НазначениеСвойства = ЗНАЧЕНИЕ(ПланВидовХарактеристик.НазначенияСвойствКатегорийОбъектов.Справочник_СотрудникиОрганизаций)
+			И НЕ СвойстваОбъектов.ПометкаУдаления)
+	ПОЛЕКЛЮЧА Ссылка
+	ПОЛЕИМЕНИ Наименование
+	ПОЛЕТИПАЗНАЧЕНИЯ ТипЗначения
+	ЗНАЧЕНИЯХАРАКТЕРИСТИК РегистрСведений.ЗначенияСвойствОбъектов
+	ПОЛЕОБЪЕКТА Объект
+	ПОЛЕВИДА Свойство
+	ПОЛЕЗНАЧЕНИЯ Значение }</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>УЛТМ</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРаботы</dataPath>
+				<field>ВидРаботы</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид работы</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплатаДоп</dataPath>
+				<field>ОплатаДоп</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Оплата доп</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИнвНомер</dataPath>
+				<field>ИнвНомер</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Инв номер</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплатаОсновная</dataPath>
+				<field>ОплатаОсновная</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Культура</dataPath>
+				<field>Культура</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Водитель</dataPath>
+				<field>Водитель</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Водитель</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Регистратор</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>МаркаТехники</dataPath>
+				<field>МаркаТехники</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Месяц</dataPath>
+				<field>Месяц</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Месяц</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплатаВсего</dataPath>
+				<field>ОплатаВсего</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаРаботы</dataPath>
+				<field>ДатаРаботы</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дата работы</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>КоличествоГа</dataPath>
+				<field>КоличествоГа</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Количество га</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОтработаноЧасов</dataPath>
+				<field>ОтработаноЧасов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидДокумента</dataPath>
+				<field>ВидДокумента</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид документа</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	цУчетныйЛистТрактористаМашинистаВыработка.ДатаРабот КАК ДатаРаботы,
+	цУчетныйЛистТрактористаМашинистаВыработка.ТехнологическаяОперация КАК ВидРаботы,
+	ВЫБОР
+		КОГДА цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор ССЫЛКА Справочник.ОсновныеСредства
+			ТОГДА цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор
+		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка)
+	КОНЕЦ КАК ИнвНомер,
+	Техника.МаркаТехники КАК МаркаТехники,
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.ТрактористСотрудник КАК Водитель,
+	цУчетныйЛистТрактористаМашинистаВыработка.ОтработаноЧасов КАК ОтработаноЧасов,
+	цУчетныйЛистТрактористаМашинистаВыработка.ОбъемВыработки КАК КоличествоГа,
+	цУчетныйЛистТрактористаМашинистаВыработка.ОплатаОсновная КАК ОплатаОсновная,
+	цУчетныйЛистТрактористаМашинистаВыработка.ОплатаДополнительная КАК ОплатаДоп,
+	цУчетныйЛистТрактористаМашинистаВыработка.ОплатаВсего КАК ОплатаВсего,
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка КАК Регистратор,
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Организация,
+	НАЧАЛОПЕРИОДА(цУчетныйЛистТрактористаМашинистаВыработка.ДатаРабот, МЕСЯЦ) КАК Месяц,
+	"Учетный лист тракториста-машиниста" КАК ВидДокумента
+{ВЫБРАТЬ
+	ВидРаботы.*,
+	МаркаТехники.*,
+	КоличествоГа,
+	ОплатаОсновная,
+	ОплатаДоп,
+	ОплатаВсего}
+ИЗ
+	Документ.цУчетныйЛистТрактористаМашиниста.Выработка КАК цУчетныйЛистТрактористаМашинистаВыработка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.цСведенияОТехнике КАК Техника
+		ПО цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор = Техника.ОсновноеСредство
+ГДЕ
+	цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Проведен = ИСТИНА
+	И цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.ВидОперации = ЗНАЧЕНИЕ(Перечисление.цВидыОперацийУчетныйПутевойЛист.Собственный)
+	И (цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Организация = &amp;Организация
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка))
+{ГДЕ
+	цУчетныйЛистТрактористаМашинистаВыработка.ТехнологическаяОперация.* КАК ВидРаботы,
+	цУчетныйЛистТрактористаМашинистаВыработка.Культура.*,
+	(ВЫРАЗИТЬ(Техника.МаркаТехники КАК Справочник.цМаркиТехники)).* КАК МаркаТехники,
+	(ВЫБОР
+			КОГДА цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор ССЫЛКА Справочник.ОсновныеСредства
+				ТОГДА цУчетныйЛистТрактористаМашинистаВыработка.Ссылка.Трактор
+			ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ОсновныеСредства.ПустаяСсылка)
+		КОНЕЦ).* КАК ИнвНомер}</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>Учетные листы труда</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сотрудник</dataPath>
+				<field>Сотрудник</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплатаВсего</dataPath>
+				<field>ОплатаВсего</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРаботы</dataPath>
+				<field>ВидРаботы</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид работы</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплатаДоп</dataPath>
+				<field>ОплатаДоп</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Оплата доп</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплатаОсновная</dataPath>
+				<field>ОплатаОсновная</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Регистратор</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Месяц</dataPath>
+				<field>Месяц</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Месяц</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаРаботы</dataPath>
+				<field>ДатаРаботы</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дата работы</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОтработаноЧасов</dataPath>
+				<field>ОтработаноЧасов</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидДокумента</dataPath>
+				<field>ВидДокумента</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид документа</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	цУчетныйЛистТрудаИВыполненныхРаботВыработка.Сотрудник,
+	цУчетныйЛистТрудаИВыполненныхРаботВыработка.ОплатаВсего,
+	цУчетныйЛистТрудаИВыполненныхРаботВыработка.ДатаРабот КАК ДатаРаботы,
+	цУчетныйЛистТрудаИВыполненныхРаботВыработка.ТехнологическаяОперация КАК ВидРаботы,
+	цУчетныйЛистТрудаИВыполненныхРаботВыработка.ОтработаноЧасов,
+	цУчетныйЛистТрудаИВыполненныхРаботВыработка.ОплатаОсновная,
+	цУчетныйЛистТрудаИВыполненныхРаботВыработка.ОплатаДополнительная КАК ОплатаДоп,
+	цУчетныйЛистТрудаИВыполненныхРаботВыработка.Ссылка КАК Регистратор,
+	цУчетныйЛистТрудаИВыполненныхРаботВыработка.Ссылка.Организация,
+	НАЧАЛОПЕРИОДА(цУчетныйЛистТрудаИВыполненныхРаботВыработка.ДатаРабот, МЕСЯЦ) КАК Месяц,
+	"Учетный лист труда и выполненных работ" КАК ВидДокумента
+ИЗ
+	Документ.цУчетныйЛистТрудаИВыполненныхРабот.Выработка КАК цУчетныйЛистТрудаИВыполненныхРаботВыработка
+ГДЕ
+	цУчетныйЛистТрудаИВыполненныхРаботВыработка.Ссылка.Проведен = ИСТИНА
+	И цУчетныйЛистТрудаИВыполненныхРаботВыработка.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И (цУчетныйЛистТрудаИВыполненныхРаботВыработка.Ссылка.Организация = &amp;Организация
+			ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка))</query>
+		</item>
+		<item xsi:type="DataSetQuery">
+			<name>Сдельные наряды</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ДатаРаботы</dataPath>
+				<field>ДатаРаботы</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Дата работы</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Месяц</dataPath>
+				<field>Месяц</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Месяц</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРаботы</dataPath>
+				<field>ВидРаботы</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид работы</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Регистратор</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сотрудник</dataPath>
+				<field>Сотрудник</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплатаОсновная</dataPath>
+				<field>ОплатаОсновная</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Оплата основная</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидДокумента</dataPath>
+				<field>ВидДокумента</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Вид документа</v8:content>
+					</v8:item>
+				</title>
+			</field>
+			<dataSource>ИсточникДанных1</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СдельныеНарядыБезОтраслевыхВыработка.ДатаРаботы,
+	СдельныеНарядыБезОтраслевыхВыработка.ВидРаботы,
+	МинимумСотрудникИзСдельногоНаряда.Сотрудник,
+	СдельныеНарядыБезОтраслевыхВыработка.ОплатаОсновная,
+	СдельныеНарядыБезОтраслевыхВыработка.Регистратор,
+	СдельныеНарядыБезОтраслевыхВыработка.Организация,
+	СдельныеНарядыБезОтраслевыхВыработка.Месяц,
+	"Сдельный наряд без отраслевого документа" КАК ВидДокумента
+ИЗ
+	(ВЫБРАТЬ
+		СдельныйНарядВыработка.Ссылка КАК Регистратор,
+		СдельныйНарядВыработка.ТехнологическаяОперация КАК ВидРаботы,
+		СдельныйНарядВыработка.Ссылка.Дата КАК ДатаРаботы,
+		СдельныйНарядВыработка.Ссылка.Организация КАК Организация,
+		КОНЕЦПЕРИОДА(СдельныйНарядВыработка.Ссылка.Дата, МЕСЯЦ) КАК Месяц,
+		СдельныйНарядВыработка.Сумма КАК ОплатаОсновная
+	ИЗ
+		Документ.СдельныйНаряд.Выработка КАК СдельныйНарядВыработка
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.цДокументы2Уровня КАК цДокументы2Уровня
+			ПО СдельныйНарядВыработка.Ссылка = цДокументы2Уровня.ТиповойДокумент
+	ГДЕ
+		цДокументы2Уровня.ТиповойДокумент ЕСТЬ NULL 
+		И СдельныйНарядВыработка.Ссылка.Проведен = ИСТИНА
+		И СдельныйНарядВыработка.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+		И (СдельныйНарядВыработка.Ссылка.Организация = &amp;Организация
+				ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка))) КАК СдельныеНарядыБезОтраслевыхВыработка
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			СдельныйНарядИсполнители.Сотрудник КАК Сотрудник,
+			МИНИМУМ(СдельныйНарядИсполнители.НомерСтроки) КАК НомерСтроки,
+			СдельныйНарядИсполнители.Ссылка КАК Ссылка
+		ИЗ
+			Документ.СдельныйНаряд.Исполнители КАК СдельныйНарядИсполнители
+		ГДЕ
+			СдельныйНарядИсполнители.Ссылка.Проведен = ИСТИНА
+			И СдельныйНарядИсполнители.Ссылка.Дата МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+			И (СдельныйНарядИсполнители.Ссылка.Организация = &amp;Организация
+					ИЛИ &amp;Организация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка))
+		
+		СГРУППИРОВАТЬ ПО
+			СдельныйНарядИсполнители.Сотрудник,
+			СдельныйНарядИсполнители.Ссылка) КАК МинимумСотрудникИзСдельногоНаряда
+		ПО СдельныеНарядыБезОтраслевыхВыработка.Регистратор = МинимумСотрудникИзСдельногоНаряда.Ссылка</query>
+		</item>
+	</dataSet>
+	<calculatedField>
+		<dataPath>ОтклонениеГСМ</dataPath>
+		<expression>РасходГорючегоПоНорме - РасходТопливаФакт</expression>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Отклонение ГСМ</v8:content>
+			</v8:item>
+		</title>
+		<useRestriction>
+			<condition>true</condition>
+		</useRestriction>
+		<appearance>
+			<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+				<dcscor:parameter>Формат</dcscor:parameter>
+				<dcscor:value xsi:type="xs:string">ЧДЦ=2</dcscor:value>
+			</dcscor:item>
+		</appearance>
+	</calculatedField>
+	<totalField>
+		<dataPath>КоличествоГа</dataPath>
+		<expression>Сумма(КоличествоГа)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОплатаВсего</dataPath>
+		<expression>Сумма(ОплатаВсего)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОплатаДоп</dataPath>
+		<expression>Сумма(ОплатаДоп)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОплатаОсновная</dataPath>
+		<expression>Сумма(ОплатаОсновная)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтклонениеГСМ</dataPath>
+		<expression>Сумма(ОтклонениеГСМ)</expression>
+	</totalField>
+	<totalField>
+		<dataPath>ОтработаноЧасов</dataPath>
+		<expression>Сумма(ОтработаноЧасов)</expression>
+	</totalField>
+	<parameter>
+		<name>КонецПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодФормированияОтчета.ДатаНачала</expression>
+	</parameter>
+	<parameter>
+		<name>НачалоПериода</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Начало периода</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодФормированияОтчета.ДатаОкончания</expression>
+	</parameter>
+	<parameter>
+		<name>ПериодФормированияОтчета</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период формирования отчета</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>v8:StandardPeriod</v8:Type>
+		</valueType>
+		<value xsi:type="v8:StandardPeriod">
+			<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+			<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+			<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+		</value>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
+		<name>Организация</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Организация</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:CatalogRef.Организации</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ИнвНомер</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>МаркаТехники</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Регистратор</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОплатаВсего</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОплатаОсновная</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ОплатаДоп</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Организация</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.Организации.ПустаяСсылка</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">Водитель</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="dcscor:DesignTimeValue">Справочник.СотрудникиОрганизаций.ПустаяСсылка</dcsset:right>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:FilterItemComparison">
+					<dcsset:use>false</dcsset:use>
+					<dcsset:left xsi:type="dcscor:Field">ГосударственныйНомер</dcsset:left>
+					<dcsset:comparisonType>Equal</dcsset:comparisonType>
+					<dcsset:right xsi:type="xs:string"/>
+				</dcsset:item>
+			</dcsset:filter>
+			<dcsset:dataParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>НачалоПериода</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DesignTimeValue">Перечисление.Периодичность.ПустаяСсылка</dcscor:value>
+				</dcscor:item>
+			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>МакетОформления</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Main</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>РасположениеПолейГруппировки</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionGroupFieldsPlacement">SeparatelyAndInTotalsOnly</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Отчет по видам работ водителей</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
+			<dcsset:item xsi:type="dcsset:StructureItemGroup">
+				<dcsset:groupItems>
+					<dcsset:item xsi:type="dcsset:GroupItemField">
+						<dcsset:field>ВидДокумента</dcsset:field>
+						<dcsset:groupType>Items</dcsset:groupType>
+						<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+						<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+						<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+					</dcsset:item>
+				</dcsset:groupItems>
+				<dcsset:order>
+					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+				</dcsset:order>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+				<dcsset:item xsi:type="dcsset:StructureItemGroup">
+					<dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:GroupItemField">
+							<dcsset:field>ВидРаботы</dcsset:field>
+							<dcsset:groupType>Items</dcsset:groupType>
+							<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+							<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+							<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+						</dcsset:item>
+					</dcsset:groupItems>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>Сотрудник</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:order>
+							<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+						</dcsset:order>
+						<dcsset:selection>
+							<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+						</dcsset:selection>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ДатаРаботы</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:order>
+								<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+							</dcsset:order>
+							<dcsset:selection>
+								<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+							</dcsset:selection>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:item>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

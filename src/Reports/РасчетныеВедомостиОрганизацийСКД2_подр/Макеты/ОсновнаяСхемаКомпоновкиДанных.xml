@@ -1,0 +1,4557 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema">
+		<dataSource>
+			<name>ИнформационнаяБаза</name>
+			<dataSourceType>Local</dataSourceType>
+		</dataSource>
+		<dataSet xsi:type="DataSetUnion">
+			<name>Данные</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГоловнаяОрганизация</dataPath>
+				<field>ГоловнаяОрганизация</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Головная организация</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Группа</dataPath>
+				<field>Группа</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Группа</d5p1:content>
+					</d5p1:item>
+				</title>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+				<orderExpression>
+					<expression xmlns="http://v8.1c.ru/8.1/data-composition-system/common">ПриоритетГруппы</expression>
+					<orderType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Asc</orderType>
+					<autoOrder xmlns="http://v8.1c.ru/8.1/data-composition-system/common">false</autoOrder>
+				</orderExpression>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>50</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ИмяВидаРасчета</dataPath>
+				<field>ИмяВидаРасчета</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Имя вида расчета</d5p1:content>
+					</d5p1:item>
+				</title>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+				<orderExpression>
+					<expression xmlns="http://v8.1c.ru/8.1/data-composition-system/common">ПриоритетВидаРасчета</expression>
+					<orderType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Asc</orderType>
+					<autoOrder xmlns="http://v8.1c.ru/8.1/data-composition-system/common">false</autoOrder>
+				</orderExpression>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>0</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Организация</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПриоритетВидаРасчета</dataPath>
+				<field>ПриоритетВидаРасчета</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Приоритет вида расчета</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+				</useRestriction>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:string</Type>
+					<StringQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Length>200</Length>
+						<AllowedLength>Variable</AllowedLength>
+					</StringQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПриоритетГруппы</dataPath>
+				<field>ПриоритетГруппы</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Приоритет группы</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+				</useRestriction>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>10</Digits>
+						<FractionDigits>0</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Результат</dataPath>
+				<field>Результат</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сумма</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:decimal</Type>
+					<NumberQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+						<Digits>15</Digits>
+						<FractionDigits>2</FractionDigits>
+						<AllowedSign>Any</AllowedSign>
+					</NumberQualifiers>
+				</valueType>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ=15; ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ФизЛицо</dataPath>
+				<field>ФизЛицо</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Физическое лицо</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПериодВзаиморасчетов</dataPath>
+				<field>ПериодВзаиморасчетов</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Период взаиморасчетов</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПериодРегистрации</dataPath>
+				<field>ПериодРегистрации</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Месяц начисления</d5p1:content>
+					</d5p1:item>
+				</title>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ДФ='MMMM yyyy'</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Регистратор</dataPath>
+				<field>Регистратор</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Документ</d5p1:content>
+					</d5p1:item>
+				</title>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Ведомость</dataPath>
+				<field>Ведомость</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Ведомость на выплату зарплаты</d5p1:content>
+					</d5p1:item>
+				</title>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплаченоДней</dataPath>
+				<field>ОплаченоДней</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Оплачено дней</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<condition>true</condition>
+				</useRestriction>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ=10; ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОплаченоЧасов</dataPath>
+				<field>ОплаченоЧасов</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Оплачено часов</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<condition>true</condition>
+				</useRestriction>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ=10; ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОтработаноДней</dataPath>
+				<field>ОтработаноДней</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Отработано дней</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<condition>true</condition>
+				</useRestriction>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ=10; ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОтработаноЧасов</dataPath>
+				<field>ОтработаноЧасов</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Отработано часов</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<condition>true</condition>
+				</useRestriction>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ=10; ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НормаДней</dataPath>
+				<field>НормаДней</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Норма дней</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ=10; ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>НормаЧасов</dataPath>
+				<field>НормаЧасов</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Норма часов</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+				<appearance>
+					<item xmlns="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="dcsset:SettingsParameterValue">
+						<parameter>Формат</parameter>
+						<value xsi:type="xs:string">ЧЦ=10; ЧДЦ=2</value>
+					</item>
+				</appearance>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>СтавкаНалогообложенияРезидента</dataPath>
+				<field>СтавкаНалогообложенияРезидента</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Ставка налогообложения резидента</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПодразделениеОрганизации</dataPath>
+				<field>ПодразделениеОрганизации</field>
+			</field>
+			<item xsi:type="DataSetQuery">
+				<name>ОсновныеНачисления</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ГоловнаяОрганизация</dataPath>
+					<field>ГоловнаяОрганизация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Головная организация</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Группа</dataPath>
+					<field>Группа</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Группа</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ИмяВидаРасчета</dataPath>
+					<field>ИмяВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Имя вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Организация</d6p1:content>
+						</d6p1:item>
+					</title>
+					<useRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</useRestriction>
+					<attributeUseRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</attributeUseRestriction>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетВидаРасчета</dataPath>
+					<field>ПриоритетВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетГруппы</dataPath>
+					<field>ПриоритетГруппы</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет группы</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Результат</dataPath>
+					<field>Результат</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Результат</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ФизЛицо</dataPath>
+					<field>ФизЛицо</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Физ лицо</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодРегистрации</dataPath>
+					<field>ПериодРегистрации</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период регистрации</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Регистратор</dataPath>
+					<field>Регистратор</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Регистратор</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ОплаченоДней</dataPath>
+					<field>ОплаченоДней</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Оплачено дней</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ОплаченоЧасов</dataPath>
+					<field>ОплаченоЧасов</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Оплачено часов</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ОтработаноДней</dataPath>
+					<field>ОтработаноДней</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Отработано дней</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ОтработаноЧасов</dataPath>
+					<field>ОтработаноЧасов</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Отработано часов</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>НормаДней</dataPath>
+					<field>НормаДней</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Норма дней</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>НормаЧасов</dataPath>
+					<field>НормаЧасов</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Норма часов</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ведомость</dataPath>
+					<field>Ведомость</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ведомость</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПодразделениеОрганизации</dataPath>
+					<field>ПодразделениеОрганизации</field>
+				</field>
+				<dataSource>ИнформационнаяБаза</dataSource>
+				<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ОсновныеНачисленияРаботниковОрганизации.ОбособленноеПодразделение КАК Организация,
+	ОсновныеНачисленияРаботниковОрганизации.Организация КАК ГоловнаяОрганизация,
+	ОсновныеНачисленияРаботниковОрганизации.Сотрудник КАК ФизЛицо,
+	ОсновныеНачисленияРаботниковОрганизации.ВидРасчета.Наименование КАК ИмяВидаРасчета,
+	"А" + ОсновныеНачисленияРаботниковОрганизации.ВидРасчета.Код КАК ПриоритетВидаРасчета,
+	ВЫБОР
+		КОГДА ОсновныеНачисленияРаботниковОрганизации.ВидРасчета.ЯвляетсяДоходомВНатуральнойФорме
+			ТОГДА "Доходы в натуральной форме"
+		ИНАЧЕ "Всего начислено"
+	КОНЕЦ КАК Группа,
+	ВЫБОР
+		КОГДА ОсновныеНачисленияРаботниковОрганизации.ВидРасчета.ЯвляетсяДоходомВНатуральнойФорме
+			ТОГДА 3
+		ИНАЧЕ 2
+	КОНЕЦ КАК ПриоритетГруппы,
+	ОсновныеНачисленияРаботниковОрганизации.ОтработаноДней КАК ОтработаноДней,
+	ОсновныеНачисленияРаботниковОрганизации.ОтработаноЧасов КАК ОтработаноЧасов,
+	ОсновныеНачисленияРаботниковОрганизации.НормаДней КАК НормаДней,
+	ОсновныеНачисленияРаботниковОрганизации.НормаЧасов КАК НормаЧасов,
+	ВЫБОР
+		КОГДА ОсновныеНачисленияРаботниковОрганизации.ВидУчетаВремени = ЗНАЧЕНИЕ(Перечисление.ВидыУчетаВремени.ПоДням)
+			ТОГДА ОсновныеНачисленияРаботниковОрганизации.ОплаченоДнейЧасов
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОплаченоДней,
+	ВЫБОР
+		КОГДА ОсновныеНачисленияРаботниковОрганизации.ВидУчетаВремени &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ВидыУчетаВремени.ПоДням)
+			ТОГДА ОсновныеНачисленияРаботниковОрганизации.ОплаченоДнейЧасов
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОплаченоЧасов,
+	ОсновныеНачисленияРаботниковОрганизации.Результат КАК Результат,
+	ОсновныеНачисленияРаботниковОрганизации.ПериодРегистрации КАК ПериодРегистрации,
+	ОсновныеНачисленияРаботниковОрганизации.Регистратор КАК Регистратор,
+	НЕОПРЕДЕЛЕНО КАК Ведомость,
+	ОсновныеНачисленияРаботниковОрганизации.ПодразделениеОрганизации КАК ПодразделениеОрганизации
+{ВЫБРАТЬ
+	Организация.*,
+	ГоловнаяОрганизация.*,
+	ФизЛицо.*,
+	ИмяВидаРасчета,
+	ПриоритетВидаРасчета,
+	Группа,
+	ПриоритетГруппы,
+	ОтработаноДней,
+	ОтработаноЧасов,
+	НормаДней,
+	НормаЧасов,
+	ОплаченоДней,
+	ОплаченоЧасов,
+	Результат,
+	ПериодРегистрации,
+	Регистратор.*,
+	Ведомость,
+	ПодразделениеОрганизации.*}
+ИЗ
+	РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизации
+ГДЕ
+	ОсновныеНачисленияРаботниковОрганизации.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+{ГДЕ
+	ОсновныеНачисленияРаботниковОрганизации.ФизЛицо.*,
+	ОсновныеНачисленияРаботниковОрганизации.Организация.* КАК ГоловнаяОрганизация,
+	ОсновныеНачисленияРаботниковОрганизации.ОбособленноеПодразделение.* КАК Организация,
+	ОсновныеНачисленияРаботниковОрганизации.ВидРасчета.Наименование КАК ИмяВидаРасчета,
+	ОсновныеНачисленияРаботниковОрганизации.Результат,
+	ОсновныеНачисленияРаботниковОрганизации.ПериодРегистрации,
+	ОсновныеНачисленияРаботниковОрганизации.Регистратор.*,
+	ОсновныеНачисленияРаботниковОрганизации.ОбособленноеПодразделение.* КАК Организация,
+	(ВЫБОР
+			КОГДА ОсновныеНачисленияРаботниковОрганизации.ВидРасчета.ЯвляетсяДоходомВНатуральнойФорме
+				ТОГДА "Доходы в натуральной форме"
+			ИНАЧЕ "Всего начислено"
+		КОНЕЦ) КАК Группа,
+	(ВЫБОР
+			КОГДА ОсновныеНачисленияРаботниковОрганизации.ВидУчетаВремени &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ВидыУчетаВремени.ПоДням)
+				ТОГДА ОсновныеНачисленияРаботниковОрганизации.ОплаченоДнейЧасов
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ОплаченоЧасов,
+	(ВЫБОР
+			КОГДА ОсновныеНачисленияРаботниковОрганизации.ВидУчетаВремени = ЗНАЧЕНИЕ(Перечисление.ВидыУчетаВремени.ПоДням)
+				ТОГДА ОсновныеНачисленияРаботниковОрганизации.ОплаченоДнейЧасов
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ОплаченоДней,
+	(ВЫБОР
+			КОГДА ОсновныеНачисленияРаботниковОрганизации.Сотрудник.ВидЗанятости &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ВнутреннееСовместительство)
+				ТОГДА ОсновныеНачисленияРаботниковОрганизации.НормаЧасов
+			ИНАЧЕ 0
+		КОНЕЦ) КАК НормаЧасов,
+	(ВЫБОР
+			КОГДА ОсновныеНачисленияРаботниковОрганизации.Сотрудник.ВидЗанятости &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ВнутреннееСовместительство)
+				ТОГДА ОсновныеНачисленияРаботниковОрганизации.НормаДней
+			ИНАЧЕ 0
+		КОНЕЦ) КАК НормаДней,
+	(ВЫБОР
+			КОГДА ОсновныеНачисленияРаботниковОрганизации.Сотрудник.ВидЗанятости &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ВнутреннееСовместительство)
+				ТОГДА ОсновныеНачисленияРаботниковОрганизации.ОтработаноЧасов
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ОтработаноЧасов,
+	(ВЫБОР
+			КОГДА ОсновныеНачисленияРаботниковОрганизации.Сотрудник.ВидЗанятости &lt;&gt; ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ВнутреннееСовместительство)
+				ТОГДА ОсновныеНачисленияРаботниковОрганизации.ОтработаноДней
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ОтработаноДней,
+	(НЕОПРЕДЕЛЕНО) КАК Ведомость}</query>
+				<autoFillFields>false</autoFillFields>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>ДополнительныеНачисления</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ГоловнаяОрганизация</dataPath>
+					<field>ГоловнаяОрганизация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Головная организация</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ФизЛицо</dataPath>
+					<field>ФизЛицо</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Физ лицо</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Группа</dataPath>
+					<field>Группа</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Группа</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ИмяВидаРасчета</dataPath>
+					<field>ИмяВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Имя вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ОплаченоДней</dataPath>
+					<field>ОплаченоДней</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Оплачено дней</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ОплаченоЧасов</dataPath>
+					<field>ОплаченоЧасов</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Оплачено часов</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Организация</d6p1:content>
+						</d6p1:item>
+					</title>
+					<useRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</useRestriction>
+					<attributeUseRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</attributeUseRestriction>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодРегистрации</dataPath>
+					<field>ПериодРегистрации</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период регистрации</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетВидаРасчета</dataPath>
+					<field>ПриоритетВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетГруппы</dataPath>
+					<field>ПриоритетГруппы</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет группы</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Регистратор</dataPath>
+					<field>Регистратор</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Регистратор</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Результат</dataPath>
+					<field>Результат</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Результат</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ОтработаноДней</dataPath>
+					<field>ОтработаноДней</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Отработано дней</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ОтработаноЧасов</dataPath>
+					<field>ОтработаноЧасов</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Отработано часов</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ведомость</dataPath>
+					<field>Ведомость</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ведомость</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПодразделениеОрганизации</dataPath>
+					<field>ПодразделениеОрганизации</field>
+				</field>
+				<dataSource>ИнформационнаяБаза</dataSource>
+				<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ДополнительныеНачисленияРаботниковОрганизации.ОбособленноеПодразделение КАК Организация,
+	ДополнительныеНачисленияРаботниковОрганизации.Организация КАК ГоловнаяОрганизация,
+	ДополнительныеНачисленияРаботниковОрганизации.Сотрудник КАК ФизЛицо,
+	ДополнительныеНачисленияРаботниковОрганизации.ВидРасчета.Наименование КАК ИмяВидаРасчета,
+	"Б" + ДополнительныеНачисленияРаботниковОрганизации.ВидРасчета.Код КАК ПриоритетВидаРасчета,
+	ВЫБОР
+		КОГДА ДополнительныеНачисленияРаботниковОрганизации.ВидРасчета.ЯвляетсяДоходомВНатуральнойФорме
+			ТОГДА "Доходы в натуральной форме"
+		ИНАЧЕ "Всего начислено"
+	КОНЕЦ КАК Группа,
+	ВЫБОР
+		КОГДА ДополнительныеНачисленияРаботниковОрганизации.ВидРасчета.ЯвляетсяДоходомВНатуральнойФорме
+			ТОГДА 3
+		ИНАЧЕ 2
+	КОНЕЦ КАК ПриоритетГруппы,
+	NULL КАК ОтработаноДней,
+	NULL КАК ОтработаноЧасов,
+	ВЫБОР
+		КОГДА ДополнительныеНачисленияРаботниковОрганизации.ВидУчетаВремени = ЗНАЧЕНИЕ(Перечисление.ВидыУчетаВремени.ПоДням)
+			ТОГДА ДополнительныеНачисленияРаботниковОрганизации.ОплаченоДнейЧасов
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОплаченоДней,
+	ВЫБОР
+		КОГДА ДополнительныеНачисленияРаботниковОрганизации.ВидУчетаВремени = ЗНАЧЕНИЕ(Перечисление.ВидыУчетаВремени.ПоЧасам)
+			ТОГДА ДополнительныеНачисленияРаботниковОрганизации.ОплаченоДнейЧасов
+		ИНАЧЕ 0
+	КОНЕЦ КАК ОплаченоЧасов,
+	ДополнительныеНачисленияРаботниковОрганизации.Результат КАК Результат,
+	НАЧАЛОПЕРИОДА(ДополнительныеНачисленияРаботниковОрганизации.ПериодРегистрации, МЕСЯЦ) КАК ПериодРегистрации,
+	ДополнительныеНачисленияРаботниковОрганизации.Регистратор КАК Регистратор,
+	НЕОПРЕДЕЛЕНО КАК Ведомость,
+	ДополнительныеНачисленияРаботниковОрганизации.ПодразделениеОрганизации КАК ПодразделениеОрганизации
+{ВЫБРАТЬ
+	Организация.*,
+	ГоловнаяОрганизация.*,
+	ФизЛицо.*,
+	ИмяВидаРасчета,
+	ПриоритетВидаРасчета,
+	Группа,
+	ПриоритетГруппы,
+	ОтработаноДней,
+	ОтработаноЧасов,
+	ОплаченоДней,
+	ОплаченоЧасов,
+	Результат,
+	ПериодРегистрации,
+	Регистратор.*,
+	Ведомость,
+	ПодразделениеОрганизации.*}
+ИЗ
+	РегистрРасчета.ДополнительныеНачисленияРаботниковОрганизаций КАК ДополнительныеНачисленияРаботниковОрганизации
+ГДЕ
+	ДополнительныеНачисленияРаботниковОрганизации.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+{ГДЕ
+	ДополнительныеНачисленияРаботниковОрганизации.ФизЛицо.*,
+	ДополнительныеНачисленияРаботниковОрганизации.Организация.* КАК ГоловнаяОрганизация,
+	ДополнительныеНачисленияРаботниковОрганизации.ОбособленноеПодразделение.* КАК Организация,
+	ДополнительныеНачисленияРаботниковОрганизации.ВидРасчета.Наименование КАК ИмяВидаРасчета,
+	(ВЫБОР
+			КОГДА ДополнительныеНачисленияРаботниковОрганизации.ВидРасчета.ЯвляетсяДоходомВНатуральнойФорме
+				ТОГДА "Доходы в натуральной форме"
+			ИНАЧЕ "Всего начислено"
+		КОНЕЦ) КАК Группа,
+	(ВЫБОР
+			КОГДА ДополнительныеНачисленияРаботниковОрганизации.ВидУчетаВремени = ЗНАЧЕНИЕ(Перечисление.ВидыУчетаВремени.ПоДням)
+				ТОГДА ДополнительныеНачисленияРаботниковОрганизации.ОплаченоДнейЧасов
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ОплаченоДней,
+	(ВЫБОР
+			КОГДА ДополнительныеНачисленияРаботниковОрганизации.ВидУчетаВремени = ЗНАЧЕНИЕ(Перечисление.ВидыУчетаВремени.ПоЧасам)
+				ТОГДА ДополнительныеНачисленияРаботниковОрганизации.ОплаченоДнейЧасов
+			ИНАЧЕ 0
+		КОНЕЦ) КАК ОплаченоЧасов,
+	ДополнительныеНачисленияРаботниковОрганизации.Результат,
+	(НАЧАЛОПЕРИОДА(ДополнительныеНачисленияРаботниковОрганизации.ПериодРегистрации, МЕСЯЦ)) КАК ПериодРегистрации,
+	ДополнительныеНачисленияРаботниковОрганизации.Регистратор.*,
+	(НЕОПРЕДЕЛЕНО) КАК Ведомость}</query>
+				<autoFillFields>false</autoFillFields>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>Удержания</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ГоловнаяОрганизация</dataPath>
+					<field>ГоловнаяОрганизация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Головная организация</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Группа</dataPath>
+					<field>Группа</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Группа</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ИмяВидаРасчета</dataPath>
+					<field>ИмяВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Имя вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Организация</d6p1:content>
+						</d6p1:item>
+					</title>
+					<useRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</useRestriction>
+					<attributeUseRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</attributeUseRestriction>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетВидаРасчета</dataPath>
+					<field>ПриоритетВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетГруппы</dataPath>
+					<field>ПриоритетГруппы</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет группы</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Результат</dataPath>
+					<field>Результат</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Результат</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ФизЛицо</dataPath>
+					<field>ФизЛицо</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Физ лицо</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодРегистрации</dataPath>
+					<field>ПериодРегистрации</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период регистрации</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Регистратор</dataPath>
+					<field>Регистратор</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Регистратор</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ведомость</dataPath>
+					<field>Ведомость</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ведомость</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПодразделениеОрганизации</dataPath>
+					<field>ПодразделениеОрганизации</field>
+				</field>
+				<dataSource>ИнформационнаяБаза</dataSource>
+				<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	УдержанияРаботниковОрганизации.ОбособленноеПодразделение КАК Организация,
+	УдержанияРаботниковОрганизации.Организация КАК ГоловнаяОрганизация,
+	ВложенныйЗапрос.Сотрудник КАК ФизЛицо,
+	УдержанияРаботниковОрганизации.ВидРасчета.Наименование КАК ИмяВидаРасчета,
+	"А" + УдержанияРаботниковОрганизации.ВидРасчета.Код КАК ПриоритетВидаРасчета,
+	"Всего удержано" КАК Группа,
+	4 КАК ПриоритетГруппы,
+	УдержанияРаботниковОрганизации.Результат КАК Результат,
+	УдержанияРаботниковОрганизации.ПериодРегистрации КАК ПериодРегистрации,
+	УдержанияРаботниковОрганизации.Регистратор КАК Регистратор,
+	НЕОПРЕДЕЛЕНО КАК Ведомость,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации КАК ПодразделениеОрганизации
+ИЗ
+	РегистрРасчета.УдержанияРаботниковОрганизаций КАК УдержанияРаботниковОрганизации
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЕСТЬNULL(ЕСТЬNULL(ВложенныйЗапрос_Осн1.Сотрудник, ВложенныйЗапрос_Доп1.Сотрудник), ЕСТЬNULL(ВложенныйЗапрос_Осн2.Сотрудник, ВложенныйЗапрос_Доп2.Сотрудник)) КАК Сотрудник,
+			ФизическиеЛица.Ссылка КАК ФизЛицо
+		ИЗ
+			Справочник.ФизическиеЛица КАК ФизическиеЛица
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн1.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп1.ФизЛицо) КАК ВложенныйЗапрос
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РаботникиОрганизаций.СрезПоследних(&amp;КонецПериода, ) КАК РаботникиОрганизацийСрезПоследних
+			ПО ВложенныйЗапрос.Сотрудник = РаботникиОрганизацийСрезПоследних.Сотрудник
+		ПО УдержанияРаботниковОрганизации.ФизЛицо = ВложенныйЗапрос.ФизЛицо
+ГДЕ
+	УдержанияРаботниковОрганизации.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И УдержанияРаботниковОрганизации.Результат &lt;&gt; 0
+{ГДЕ
+	УдержанияРаботниковОрганизации.ФизЛицо.*,
+	УдержанияРаботниковОрганизации.ОбособленноеПодразделение.* КАК Организация}</query>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>НДФЛ</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ГоловнаяОрганизация</dataPath>
+					<field>ГоловнаяОрганизация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Головная организация</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Группа</dataPath>
+					<field>Группа</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Группа</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ИмяВидаРасчета</dataPath>
+					<field>ИмяВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Имя вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Организация</d6p1:content>
+						</d6p1:item>
+					</title>
+					<useRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</useRestriction>
+					<attributeUseRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</attributeUseRestriction>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетВидаРасчета</dataPath>
+					<field>ПриоритетВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетГруппы</dataPath>
+					<field>ПриоритетГруппы</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет группы</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Результат</dataPath>
+					<field>Результат</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Результат</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ФизЛицо</dataPath>
+					<field>ФизЛицо</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Физ лицо</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодРегистрации</dataPath>
+					<field>ПериодРегистрации</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период регистрации</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">2</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Регистратор</dataPath>
+					<field>Регистратор</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Регистратор</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ведомость</dataPath>
+					<field>Ведомость</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ведомость</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПодразделениеОрганизации</dataPath>
+					<field>ПодразделениеОрганизации</field>
+				</field>
+				<dataSource>ИнформационнаяБаза</dataSource>
+				<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	НДФЛРасчетыСБюджетом.ОбособленноеПодразделение КАК Организация,
+	НДФЛРасчетыСБюджетом.Организация КАК ГоловнаяОрганизация,
+	ВложенныйЗапрос.Сотрудник КАК ФизЛицо,
+	"НДФЛ" КАК ИмяВидаРасчета,
+	"НДФЛ" КАК ПриоритетВидаРасчета,
+	"Всего удержано" КАК Группа,
+	4 КАК ПриоритетГруппы,
+	НДФЛРасчетыСБюджетом.Налог КАК Результат,
+	НАЧАЛОПЕРИОДА(НДФЛРасчетыСБюджетом.Период, МЕСЯЦ) КАК ПериодРегистрации,
+	НДФЛРасчетыСБюджетом.Регистратор КАК Регистратор,
+	НЕОПРЕДЕЛЕНО КАК Ведомость,
+	НДФЛРасчетыСБюджетом.ПодразделениеОрганизации КАК ПодразделениеОрганизации
+ИЗ
+	РегистрНакопления.НДФЛРасчетыСБюджетом КАК НДФЛРасчетыСБюджетом
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЕСТЬNULL(ЕСТЬNULL(ВложенныйЗапрос_Осн1.Сотрудник, ВложенныйЗапрос_Доп1.Сотрудник), ЕСТЬNULL(ВложенныйЗапрос_Осн2.Сотрудник, ВложенныйЗапрос_Доп2.Сотрудник)) КАК Сотрудник,
+			ФизическиеЛица.Ссылка КАК ФизЛицо
+		ИЗ
+			Справочник.ФизическиеЛица КАК ФизическиеЛица
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн1.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп1.ФизЛицо) КАК ВложенныйЗапрос
+		ПО НДФЛРасчетыСБюджетом.ФизЛицо = ВложенныйЗапрос.ФизЛицо
+ГДЕ
+	НДФЛРасчетыСБюджетом.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И НДФЛРасчетыСБюджетом.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход)
+	И НДФЛРасчетыСБюджетом.ВидСтроки = ЗНАЧЕНИЕ(Перечисление.НДФЛРасчетыСБюджетомВидСтроки.Начисление)
+	И НДФЛРасчетыСБюджетом.ИсчисленоИзЗарплаты
+{ГДЕ
+	НДФЛРасчетыСБюджетом.ФизЛицо.*,
+	НДФЛРасчетыСБюджетом.ОбособленноеПодразделение.* КАК Организация,
+	НДФЛРасчетыСБюджетом.ПодразделениеОрганизации.*}</query>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>ПогашениеЗаймов</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ГоловнаяОрганизация</dataPath>
+					<field>ГоловнаяОрганизация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Головная организация</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Группа</dataPath>
+					<field>Группа</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Группа</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ИмяВидаРасчета</dataPath>
+					<field>ИмяВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Имя вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Организация</d6p1:content>
+						</d6p1:item>
+					</title>
+					<useRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</useRestriction>
+					<attributeUseRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</attributeUseRestriction>
+					<role>
+						<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетВидаРасчета</dataPath>
+					<field>ПриоритетВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетГруппы</dataPath>
+					<field>ПриоритетГруппы</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет группы</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Результат</dataPath>
+					<field>Результат</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Результат</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ФизЛицо</dataPath>
+					<field>ФизЛицо</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Физ лицо</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодРегистрации</dataPath>
+					<field>ПериодРегистрации</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период регистрации</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">2</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Регистратор</dataPath>
+					<field>Регистратор</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Регистратор</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ведомость</dataPath>
+					<field>Ведомость</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ведомость</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПодразделениеОрганизации</dataPath>
+					<field>ПодразделениеОрганизации</field>
+				</field>
+				<dataSource>ИнформационнаяБаза</dataSource>
+				<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ПогашениеЗаймовРаботникамиОрганизаций.Организация КАК Организация,
+	ВЫБОР
+		КОГДА ПогашениеЗаймовРаботникамиОрганизаций.Организация.ГоловнаяОрганизация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+			ТОГДА ПогашениеЗаймовРаботникамиОрганизаций.Организация
+		ИНАЧЕ ПогашениеЗаймовРаботникамиОрганизаций.Организация.ГоловнаяОрганизация
+	КОНЕЦ КАК ГоловнаяОрганизация,
+	ВложенныйЗапрос.Сотрудник КАК ФизЛицо,
+	НАЧАЛОПЕРИОДА(ПогашениеЗаймовРаботникамиОрганизаций.Период, МЕСЯЦ) КАК ПериодРегистрации,
+	"Погашение займа" КАК ИмяВидаРасчета,
+	"ПогашениеЗайма" КАК ПриоритетВидаРасчета,
+	"Всего удержано" КАК Группа,
+	4 КАК ПриоритетГруппы,
+	ПогашениеЗаймовРаботникамиОрганизаций.ОсновнойДолг + ПогашениеЗаймовРаботникамиОрганизаций.Проценты КАК Результат,
+	ПогашениеЗаймовРаботникамиОрганизаций.Регистратор КАК Регистратор,
+	НЕОПРЕДЕЛЕНО КАК Ведомость,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации КАК ПодразделениеОрганизации
+ИЗ
+	РегистрНакопления.ПогашениеЗаймовРаботникамиОрганизаций КАК ПогашениеЗаймовРаботникамиОрганизаций
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЕСТЬNULL(ЕСТЬNULL(ВложенныйЗапрос_Осн1.Сотрудник, ВложенныйЗапрос_Доп1.Сотрудник), ЕСТЬNULL(ВложенныйЗапрос_Осн2.Сотрудник, ВложенныйЗапрос_Доп2.Сотрудник)) КАК Сотрудник,
+			ФизическиеЛица.Ссылка КАК ФизЛицо
+		ИЗ
+			Справочник.ФизическиеЛица КАК ФизическиеЛица
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн1.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп1.ФизЛицо) КАК ВложенныйЗапрос
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РаботникиОрганизаций.СрезПоследних(&amp;КонецПериода, ) КАК РаботникиОрганизацийСрезПоследних
+			ПО ВложенныйЗапрос.Сотрудник = РаботникиОрганизацийСрезПоследних.Сотрудник
+		ПО ПогашениеЗаймовРаботникамиОрганизаций.ФизЛицо = ВложенныйЗапрос.ФизЛицо
+ГДЕ
+	ПогашениеЗаймовРаботникамиОрганизаций.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ПогашениеЗаймовРаботникамиОрганизаций.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
+	И ПогашениеЗаймовРаботникамиОрганизаций.УдержаноИзЗарплаты
+{ГДЕ
+	ПогашениеЗаймовРаботникамиОрганизаций.ФизЛицо.*}</query>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>Взаиморасчеты</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ГоловнаяОрганизация</dataPath>
+					<field>ГоловнаяОрганизация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Головная организация</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Группа</dataPath>
+					<field>Группа</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Группа</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ИмяВидаРасчета</dataPath>
+					<field>ИмяВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Имя вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Организация</d6p1:content>
+						</d6p1:item>
+					</title>
+					<useRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</useRestriction>
+					<attributeUseRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</attributeUseRestriction>
+					<role>
+						<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетВидаРасчета</dataPath>
+					<field>ПриоритетВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетГруппы</dataPath>
+					<field>ПриоритетГруппы</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет группы</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Результат</dataPath>
+					<field>Результат</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Результат</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Физлицо</dataPath>
+					<field>Физлицо</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Физлицо</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодРегистрации</dataPath>
+					<field>ПериодРегистрации</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период регистрации</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">2</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Регистратор</dataPath>
+					<field>Регистратор</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Регистратор</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ведомость</dataPath>
+					<field>Ведомость</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ведомость</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПодразделениеОрганизации</dataPath>
+					<field>ПодразделениеОрганизации</field>
+				</field>
+				<dataSource>ИнформационнаяБаза</dataSource>
+				<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Взаиморасчеты.Организация КАК Организация,
+	ВЫБОР
+		КОГДА Взаиморасчеты.Организация.ГоловнаяОрганизация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+			ТОГДА Взаиморасчеты.Организация
+		ИНАЧЕ Взаиморасчеты.Организация.ГоловнаяОрганизация
+	КОНЕЦ КАК ГоловнаяОрганизация,
+	ВложенныйЗапрос.Сотрудник КАК ФизЛицо,
+	ВЫБОР
+		КОГДА Взаиморасчеты.СпособВыплаты = ЗНАЧЕНИЕ(Перечисление.СпособыВыплатыЗарплаты.ЧерезКассу)
+				И ВзаиморасчетыСДепонентамиОрганизаций.Регистратор ЕСТЬ NULL 
+			ТОГДА "Через кассу "
+		КОГДА Взаиморасчеты.СпособВыплаты = ЗНАЧЕНИЕ(Перечисление.СпособыВыплатыЗарплаты.ЧерезБанк)
+				И ВзаиморасчетыСДепонентамиОрганизаций.Регистратор ЕСТЬ NULL 
+			ТОГДА "Перечислено в банк "
+		КОГДА НЕ ВзаиморасчетыСДепонентамиОрганизаций.Регистратор ЕСТЬ NULL 
+			ТОГДА "Задепонировано"
+		ИНАЧЕ "Способ выплаты не указан "
+	КОНЕЦ + ВЫБОР
+		КОГДА (Взаиморасчеты.ХарактерВыплаты = ЗНАЧЕНИЕ(Перечисление.ХарактерВыплатыЗарплаты.ПлановыйАванс)
+				ИЛИ Взаиморасчеты.ХарактерВыплаты = ЗНАЧЕНИЕ(Перечисление.ХарактерВыплатыЗарплаты.АвансЗаПервуюПоловинуМесяца))
+				И ВзаиморасчетыСДепонентамиОрганизаций.Регистратор ЕСТЬ NULL 
+			ТОГДА "(аванс)"
+		КОГДА Взаиморасчеты.ХарактерВыплаты = ЗНАЧЕНИЕ(Перечисление.ХарактерВыплатыЗарплаты.Зарплата)
+				И ВзаиморасчетыСДепонентамиОрганизаций.Регистратор ЕСТЬ NULL 
+			ТОГДА "(под расчет)"
+		КОГДА Взаиморасчеты.ХарактерВыплаты = ЗНАЧЕНИЕ(Перечисление.ХарактерВыплатыЗарплаты.ПустаяСсылка)
+				И ВзаиморасчетыСДепонентамиОрганизаций.Регистратор ЕСТЬ NULL 
+				И Взаиморасчеты.СуммаВзаиморасчетов &gt; 0
+			ТОГДА "(не указано)"
+		КОГДА Взаиморасчеты.ХарактерВыплаты = ЗНАЧЕНИЕ(Перечисление.ХарактерВыплатыЗарплаты.ПустаяСсылка)
+				И ВзаиморасчетыСДепонентамиОрганизаций.Регистратор ЕСТЬ NULL 
+				И Взаиморасчеты.СуммаВзаиморасчетов &lt; 0
+			ТОГДА "(погашено задолженности)"
+		КОГДА ВзаиморасчетыСДепонентамиОрганизаций.Регистратор ЕСТЬ NULL 
+			ТОГДА "(межрасчет)"
+		ИНАЧЕ ""
+	КОНЕЦ КАК ИмяВидаРасчета,
+	"А" КАК ПриоритетВидаРасчета,
+	НАЧАЛОПЕРИОДА(Взаиморасчеты.Период, МЕСЯЦ) КАК ПериодРегистрации,
+	"Всего выплачено" КАК Группа,
+	5 КАК ПриоритетГруппы,
+	Взаиморасчеты.СуммаВзаиморасчетов КАК Результат,
+	Взаиморасчеты.Регистратор КАК Регистратор,
+	Взаиморасчеты.Ведомость КАК Ведомость,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации КАК ПодразделениеОрганизации
+ИЗ
+	РегистрНакопления.ВзаиморасчетыСРаботникамиОрганизаций КАК Взаиморасчеты
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрНакопления.ВзаиморасчетыСДепонентамиОрганизаций КАК ВзаиморасчетыСДепонентамиОрганизаций
+		ПО (ВзаиморасчетыСДепонентамиОрганизаций.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Приход))
+			И (ВзаиморасчетыСДепонентамиОрганизаций.Ведомость = Взаиморасчеты.Ведомость)
+			И (ВзаиморасчетыСДепонентамиОрганизаций.Физлицо = Взаиморасчеты.Физлицо)
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЕСТЬNULL(ЕСТЬNULL(ВложенныйЗапрос_Осн1.Сотрудник, ВложенныйЗапрос_Доп1.Сотрудник), ЕСТЬNULL(ВложенныйЗапрос_Осн2.Сотрудник, ВложенныйЗапрос_Доп2.Сотрудник)) КАК Сотрудник,
+			ФизическиеЛица.Ссылка КАК ФизЛицо
+		ИЗ
+			Справочник.ФизическиеЛица КАК ФизическиеЛица
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн1.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп1.ФизЛицо) КАК ВложенныйЗапрос
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РаботникиОрганизаций.СрезПоследних(&amp;КонецПериода, ) КАК РаботникиОрганизацийСрезПоследних
+			ПО ВложенныйЗапрос.Сотрудник = РаботникиОрганизацийСрезПоследних.Сотрудник
+		ПО Взаиморасчеты.Физлицо = ВложенныйЗапрос.ФизЛицо
+ГДЕ
+	Взаиморасчеты.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И Взаиморасчеты.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
+	И Взаиморасчеты.СуммаВзаиморасчетов &lt;&gt; 0
+{ГДЕ
+	Взаиморасчеты.Физлицо.*,
+	Взаиморасчеты.Организация.*}</query>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>НачальныйОстаток</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ГоловнаяОрганизация</dataPath>
+					<field>ГоловнаяОрганизация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Головная организация</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<useRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</useRestriction>
+					<attributeUseRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</attributeUseRestriction>
+					<role>
+						<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодВзаиморасчетов</dataPath>
+					<field>ПериодВзаиморасчетов</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период взаиморасчетов</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Результат</dataPath>
+					<field>Результат</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Результат</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ФизЛицо</dataPath>
+					<field>ФизЛицо</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодРегистрации</dataPath>
+					<field>ПериодРегистрации</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период регистрации</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ИмяВидаРасчета</dataPath>
+					<field>ИмяВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Имя вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетВидаРасчета</dataPath>
+					<field>ПриоритетВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Группа</dataPath>
+					<field>Группа</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Группа</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетГруппы</dataPath>
+					<field>ПриоритетГруппы</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет группы</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Регистратор</dataPath>
+					<field>Регистратор</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Регистратор</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СтавкаНалогообложенияРезидента</dataPath>
+					<field>СтавкаНалогообложенияРезидента</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ставка налогообложения резидента</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ведомость</dataPath>
+					<field>Ведомость</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ведомость</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПодразделениеОрганизации</dataPath>
+					<field>ПодразделениеОрганизации</field>
+				</field>
+				<dataSource>ИнформационнаяБаза</dataSource>
+				<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ДатаКалендаря, МЕСЯЦ) КАК ПериодРегистрации
+ПОМЕСТИТЬ Периоды
+ИЗ
+	РегистрСведений.РегламентированныйПроизводственныйКалендарь КАК РегламентированныйПроизводственныйКалендарь
+ГДЕ
+	РегламентированныйПроизводственныйКалендарь.ДатаКалендаря МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СальдоПоПериодам.Период КАК ПериодРегистрации,
+	СальдоПоПериодам.Организация КАК Организация,
+	ВЫБОР
+		КОГДА СальдоПоПериодам.Организация.ГоловнаяОрганизация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+			ТОГДА СальдоПоПериодам.Организация
+		ИНАЧЕ СальдоПоПериодам.Организация.ГоловнаяОрганизация
+	КОНЕЦ КАК ГоловнаяОрганизация,
+	ЕСТЬNULL(ВложенныйЗапрос.Сотрудник, "тутка") КАК ФизЛицо,
+	"Начальное сальдо" КАК ИмяВидаРасчета,
+	СУММА(СальдоПоПериодам.Результат) КАК Результат,
+	NULL КАК ПриоритетВидаРасчета,
+	"А" КАК Группа,
+	1 КАК ПриоритетГруппы,
+	NULL КАК Регистратор,
+	НЕОПРЕДЕЛЕНО КАК Ведомость,
+	ЕСТЬNULL(ЕСТЬNULL(РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации, РаботникиОрганизацийСрезПоследних1.ПодразделениеОрганизации), "этот тттутт") КАК ПодразделениеОрганизации
+ИЗ
+	(ВЫБРАТЬ
+		Периоды.Период КАК Период,
+		Сальдо.Физлицо КАК Физлицо,
+		Сальдо.Организация КАК Организация,
+		СУММА(Сальдо.СуммаВзаиморасчетовОстаток) КАК Результат
+	ИЗ
+		(ВЫБРАТЬ РАЗЛИЧНЫЕ
+			МИНИМУМ(НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ПериодРегистрации, МЕСЯЦ)) КАК Период
+		ИЗ
+			Периоды КАК РегламентированныйПроизводственныйКалендарь
+		ГДЕ
+			РегламентированныйПроизводственныйКалендарь.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+			И НЕ &amp;ЕстьГруппировкаПоПериодуРегистрации
+		{ГДЕ
+			(НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ПериодРегистрации, МЕСЯЦ)) КАК ПериодРегистрации}
+		
+		ИМЕЮЩИЕ
+			МИНИМУМ(НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ПериодРегистрации, МЕСЯЦ)) ЕСТЬ НЕ NULL 
+		
+		ОБЪЕДИНИТЬ ВСЕ
+		
+		ВЫБРАТЬ РАЗЛИЧНЫЕ
+			НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ПериодРегистрации, МЕСЯЦ)
+		ИЗ
+			Периоды КАК РегламентированныйПроизводственныйКалендарь
+		ГДЕ
+			РегламентированныйПроизводственныйКалендарь.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+			И &amp;ЕстьГруппировкаПоПериодуРегистрации
+		{ГДЕ
+			(НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ПериодРегистрации, МЕСЯЦ)) КАК ПериодРегистрации}) КАК Периоды
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.Организация КАК Организация,
+				&amp;НачалоПериода КАК Период,
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.Физлицо КАК Физлицо,
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.СуммаВзаиморасчетовОстаток КАК СуммаВзаиморасчетовОстаток
+			ИЗ
+				РегистрНакопления.ВзаиморасчетыСРаботникамиОрганизаций.Остатки(&amp;НачалоПериода {(&amp;НачалоПериода)}, {(Физлицо), (Организация)}) КАК ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.Организация,
+				ДОБАВИТЬКДАТЕ(ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.Период, МЕСЯЦ, 1),
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.Физлицо,
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.СуммаВзаиморасчетовОборот
+			ИЗ
+				РегистрНакопления.ВзаиморасчетыСРаботникамиОрганизаций.Обороты(&amp;НачалоПериода {(&amp;НачалоПериода)}, &amp;КонецПериода {(&amp;КонецПериода)}, Месяц, {(Физлицо), (Организация)}) КАК ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				НДФЛКЗачету.Организация,
+				&amp;НачалоПериода,
+				НДФЛКЗачету.ФизЛицо,
+				НДФЛКЗачету.СуммаНДФЛКЗачетуОстаток
+			ИЗ
+				РегистрНакопления.НДФЛКЗачету.Остатки(&amp;НачалоПериода {(&amp;НачалоПериода)}, {(Физлицо), (Организация)}) КАК НДФЛКЗачету
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				НДФЛКЗачету.Организация,
+				ДОБАВИТЬКДАТЕ(НДФЛКЗачету.Период, МЕСЯЦ, 1),
+				НДФЛКЗачету.ФизЛицо,
+				НДФЛКЗачету.СуммаНДФЛКЗачетуОборот
+			ИЗ
+				РегистрНакопления.НДФЛКЗачету.Обороты(&amp;НачалоПериода {(&amp;НачалоПериода)}, &amp;КонецПериода {(&amp;КонецПериода)}, Месяц, {(Физлицо), (Организация)}) КАК НДФЛКЗачету) КАК Сальдо
+			ПО (Сальдо.Период &lt;= Периоды.Период)
+	
+	СГРУППИРОВАТЬ ПО
+		Сальдо.Организация,
+		Сальдо.Физлицо,
+		Периоды.Период) КАК СальдоПоПериодам
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЕСТЬNULL(ЕСТЬNULL(ВложенныйЗапрос_Осн1.Сотрудник, ВложенныйЗапрос_Доп1.Сотрудник), ЕСТЬNULL(ВложенныйЗапрос_Осн2.Сотрудник, ВложенныйЗапрос_Доп2.Сотрудник)) КАК Сотрудник,
+			ФизическиеЛица.Ссылка КАК ФизЛицо
+		ИЗ
+			Справочник.ФизическиеЛица КАК ФизическиеЛица
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;НачалоПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;НачалоПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн1.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп1.ФизЛицо) КАК ВложенныйЗапрос
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РаботникиОрганизаций.СрезПоследних(&amp;НачалоПериода, ) КАК РаботникиОрганизацийСрезПоследних
+			ПО ВложенныйЗапрос.Сотрудник = РаботникиОрганизацийСрезПоследних.Сотрудник
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РаботникиОрганизаций.СрезПоследних(&amp;КонецПериода, ) КАК РаботникиОрганизацийСрезПоследних1
+			ПО ВложенныйЗапрос.Сотрудник = РаботникиОрганизацийСрезПоследних1.Сотрудник
+		ПО СальдоПоПериодам.Физлицо = ВложенныйЗапрос.ФизЛицо
+ГДЕ
+	НЕ СальдоПоПериодам.Физлицо ЕСТЬ NULL 
+
+СГРУППИРОВАТЬ ПО
+	СальдоПоПериодам.Период,
+	СальдоПоПериодам.Организация,
+	ВЫБОР
+		КОГДА СальдоПоПериодам.Организация.ГоловнаяОрганизация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+			ТОГДА СальдоПоПериодам.Организация
+		ИНАЧЕ СальдоПоПериодам.Организация.ГоловнаяОрганизация
+	КОНЕЦ,
+	ЕСТЬNULL(ЕСТЬNULL(РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации, РаботникиОрганизацийСрезПоследних1.ПодразделениеОрганизации), "этот тттутт"),
+	ЕСТЬNULL(ВложенныйЗапрос.Сотрудник, "тутка")
+
+ИМЕЮЩИЕ
+	СУММА(СальдоПоПериодам.Результат) &lt;&gt; 0</query>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>КонечныйОстаток</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ГоловнаяОрганизация</dataPath>
+					<field>ГоловнаяОрганизация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Головная организация</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<useRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</useRestriction>
+					<attributeUseRestriction>
+						<field>true</field>
+						<group>true</group>
+						<order>true</order>
+					</attributeUseRestriction>
+					<role>
+						<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодВзаиморасчетов</dataPath>
+					<field>ПериодВзаиморасчетов</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период взаиморасчетов</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Результат</dataPath>
+					<field>Результат</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Результат</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Физлицо</dataPath>
+					<field>Физлицо</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Физлицо</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодРегистрации</dataPath>
+					<field>ПериодРегистрации</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период регистрации</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Группа</dataPath>
+					<field>Группа</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ИмяВидаРасчета</dataPath>
+					<field>ИмяВидаРасчета</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетВидаРасчета</dataPath>
+					<field>ПриоритетВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетГруппы</dataPath>
+					<field>ПриоритетГруппы</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет группы</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Регистратор</dataPath>
+					<field>Регистратор</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Регистратор</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>СтавкаНалогообложенияРезидента</dataPath>
+					<field>СтавкаНалогообложенияРезидента</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ставка налогообложения резидента</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ведомость</dataPath>
+					<field>Ведомость</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ведомость</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПодразделениеОрганизации</dataPath>
+					<field>ПодразделениеОрганизации</field>
+				</field>
+				<dataSource>ИнформационнаяБаза</dataSource>
+				<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ДатаКалендаря, МЕСЯЦ) КАК ПериодРегистрации
+ПОМЕСТИТЬ Периоды
+ИЗ
+	РегистрСведений.РегламентированныйПроизводственныйКалендарь КАК РегламентированныйПроизводственныйКалендарь
+ГДЕ
+	РегламентированныйПроизводственныйКалендарь.ДатаКалендаря МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СальдоПоПериодам.Период КАК ПериодРегистрации,
+	СальдоПоПериодам.Организация КАК Организация,
+	ВЫБОР
+		КОГДА СальдоПоПериодам.Организация.ГоловнаяОрганизация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+			ТОГДА СальдоПоПериодам.Организация
+		ИНАЧЕ СальдоПоПериодам.Организация.ГоловнаяОрганизация
+	КОНЕЦ КАК ГоловнаяОрганизация,
+	СУММА(СальдоПоПериодам.СуммаВзаиморасчетовКонечныйОстаток) КАК Результат,
+	"Я" КАК Группа,
+	6 КАК ПриоритетГруппы,
+	NULL КАК ПриоритетВидаРасчета,
+	ВложенныйЗапрос.Сотрудник КАК Физлицо,
+	"Конечное сальдо" КАК ИмяВидаРасчета,
+	NULL КАК Регистратор,
+	НЕОПРЕДЕЛЕНО КАК Ведомость,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации КАК ПодразделениеОрганизации
+{ВЫБРАТЬ
+	ПериодРегистрации,
+	Организация.*,
+	ГоловнаяОрганизация.*,
+	Результат,
+	Группа,
+	Физлицо.*,
+	ИмяВидаРасчета}
+ИЗ
+	(ВЫБРАТЬ
+		Периоды.Период КАК Период,
+		Сальдо.Физлицо КАК Физлицо,
+		Сальдо.Организация КАК Организация,
+		СУММА(Сальдо.СуммаВзаиморасчетовОстаток) КАК СуммаВзаиморасчетовКонечныйОстаток
+	ИЗ
+		(ВЫБРАТЬ РАЗЛИЧНЫЕ
+			НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ПериодРегистрации, МЕСЯЦ) КАК Период
+		ИЗ
+			Периоды КАК РегламентированныйПроизводственныйКалендарь
+		ГДЕ
+			РегламентированныйПроизводственныйКалендарь.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+			И &amp;ЕстьГруппировкаПоПериодуРегистрации
+		{ГДЕ
+			(НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ПериодРегистрации, МЕСЯЦ)) КАК ПериодРегистрации}
+		
+		ОБЪЕДИНИТЬ ВСЕ
+		
+		ВЫБРАТЬ РАЗЛИЧНЫЕ
+			МАКСИМУМ(НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ПериодРегистрации, МЕСЯЦ))
+		ИЗ
+			Периоды КАК РегламентированныйПроизводственныйКалендарь
+		ГДЕ
+			РегламентированныйПроизводственныйКалендарь.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+			И НЕ &amp;ЕстьГруппировкаПоПериодуРегистрации
+		{ГДЕ
+			(НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ПериодРегистрации, МЕСЯЦ)) КАК ПериодРегистрации}
+		
+		ИМЕЮЩИЕ
+			МАКСИМУМ(НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ПериодРегистрации, МЕСЯЦ)) ЕСТЬ НЕ NULL ) КАК Периоды
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.Организация КАК Организация,
+				&amp;НачалоПериода КАК Период,
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.Физлицо КАК Физлицо,
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.СуммаВзаиморасчетовОстаток КАК СуммаВзаиморасчетовОстаток
+			ИЗ
+				РегистрНакопления.ВзаиморасчетыСРаботникамиОрганизаций.Остатки(&amp;НачалоПериода {(&amp;НачалоПериода)}, {(Физлицо), (Организация)}) КАК ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.Организация,
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.Период,
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.Физлицо,
+				ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты.СуммаВзаиморасчетовОборот
+			ИЗ
+				РегистрНакопления.ВзаиморасчетыСРаботникамиОрганизаций.Обороты(&amp;НачалоПериода {(&amp;НачалоПериода)}, &amp;КонецПериода {(&amp;КонецПериода)}, Месяц, {(Физлицо), (Организация)}) КАК ВзаиморасчетыСРаботникамиОрганизацииОстаткиИОбороты
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				НДФЛКЗачету.Организация,
+				&amp;НачалоПериода,
+				НДФЛКЗачету.ФизЛицо,
+				НДФЛКЗачету.СуммаНДФЛКЗачетуОстаток
+			ИЗ
+				РегистрНакопления.НДФЛКЗачету.Остатки(&amp;НачалоПериода {(&amp;НачалоПериода)}, {(Физлицо), (Организация)}) КАК НДФЛКЗачету
+			
+			ОБЪЕДИНИТЬ ВСЕ
+			
+			ВЫБРАТЬ
+				НДФЛКЗачету.Организация,
+				НДФЛКЗачету.Период,
+				НДФЛКЗачету.ФизЛицо,
+				НДФЛКЗачету.СуммаНДФЛКЗачетуОборот
+			ИЗ
+				РегистрНакопления.НДФЛКЗачету.Обороты(&amp;НачалоПериода {(&amp;НачалоПериода)}, &amp;КонецПериода {(&amp;КонецПериода)}, Месяц, {(Физлицо), (Организация)}) КАК НДФЛКЗачету) КАК Сальдо
+			ПО (Сальдо.Период &lt;= Периоды.Период)
+	ГДЕ
+		НЕ Сальдо.Физлицо ЕСТЬ NULL 
+	
+	СГРУППИРОВАТЬ ПО
+		Сальдо.Организация,
+		Сальдо.Физлицо,
+		Периоды.Период) КАК СальдоПоПериодам
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЕСТЬNULL(ЕСТЬNULL(ВложенныйЗапрос_Осн1.Сотрудник, ВложенныйЗапрос_Доп1.Сотрудник), ЕСТЬNULL(ВложенныйЗапрос_Осн2.Сотрудник, ВложенныйЗапрос_Доп2.Сотрудник)) КАК Сотрудник,
+			ФизическиеЛица.Ссылка КАК ФизЛицо
+		ИЗ
+			Справочник.ФизическиеЛица КАК ФизическиеЛица
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн1.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп1.ФизЛицо) КАК ВложенныйЗапрос
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РаботникиОрганизаций.СрезПоследних(&amp;КонецПериода, ) КАК РаботникиОрганизацийСрезПоследних
+			ПО ВложенныйЗапрос.Сотрудник = РаботникиОрганизацийСрезПоследних.Сотрудник
+		ПО СальдоПоПериодам.Физлицо = ВложенныйЗапрос.ФизЛицо
+ГДЕ
+	НЕ СальдоПоПериодам.Физлицо ЕСТЬ NULL 
+
+СГРУППИРОВАТЬ ПО
+	СальдоПоПериодам.Период,
+	СальдоПоПериодам.Организация,
+	ВЫБОР
+		КОГДА СальдоПоПериодам.Организация.ГоловнаяОрганизация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+			ТОГДА СальдоПоПериодам.Организация
+		ИНАЧЕ СальдоПоПериодам.Организация.ГоловнаяОрганизация
+	КОНЕЦ,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации,
+	ВложенныйЗапрос.Сотрудник
+
+ИМЕЮЩИЕ
+	СУММА(СальдоПоПериодам.СуммаВзаиморасчетовКонечныйОстаток) &lt;&gt; 0</query>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>КомпенсацияЗаЗадержкуЗП</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ГоловнаяОрганизация</dataPath>
+					<field>ГоловнаяОрганизация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Головная организация</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Группа</dataPath>
+					<field>Группа</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Группа</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ИмяВидаРасчета</dataPath>
+					<field>ИмяВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Имя вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Организация</d6p1:content>
+						</d6p1:item>
+					</title>
+					<useRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</useRestriction>
+					<attributeUseRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</attributeUseRestriction>
+					<role>
+						<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодРегистрации</dataPath>
+					<field>ПериодРегистрации</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период регистрации</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">2</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетВидаРасчета</dataPath>
+					<field>ПриоритетВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Результат</dataPath>
+					<field>Результат</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Результат</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Физлицо</dataPath>
+					<field>Физлицо</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Физлицо</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Регистратор</dataPath>
+					<field>Регистратор</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Регистратор</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ведомость</dataPath>
+					<field>Ведомость</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ведомость</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПодразделениеОрганизации</dataPath>
+					<field>ПодразделениеОрганизации</field>
+				</field>
+				<dataSource>ИнформационнаяБаза</dataSource>
+				<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ВидыДвижения.ВидДвижения КАК Группа,
+	Взаиморасчеты.Организация КАК Организация,
+	ВЫБОР
+		КОГДА Взаиморасчеты.Организация.ГоловнаяОрганизация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+			ТОГДА Взаиморасчеты.Организация
+		ИНАЧЕ Взаиморасчеты.Организация.ГоловнаяОрганизация
+	КОНЕЦ КАК ГоловнаяОрганизация,
+	НАЧАЛОПЕРИОДА(Взаиморасчеты.Период, МЕСЯЦ) КАК ПериодРегистрации,
+	ВложенныйЗапрос.Сотрудник КАК ФизЛицо,
+	"Компенсация за задержку выплаты заработной платы" КАК ИмяВидаРасчета,
+	"Г2" КАК ПриоритетВидаРасчета,
+	СУММА(ЗарплатаКВыплатеОрганизацийЗарплата.КомпенсацияЗаЗадержкуЗарплаты) КАК Результат,
+	Взаиморасчеты.Регистратор,
+	Взаиморасчеты.Ведомость,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации КАК ПодразделениеОрганизации
+ИЗ
+	(ВЫБРАТЬ
+		"Всего начислено" КАК ВидДвижения,
+		2 КАК ПриоритетГруппы
+	
+	ОБЪЕДИНИТЬ ВСЕ
+	
+	ВЫБРАТЬ
+		"Всего выплачено",
+		5) КАК ВидыДвижения,
+	РегистрНакопления.ВзаиморасчетыСРаботникамиОрганизаций КАК Взаиморасчеты
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Документ.ЗарплатаКВыплатеОрганизаций.Зарплата КАК ЗарплатаКВыплатеОрганизацийЗарплата
+		ПО Взаиморасчеты.Физлицо = ЗарплатаКВыплатеОрганизацийЗарплата.Физлицо
+			И Взаиморасчеты.Ведомость = ЗарплатаКВыплатеОрганизацийЗарплата.Ссылка
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЕСТЬNULL(ЕСТЬNULL(ВложенныйЗапрос_Осн1.Сотрудник, ВложенныйЗапрос_Доп1.Сотрудник), ЕСТЬNULL(ВложенныйЗапрос_Осн2.Сотрудник, ВложенныйЗапрос_Доп2.Сотрудник)) КАК Сотрудник,
+			ФизическиеЛица.Ссылка КАК ФизЛицо
+		ИЗ
+			Справочник.ФизическиеЛица КАК ФизическиеЛица
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн1.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп1.ФизЛицо) КАК ВложенныйЗапрос
+			ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РаботникиОрганизаций.СрезПоследних(&amp;КонецПериода, ) КАК РаботникиОрганизацийСрезПоследних
+			ПО ВложенныйЗапрос.Сотрудник = РаботникиОрганизацийСрезПоследних.Сотрудник
+		ПО Взаиморасчеты.Физлицо = ВложенныйЗапрос.ФизЛицо
+ГДЕ
+	Взаиморасчеты.ВидДвижения = ЗНАЧЕНИЕ(ВидДвиженияНакопления.Расход)
+	И Взаиморасчеты.СуммаВзаиморасчетов &lt;&gt; 0
+	И Взаиморасчеты.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И ЗарплатаКВыплатеОрганизацийЗарплата.КомпенсацияЗаЗадержкуЗарплаты &lt;&gt; 0
+{ГДЕ
+	Взаиморасчеты.Физлицо.*,
+	Взаиморасчеты.Организация.*}
+
+СГРУППИРОВАТЬ ПО
+	Взаиморасчеты.Организация,
+	НАЧАЛОПЕРИОДА(Взаиморасчеты.Период, МЕСЯЦ),
+	ВидыДвижения.ВидДвижения,
+	ВЫБОР
+		КОГДА Взаиморасчеты.Организация.ГоловнаяОрганизация = ЗНАЧЕНИЕ(Справочник.Организации.ПустаяСсылка)
+			ТОГДА Взаиморасчеты.Организация
+		ИНАЧЕ Взаиморасчеты.Организация.ГоловнаяОрганизация
+	КОНЕЦ,
+	Взаиморасчеты.Регистратор,
+	Взаиморасчеты.Ведомость,
+	ВложенныйЗапрос.Сотрудник,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации</query>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>ДоходыВНатуральнойФорме</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ГоловнаяОрганизация</dataPath>
+					<field>ГоловнаяОрганизация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Головная организация</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<dimension xmlns="http://v8.1c.ru/8.1/data-composition-system/common">true</dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Группа</dataPath>
+					<field>Группа</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Группа</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ИмяВидаРасчета</dataPath>
+					<field>ИмяВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Имя вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Организация</dataPath>
+					<field>Организация</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Организация</d6p1:content>
+						</d6p1:item>
+					</title>
+					<useRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</useRestriction>
+					<attributeUseRestriction>
+						<field>true</field>
+						<condition>true</condition>
+						<group>true</group>
+						<order>true</order>
+					</attributeUseRestriction>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетВидаРасчета</dataPath>
+					<field>ПриоритетВидаРасчета</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет вида расчета</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПриоритетГруппы</dataPath>
+					<field>ПриоритетГруппы</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Приоритет группы</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ФизЛицо</dataPath>
+					<field>ФизЛицо</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Физ лицо</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПериодРегистрации</dataPath>
+					<field>ПериодРегистрации</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Период регистрации</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">2</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Регистратор</dataPath>
+					<field>Регистратор</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Регистратор</d6p1:content>
+						</d6p1:item>
+					</title>
+					<role>
+						<periodNumber xmlns="http://v8.1c.ru/8.1/data-composition-system/common">1</periodNumber>
+						<periodType xmlns="http://v8.1c.ru/8.1/data-composition-system/common">Main</periodType>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Ведомость</dataPath>
+					<field>Ведомость</field>
+					<title xmlns:d6p1="http://v8.1c.ru/8.1/data/core" xsi:type="d6p1:LocalStringType">
+						<d6p1:item>
+							<d6p1:lang>ru</d6p1:lang>
+							<d6p1:content>Ведомость</d6p1:content>
+						</d6p1:item>
+					</title>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Результат</dataPath>
+					<field>Результат</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ПодразделениеОрганизации</dataPath>
+					<field>ПодразделениеОрганизации</field>
+				</field>
+				<dataSource>ИнформационнаяБаза</dataSource>
+				<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	НДФЛСведенияОДоходах.ОбособленноеПодразделение КАК Организация,
+	НДФЛСведенияОДоходах.Организация КАК ГоловнаяОрганизация,
+	"Мат. выгода по займам (кредитам)" КАК ИмяВидаРасчета,
+	"Матвыгода" КАК ПриоритетВидаРасчета,
+	"Доходы в натуральной форме" КАК Группа,
+	3 КАК ПриоритетГруппы,
+	НДФЛСведенияОДоходах.СуммаДохода КАК Результат,
+	НАЧАЛОПЕРИОДА(НДФЛСведенияОДоходах.Период, МЕСЯЦ) КАК ПериодРегистрации,
+	НДФЛСведенияОДоходах.Регистратор КАК Регистратор,
+	НЕОПРЕДЕЛЕНО КАК Ведомость,
+	ВложенныйЗапрос.Сотрудник КАК ФизЛицо,
+	НДФЛСведенияОДоходах.ПодразделениеОрганизации КАК ПодразделениеОрганизации
+ИЗ
+	РегистрНакопления.НДФЛСведенияОДоходах КАК НДФЛСведенияОДоходах
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			ЕСТЬNULL(ЕСТЬNULL(ВложенныйЗапрос_Осн1.Сотрудник, ВложенныйЗапрос_Доп1.Сотрудник), ЕСТЬNULL(ВложенныйЗапрос_Осн2.Сотрудник, ВложенныйЗапрос_Доп2.Сотрудник)) КАК Сотрудник,
+			ФизическиеЛица.Ссылка КАК ФизЛицо
+		ИЗ
+			Справочник.ФизическиеЛица КАК ФизическиеЛица
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации &lt; &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп2
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп2.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Осн1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Осн1.ФизЛицо
+				ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник КАК Сотрудник,
+					ВложенныйЗапрос.ФизЛицо КАК ФизЛицо
+				ИЗ
+					(ВЫБРАТЬ
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо КАК ФизЛицо,
+						МАКСИМУМ(ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия) КАК ПериодРегистрации
+					ИЗ
+						РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+					ГДЕ
+						ОсновныеНачисленияРаботниковОрганизаций.ПериодРегистрации МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+						И НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+					
+					СГРУППИРОВАТЬ ПО
+						ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо) КАК ВложенныйЗапрос
+						ЛЕВОЕ СОЕДИНЕНИЕ РегистрРасчета.ОсновныеНачисленияРаботниковОрганизаций КАК ОсновныеНачисленияРаботниковОрганизаций
+						ПО ВложенныйЗапрос.ФизЛицо = ОсновныеНачисленияРаботниковОрганизаций.ФизЛицо
+							И ВложенныйЗапрос.ПериодРегистрации = ОсновныеНачисленияРаботниковОрганизаций.ДатаНачалаСобытия
+				ГДЕ
+					НЕ ОсновныеНачисленияРаботниковОрганизаций.Сотрудник.ВидЗанятости = ЗНАЧЕНИЕ(Перечисление.ВидыЗанятостиВОрганизации.ОсновноеМестоРаботы)
+				
+				СГРУППИРОВАТЬ ПО
+					ОсновныеНачисленияРаботниковОрганизаций.Сотрудник,
+					ВложенныйЗапрос.ФизЛицо) КАК ВложенныйЗапрос_Доп1
+				ПО ФизическиеЛица.Ссылка = ВложенныйЗапрос_Доп1.ФизЛицо) КАК ВложенныйЗапрос
+		ПО НДФЛСведенияОДоходах.ФизЛицо = ВложенныйЗапрос.ФизЛицо
+ГДЕ
+	НДФЛСведенияОДоходах.Период МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+	И (НДФЛСведенияОДоходах.КодДохода = ЗНАЧЕНИЕ(Справочник.ДоходыНДФЛ.Код2610ПоСтавке13)
+			ИЛИ НДФЛСведенияОДоходах.КодДохода = ЗНАЧЕНИЕ(Справочник.ДоходыНДФЛ.Код2610ПоСтавке35))
+	И НДФЛСведенияОДоходах.ИсчисленоИзЗарплаты
+{ГДЕ
+	НДФЛСведенияОДоходах.ФизЛицо.*,
+	НДФЛСведенияОДоходах.ОбособленноеПодразделение.* КАК Организация}</query>
+			</item>
+		</dataSet>
+		<dataSet xsi:type="DataSetQuery">
+			<name>РаботникиСрезПоследних</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Организация</dataPath>
+				<field>Организация</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Организация</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Физлицо</dataPath>
+				<field>Физлицо</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Физическое лицо</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ГоловнаяОрганизация</dataPath>
+				<field>ГоловнаяОрганизация</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Головная организация</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Должность</dataPath>
+				<field>Должность</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Должность</d5p1:content>
+					</d5p1:item>
+				</title>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПодразделениеОрганизации</dataPath>
+				<field>ПодразделениеОрганизации</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Подразделение организации</d5p1:content>
+					</d5p1:item>
+				</title>
+				<valueType>
+					<Type xmlns="http://v8.1c.ru/8.1/data/core" xmlns:d6p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d6p1:CatalogRef.ПодразделенияОрганизаций</Type>
+				</valueType>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Сотрудник</dataPath>
+				<field>Сотрудник</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Сотрудник</d5p1:content>
+					</d5p1:item>
+				</title>
+				<presentationExpression>ВЫБОР КОГДА ФИО ЕСТЬ NULL ТОГДА Сотрудник ИНАЧЕ ФИО КОНЕЦ</presentationExpression>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПериодРегистрации</dataPath>
+				<field>ПериодРегистрации</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Период</dataPath>
+				<field>Период</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ОрганизацияГоловнаяОрганизация</dataPath>
+				<field>ОрганизацияГоловнаяОрганизация</field>
+			</field>
+			<dataSource>ИнформационнаяБаза</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ДатаКалендаря, МЕСЯЦ) КАК ПериодРегистрации
+ПОМЕСТИТЬ Периоды
+ИЗ
+	РегистрСведений.РегламентированныйПроизводственныйКалендарь КАК РегламентированныйПроизводственныйКалендарь
+ГДЕ
+	РегламентированныйПроизводственныйКалендарь.ДатаКалендаря МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	РаботникиОрганизацийСрезПоследних.Сотрудник КАК Физлицо,
+	РаботникиОрганизацийСрезПоследних.Организация.ГоловнаяОрганизация КАК ГоловнаяОрганизация,
+	РаботникиОрганизацийСрезПоследних.Организация КАК Организация,
+	РаботникиОрганизацийСрезПоследних.Должность КАК Должность,
+	РаботникиОрганизацийСрезПоследних.Сотрудник КАК Сотрудник,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации КАК ПодразделениеОрганизации,
+	Периоды.ПериодРегистрации КАК ПериодРегистрации
+{ВЫБРАТЬ
+	Физлицо.*,
+	ГоловнаяОрганизация.*,
+	Организация.*,
+	Должность.*,
+	Сотрудник.*,
+	ПодразделениеОрганизации.*,
+	ПериодРегистрации}
+ИЗ
+	Периоды КАК Периоды,
+	РегистрСведений.РаботникиОрганизаций.СрезПоследних(&amp;КонецПериода, ) КАК РаботникиОрганизацийСрезПоследних
+{ГДЕ
+	РаботникиОрганизацийСрезПоследних.Период,
+	РаботникиОрганизацийСрезПоследних.Сотрудник.*,
+	РаботникиОрганизацийСрезПоследних.Организация.ГоловнаяОрганизация.*,
+	РаботникиОрганизацийСрезПоследних.Организация.*,
+	РаботникиОрганизацийСрезПоследних.Должность.*,
+	РаботникиОрганизацийСрезПоследних.ПодразделениеОрганизации.*}
+{ХАРАКТЕРИСТИКИ
+	ТИП(Справочник.ДолжностиОрганизаций)
+	ВИДЫХАРАКТЕРИСТИК (ВЫБРАТЬ
+			СвойстваОбъектов.Ссылка,
+			" Дополнительное свойство: " + СвойстваОбъектов.Наименование КАК Наименование,
+			СвойстваОбъектов.ТипЗначения
+		ИЗ
+			ПланВидовХарактеристик.СвойстваОбъектов КАК СвойстваОбъектов
+		ГДЕ
+			СвойстваОбъектов.НазначениеСвойства = ЗНАЧЕНИЕ(ПланВидовХарактеристик.НазначенияСвойствКатегорийОбъектов.Справочник_ДолжностиОрганизаций)
+			И НЕ СвойстваОбъектов.ПометкаУдаления)
+	ПОЛЕКЛЮЧА Ссылка
+	ПОЛЕИМЕНИ Наименование
+	ПОЛЕТИПАЗНАЧЕНИЯ ТипЗначения
+	ЗНАЧЕНИЯХАРАКТЕРИСТИК РегистрСведений.ЗначенияСвойствОбъектов
+	ПОЛЕОБЪЕКТА Объект
+	ПОЛЕВИДА Свойство
+	ПОЛЕЗНАЧЕНИЯ Значение }
+{ХАРАКТЕРИСТИКИ
+	ТИП(Справочник.ДолжностиОрганизаций)
+	ВИДЫХАРАКТЕРИСТИК (ВЫБРАТЬ
+			КатегорииОбъектов.Ссылка,
+			" Дополнительная категория: " + КатегорииОбъектов.Наименование КАК Наименование
+		ИЗ
+			Справочник.КатегорииОбъектов КАК КатегорииОбъектов
+		ГДЕ
+			КатегорииОбъектов.НазначениеКатегории = ЗНАЧЕНИЕ(ПланВидовХарактеристик.НазначенияСвойствКатегорийОбъектов.Справочник_ДолжностиОрганизаций)
+			И НЕ КатегорииОбъектов.ПометкаУдаления)
+	ПОЛЕКЛЮЧА Ссылка
+	ПОЛЕИМЕНИ Наименование
+	ЗНАЧЕНИЯХАРАКТЕРИСТИК РегистрСведений.КатегорииОбъектов
+	ПОЛЕОБЪЕКТА Объект
+	ПОЛЕВИДА Категория }
+{ХАРАКТЕРИСТИКИ
+	ТИП(Справочник.ПодразделенияОрганизаций)
+	ВИДЫХАРАКТЕРИСТИК (ВЫБРАТЬ
+			СвойстваОбъектов.Ссылка,
+			" Дополнительное свойство: " + СвойстваОбъектов.Наименование КАК Наименование,
+			СвойстваОбъектов.ТипЗначения
+		ИЗ
+			ПланВидовХарактеристик.СвойстваОбъектов КАК СвойстваОбъектов
+		ГДЕ
+			СвойстваОбъектов.НазначениеСвойства = ЗНАЧЕНИЕ(ПланВидовХарактеристик.НазначенияСвойствКатегорийОбъектов.Справочник_ПодразделенияОрганизаций)
+			И НЕ СвойстваОбъектов.ПометкаУдаления)
+	ПОЛЕКЛЮЧА Ссылка
+	ПОЛЕИМЕНИ Наименование
+	ПОЛЕТИПАЗНАЧЕНИЯ ТипЗначения
+	ЗНАЧЕНИЯХАРАКТЕРИСТИК РегистрСведений.ЗначенияСвойствОбъектов
+	ПОЛЕОБЪЕКТА Объект
+	ПОЛЕВИДА Свойство
+	ПОЛЕЗНАЧЕНИЯ Значение }
+{ХАРАКТЕРИСТИКИ
+	ТИП(Справочник.СотрудникиОрганизаций)
+	ВИДЫХАРАКТЕРИСТИК (ВЫБРАТЬ
+			СвойстваОбъектов.Ссылка,
+			" Дополнительное свойство: " + СвойстваОбъектов.Наименование КАК Наименование,
+			СвойстваОбъектов.ТипЗначения
+		ИЗ
+			ПланВидовХарактеристик.СвойстваОбъектов КАК СвойстваОбъектов
+		ГДЕ
+			СвойстваОбъектов.НазначениеСвойства = ЗНАЧЕНИЕ(ПланВидовХарактеристик.НазначенияСвойствКатегорийОбъектов.Справочник_СотрудникиОрганизаций)
+			И НЕ СвойстваОбъектов.ПометкаУдаления)
+	ПОЛЕКЛЮЧА Ссылка
+	ПОЛЕИМЕНИ Наименование
+	ПОЛЕТИПАЗНАЧЕНИЯ ТипЗначения
+	ЗНАЧЕНИЯХАРАКТЕРИСТИК РегистрСведений.ЗначенияСвойствОбъектов
+	ПОЛЕОБЪЕКТА Объект
+	ПОЛЕВИДА Свойство
+	ПОЛЕЗНАЧЕНИЯ Значение }
+{ХАРАКТЕРИСТИКИ
+	ТИП(Справочник.ПодразделенияОрганизаций)
+	ВИДЫХАРАКТЕРИСТИК (ВЫБРАТЬ
+			КатегорииОбъектов.Ссылка,
+			" Дополнительная категория: " + КатегорииОбъектов.Наименование КАК Наименование
+		ИЗ
+			Справочник.КатегорииОбъектов КАК КатегорииОбъектов
+		ГДЕ
+			КатегорииОбъектов.НазначениеКатегории = ЗНАЧЕНИЕ(ПланВидовХарактеристик.НазначенияСвойствКатегорийОбъектов.Справочник_ПодразделенияОрганизаций)
+			И НЕ КатегорииОбъектов.ПометкаУдаления)
+	ПОЛЕКЛЮЧА Ссылка
+	ПОЛЕИМЕНИ Наименование
+	ЗНАЧЕНИЯХАРАКТЕРИСТИК РегистрСведений.КатегорииОбъектов
+	ПОЛЕОБЪЕКТА Объект
+	ПОЛЕВИДА Категория }
+{ХАРАКТЕРИСТИКИ
+	ТИП(Справочник.СотрудникиОрганизаций)
+	ВИДЫХАРАКТЕРИСТИК (ВЫБРАТЬ
+			КатегорииОбъектов.Ссылка,
+			" Дополнительная категория: " + КатегорииОбъектов.Наименование КАК Наименование
+		ИЗ
+			Справочник.КатегорииОбъектов КАК КатегорииОбъектов
+		ГДЕ
+			КатегорииОбъектов.НазначениеКатегории = ЗНАЧЕНИЕ(ПланВидовХарактеристик.НазначенияСвойствКатегорийОбъектов.Справочник_СотрудникиОрганизаций)
+			И НЕ КатегорииОбъектов.ПометкаУдаления)
+	ПОЛЕКЛЮЧА Ссылка
+	ПОЛЕИМЕНИ Наименование
+	ЗНАЧЕНИЯХАРАКТЕРИСТИК РегистрСведений.КатегорииОбъектов
+	ПОЛЕОБЪЕКТА Объект
+	ПОЛЕВИДА Категория }
+{ХАРАКТЕРИСТИКИ
+	ТИП(Справочник.ФизическиеЛица)
+	ВИДЫХАРАКТЕРИСТИК (ВЫБРАТЬ
+			СвойстваОбъектов.Ссылка,
+			" Дополнительное свойство: " + СвойстваОбъектов.Наименование КАК Наименование,
+			СвойстваОбъектов.ТипЗначения
+		ИЗ
+			ПланВидовХарактеристик.СвойстваОбъектов КАК СвойстваОбъектов
+		ГДЕ
+			СвойстваОбъектов.НазначениеСвойства = ЗНАЧЕНИЕ(ПланВидовХарактеристик.НазначенияСвойствКатегорийОбъектов.Справочник_ФизическиеЛица)
+			И НЕ СвойстваОбъектов.ПометкаУдаления)
+	ПОЛЕКЛЮЧА Ссылка
+	ПОЛЕИМЕНИ Наименование
+	ПОЛЕТИПАЗНАЧЕНИЯ ТипЗначения
+	ЗНАЧЕНИЯХАРАКТЕРИСТИК РегистрСведений.ЗначенияСвойствОбъектов
+	ПОЛЕОБЪЕКТА Объект
+	ПОЛЕВИДА Свойство
+	ПОЛЕЗНАЧЕНИЯ Значение }
+{ХАРАКТЕРИСТИКИ
+	ТИП(Справочник.ПодразделенияОрганизаций)
+	ВИДЫХАРАКТЕРИСТИК (ВЫБРАТЬ
+			"Ответственное лицо" КАК Идентификатор,
+			"Ответственное лицо" КАК ИмяХарактеристики)
+	ПОЛЕКЛЮЧА Идентификатор
+	ПОЛЕИМЕНИ ИмяХарактеристики
+	ЗНАЧЕНИЯХАРАКТЕРИСТИК (ВЫБРАТЬ
+			ОтветственныеЛицаСрезПоследних.СтруктурнаяЕдиница КАК Объект,
+			"Ответственное лицо" КАК Идентификатор,
+			ОтветственныеЛицаСрезПоследних.ФизическоеЛицо КАК Значение
+		ИЗ
+			РегистрСведений.ОтветственныеЛицаОрганизаций.СрезПоследних КАК ОтветственныеЛицаСрезПоследних
+		ГДЕ
+			ОтветственныеЛицаСрезПоследних.СтруктурнаяЕдиница ССЫЛКА Справочник.ПодразделенияОрганизаций
+			И ОтветственныеЛицаСрезПоследних.ОтветственноеЛицо = ЗНАЧЕНИЕ(Перечисление.ОтветственныеЛицаОрганизаций.Руководитель))
+	ПОЛЕОБЪЕКТА Объект
+	ПОЛЕВИДА Идентификатор
+	ПОЛЕЗНАЧЕНИЯ Значение }</query>
+			<autoFillFields>false</autoFillFields>
+		</dataSet>
+		<dataSet xsi:type="DataSetQuery">
+			<name>ФИОРаботников</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПериодРегистрации</dataPath>
+				<field>ПериодРегистрации</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Период регистрации</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ФизЛицо</dataPath>
+				<field>ФизЛицо</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>Физ лицо</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+				<attributeUseRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</attributeUseRestriction>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ФИО</dataPath>
+				<field>ФИО</field>
+				<title xmlns:d5p1="http://v8.1c.ru/8.1/data/core" xsi:type="d5p1:LocalStringType">
+					<d5p1:item>
+						<d5p1:lang>ru</d5p1:lang>
+						<d5p1:content>ФИО</d5p1:content>
+					</d5p1:item>
+				</title>
+				<useRestriction>
+					<field>true</field>
+					<condition>true</condition>
+					<group>true</group>
+					<order>true</order>
+				</useRestriction>
+			</field>
+			<dataSource>ИнформационнаяБаза</dataSource>
+			<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
+	НАЧАЛОПЕРИОДА(РегламентированныйПроизводственныйКалендарь.ДатаКалендаря, МЕСЯЦ) КАК ПериодРегистрации
+ПОМЕСТИТЬ Периоды
+ИЗ
+	РегистрСведений.РегламентированныйПроизводственныйКалендарь КАК РегламентированныйПроизводственныйКалендарь
+ГДЕ
+	РегламентированныйПроизводственныйКалендарь.ДатаКалендаря МЕЖДУ &amp;НачалоПериода И &amp;КонецПериода
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	СотрудникиОрганизаций.Ссылка КАК ФизЛицо,
+	ДатыПоследнихДвижений.ПериодРегистрации КАК ПериодРегистрации,
+	ФИОФизЛиц.Фамилия + " " + ФИОФизЛиц.Имя + " " + ФИОФизЛиц.Отчество КАК ФИО
+{ВЫБРАТЬ
+	ФИО,
+	ФизЛицо.*,
+	ПериодРегистрации}
+ИЗ
+	Справочник.СотрудникиОрганизаций КАК СотрудникиОрганизаций
+		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
+			Периоды.ПериодРегистрации КАК ПериодРегистрации,
+			ФИОФизЛиц.ФизЛицо КАК ФизЛицо,
+			МАКСИМУМ(ФИОФизЛиц.Период) КАК Период
+		ИЗ
+			Периоды КАК Периоды
+				ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ФИОФизЛиц КАК ФИОФизЛиц
+				ПО (КОНЕЦПЕРИОДА(Периоды.ПериодРегистрации, МЕСЯЦ) &gt;= ФИОФизЛиц.Период
+							И &amp;ЕстьГруппировкаПоПериодуРегистрации
+						ИЛИ НЕ &amp;ЕстьГруппировкаПоПериодуРегистрации
+							И &amp;КонецПериода &gt;= ФИОФизЛиц.Период)
+		{ГДЕ
+			Периоды.ПериодРегистрации,
+			ФИОФизЛиц.ФизЛицо.*}
+		
+		СГРУППИРОВАТЬ ПО
+			Периоды.ПериодРегистрации,
+			ФИОФизЛиц.ФизЛицо) КАК ДатыПоследнихДвижений
+			ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ФИОФизЛиц КАК ФИОФизЛиц
+			ПО ДатыПоследнихДвижений.ФизЛицо = ФИОФизЛиц.ФизЛицо
+				И ДатыПоследнихДвижений.Период = ФИОФизЛиц.Период
+		ПО СотрудникиОрганизаций.Физлицо = ДатыПоследнихДвижений.ФизЛицо
+{ГДЕ
+	ФИОФизЛиц.ФизЛицо.*,
+	ДатыПоследнихДвижений.ПериодРегистрации,
+	(ФИОФизЛиц.Фамилия + " " + ФИОФизЛиц.Имя + " " + ФИОФизЛиц.Отчество) КАК ФИО}</query>
+			<autoFillFields>false</autoFillFields>
+		</dataSet>
+		<dataSetLink>
+			<sourceDataSet>Данные</sourceDataSet>
+			<destinationDataSet>РаботникиСрезПоследних</destinationDataSet>
+			<sourceExpression>ФизЛицо</sourceExpression>
+			<destinationExpression>ФизЛицо</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>Данные</sourceDataSet>
+			<destinationDataSet>РаботникиСрезПоследних</destinationDataSet>
+			<sourceExpression>Организация</sourceExpression>
+			<destinationExpression>Организация</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>Данные</sourceDataSet>
+			<destinationDataSet>РаботникиСрезПоследних</destinationDataSet>
+			<sourceExpression>ПериодРегистрации</sourceExpression>
+			<destinationExpression>ПериодРегистрации</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>РаботникиСрезПоследних</sourceDataSet>
+			<destinationDataSet>ФИОРаботников</destinationDataSet>
+			<sourceExpression>ПериодРегистрации</sourceExpression>
+			<destinationExpression>ПериодРегистрации</destinationExpression>
+		</dataSetLink>
+		<dataSetLink>
+			<sourceDataSet>РаботникиСрезПоследних</sourceDataSet>
+			<destinationDataSet>ФИОРаботников</destinationDataSet>
+			<sourceExpression>Физлицо</sourceExpression>
+			<destinationExpression>ФизЛицо</destinationExpression>
+		</dataSetLink>
+		<calculatedField>
+			<dataPath>Результат.РезультатОтр</dataPath>
+			<expression>-Результат</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Результат для погашения задолжености</d4p1:content>
+				</d4p1:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</calculatedField>
+		<calculatedField>
+			<dataPath>ФИО</dataPath>
+			<expression>ВЫБОР КОГДА ФИО ЕСТЬ NULL ТОГДА Сотрудник ИНАЧЕ ФИО КОНЕЦ</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>ФИО</d4p1:content>
+				</d4p1:item>
+			</title>
+			<useRestriction>
+				<field>true</field>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</calculatedField>
+		<calculatedField>
+			<dataPath>РезультатОтр</dataPath>
+			<expression>-Результат</expression>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Результат для погашения задолжености</d4p1:content>
+				</d4p1:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+				<group>true</group>
+				<order>true</order>
+			</useRestriction>
+		</calculatedField>
+		<totalField>
+			<dataPath>Результат</dataPath>
+			<expression>Сумма(Результат)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОплаченоДней</dataPath>
+			<expression>Сумма(ОплаченоДней)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОплаченоЧасов</dataPath>
+			<expression>Сумма(ОплаченоЧасов)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОтработаноДней</dataPath>
+			<expression>Сумма(ОтработаноДней)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ОтработаноЧасов</dataPath>
+			<expression>Сумма(ОтработаноЧасов)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>НормаДней</dataPath>
+			<expression>Сумма(НормаДней)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>НормаЧасов</dataPath>
+			<expression>Сумма(НормаЧасов)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>ФИО</dataPath>
+			<expression>Максимум(ФИО)</expression>
+		</totalField>
+		<totalField>
+			<dataPath>Результат.РезультатОтр</dataPath>
+			<expression>Сумма(Результат.РезультатОтр)</expression>
+		</totalField>
+		<parameter>
+			<name>КонецПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Конец периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+			<availableAsField>false</availableAsField>
+		</parameter>
+		<parameter>
+			<name>НачалоПериода</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Начало периода</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+			<availableAsField>false</availableAsField>
+		</parameter>
+		<parameter>
+			<name>ЕстьГруппировкаПоПериодуРегистрации</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Есть группировка по периоду регистрации</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:boolean</Type>
+			</valueType>
+			<value xsi:type="xs:boolean">false</value>
+			<useRestriction>false</useRestriction>
+			<availableAsField>false</availableAsField>
+		</parameter>
+		<parameter>
+			<name>Период</name>
+			<title xmlns:d4p1="http://v8.1c.ru/8.1/data/core" xsi:type="d4p1:LocalStringType">
+				<d4p1:item>
+					<d4p1:lang>ru</d4p1:lang>
+					<d4p1:content>Период</d4p1:content>
+				</d4p1:item>
+			</title>
+			<valueType>
+				<Type xmlns="http://v8.1c.ru/8.1/data/core">xs:dateTime</Type>
+				<DateQualifiers xmlns="http://v8.1c.ru/8.1/data/core">
+					<DateFractions>DateTime</DateFractions>
+				</DateQualifiers>
+			</valueType>
+			<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
+			<useRestriction>false</useRestriction>
+		</parameter>
+		<settingsVariant>
+			<name xmlns="http://v8.1c.ru/8.1/data-composition-system/settings">Основной</name>
+			<presentation xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xsi:type="xs:string">Основной</presentation>
+		</settingsVariant>
+	</dataCompositionSchema>
+</SchemaFile>﻿<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<selection>
+		<item xsi:type="SelectedItemField">
+			<field>Результат</field>
+		</item>
+	</selection>
+	<filter>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Организация</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="dcscor:DesignTimeValue">Справочник.Организации.ПустаяСсылка</right>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">ПодразделениеОрганизации</left>
+			<comparisonType>Equal</comparisonType>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Должность</left>
+			<comparisonType>Equal</comparisonType>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Должность.КатегорияСтатистическогоУчета</left>
+			<comparisonType>Equal</comparisonType>
+			<viewMode>Normal</viewMode>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Сотрудник</left>
+			<comparisonType>Equal</comparisonType>
+			<right xsi:type="dcscor:DesignTimeValue">Справочник.СотрудникиОрганизаций.ПустаяСсылка</right>
+		</item>
+		<item xsi:type="FilterItemComparison">
+			<use>false</use>
+			<left xsi:type="dcscor:Field">Сотрудник.ВидДоговора</left>
+			<comparisonType>Equal</comparisonType>
+			<viewMode>Normal</viewMode>
+		</item>
+	</filter>
+	<dataParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>КонецПериода</dcscor:parameter>
+			<dcscor:value xsi:type="xs:dateTime">2013-12-31T23:59:59</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>НачалоПериода</dcscor:parameter>
+			<dcscor:value xsi:type="xs:dateTime">2013-12-01T00:00:00</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ЕстьГруппировкаПоПериодуРегистрации</dcscor:parameter>
+			<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+		</dcscor:item>
+	</dataParameters>
+	<order>
+		<item xsi:type="OrderItemField">
+			<field>Сотрудник</field>
+			<orderType>Asc</orderType>
+		</item>
+	</order>
+	<conditionalAppearance>
+		<item>
+			<selection>
+				<item>
+					<field>Результат</field>
+				</item>
+			</selection>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Результат</left>
+					<comparisonType>Less</comparisonType>
+					<right xsi:type="xs:decimal">0</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ИмяВидаРасчета</left>
+					<comparisonType>Contains</comparisonType>
+					<right xsi:type="xs:string">погашено задолженности</right>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>Текст</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:Field">Результат.РезультатОтр</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+		<item>
+			<selection>
+				<item>
+					<field>ПериодРегистрации</field>
+				</item>
+				<item>
+					<field>МесяцНачисления</field>
+				</item>
+			</selection>
+			<filter/>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>АвтоОтступ</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">0</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>Формат</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ДФ='MMMM yyyy'</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+		<item>
+			<selection>
+				<item>
+					<field>ИмяВидаРасчета</field>
+				</item>
+			</selection>
+			<filter/>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">45</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>МаксимальнаяВысота</dcscor:parameter>
+					<dcscor:value xsi:type="xs:decimal">45</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+		<item>
+			<selection>
+				<item>
+					<field>Сотрудник</field>
+				</item>
+			</selection>
+			<filter/>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>Текст</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:Field">ФИО</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+		<item>
+			<selection>
+				<item>
+					<field>Должность.АУП</field>
+				</item>
+			</selection>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Должность.АУП</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>Текст</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">ИТР</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+		<item>
+			<selection>
+				<item>
+					<field>Должность.АУП</field>
+				</item>
+			</selection>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Должность.АУП</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">false</right>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>Текст</dcscor:parameter>
+					<dcscor:value xsi:type="xs:string">Рабочие</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+	</conditionalAppearance>
+	<outputParameters>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>РасположениеРеквизитов</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionAttributesPlacement">WithOwnerField</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:use>false</dcscor:use>
+			<dcscor:parameter>РасположениеРесурсов</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionResourcesPlacement">Vertically</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
+			<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
+			<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">End</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">Output</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>Заголовок</dcscor:parameter>
+			<dcscor:value xsi:type="xs:string">Расчетная ведомость организаций</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">Output</dcscor:value>
+		</dcscor:item>
+		<dcscor:item xsi:type="SettingsParameterValue">
+			<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
+			<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+		</dcscor:item>
+	</outputParameters>
+	<item xsi:type="StructureItemTable">
+		<column>
+			<name>НачальноеСальдо</name>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>ИмяВидаРасчета</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ИмяВидаРасчета</left>
+					<comparisonType>Contains</comparisonType>
+					<right xsi:type="xs:string">Начальное сальдо</right>
+				</item>
+			</filter>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemField">
+					<field>ИмяВидаРасчета</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>Результат</field>
+				</item>
+			</selection>
+		</column>
+		<column>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Группа</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Группа</left>
+					<comparisonType>NotEqual</comparisonType>
+					<right xsi:type="xs:string">А</right>
+				</item>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Группа</left>
+					<comparisonType>NotEqual</comparisonType>
+					<right xsi:type="xs:string">Я</right>
+				</item>
+			</filter>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemField">
+					<field>Группа</field>
+				</item>
+			</selection>
+			<conditionalAppearance>
+				<item>
+					<selection>
+						<item>
+							<field>Группа</field>
+						</item>
+					</selection>
+					<filter/>
+					<appearance>
+						<dcscor:item xsi:type="SettingsParameterValue">
+							<dcscor:parameter>ЦветФона</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Color">style:FormBackColor</dcscor:value>
+						</dcscor:item>
+						<dcscor:item xsi:type="SettingsParameterValue">
+							<dcscor:parameter>Шрифт</dcscor:parameter>
+							<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Verdana" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+						</dcscor:item>
+					</appearance>
+				</item>
+			</conditionalAppearance>
+			<outputParameters>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>РасположениеОбщихИтогов</dcscor:parameter>
+					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+				</dcscor:item>
+			</outputParameters>
+			<item>
+				<groupItems>
+					<item xsi:type="GroupItemField">
+						<field>Группа</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+				</groupItems>
+				<filter>
+					<item xsi:type="FilterItemComparison">
+						<left xsi:type="dcscor:Field">Группа</left>
+						<comparisonType>Equal</comparisonType>
+						<right xsi:type="xs:string">Всего начислено</right>
+					</item>
+				</filter>
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemField">
+						<field>ОтработаноЧасов</field>
+					</item>
+				</selection>
+			</item>
+			<item>
+				<groupItems>
+					<item xsi:type="GroupItemField">
+						<field>ИмяВидаРасчета</field>
+						<groupType>Items</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+				</groupItems>
+				<filter>
+					<item xsi:type="FilterItemGroup">
+						<groupType>AndGroup</groupType>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ИмяВидаРасчета</left>
+							<comparisonType>NotEqual</comparisonType>
+							<right xsi:type="xs:string">Начальное сальдо</right>
+						</item>
+						<item xsi:type="FilterItemComparison">
+							<left xsi:type="dcscor:Field">ИмяВидаРасчета</left>
+							<comparisonType>NotEqual</comparisonType>
+							<right xsi:type="xs:string">Конечное сальдо</right>
+						</item>
+					</item>
+				</filter>
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemField">
+						<field>ИмяВидаРасчета</field>
+					</item>
+					<item xsi:type="SelectedItemAuto"/>
+				</selection>
+				<conditionalAppearance>
+					<item>
+						<selection>
+							<item>
+								<field>ИмяВидаРасчета</field>
+							</item>
+						</selection>
+						<filter/>
+						<appearance>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:parameter>ЦветФона</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Color">style:FieldSelectedTextColor</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:parameter>Шрифт</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" faceName="Verdana" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+							</dcscor:item>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:parameter>ГоризонтальноеПоложение</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:HorizontalAlign">Center</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:parameter>ВертикальноеПоложение</dcscor:parameter>
+								<dcscor:value xsi:type="v8ui:VerticalAlign">Top</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:parameter>Размещение</dcscor:parameter>
+								<dcscor:value xsi:type="dcscor:DataCompositionTextPlacementType">Wrap</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:parameter>ВыделятьОтрицательные</dcscor:parameter>
+								<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>МинимальнаяШирина</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>МаксимальнаяШирина</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">15</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>МинимальнаяВысота</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">45</dcscor:value>
+							</dcscor:item>
+							<dcscor:item xsi:type="SettingsParameterValue">
+								<dcscor:use>false</dcscor:use>
+								<dcscor:parameter>МаксимальнаяВысота</dcscor:parameter>
+								<dcscor:value xsi:type="xs:decimal">45</dcscor:value>
+							</dcscor:item>
+						</appearance>
+					</item>
+				</conditionalAppearance>
+				<outputParameters>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>РасположениеРесурсов</dcscor:parameter>
+						<dcscor:value xsi:type="DataCompositionResourcesPlacement">Horizontally</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>РасположениеОбщихИтогов</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ТипЗаголовкаПолей</dcscor:parameter>
+						<dcscor:value xsi:type="dcscor:DataCompositionFieldsTitleType">Short</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="SettingsParameterValue">
+						<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
+						<dcscor:value xsi:type="DataCompositionTextOutputType">DontOutput</dcscor:value>
+					</dcscor:item>
+				</outputParameters>
+			</item>
+		</column>
+		<column>
+			<name>КонечноеСальдо</name>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>ИмяВидаРасчета</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">ИмяВидаРасчета</left>
+					<comparisonType>Contains</comparisonType>
+					<right xsi:type="xs:string">Конечное сальдо</right>
+				</item>
+			</filter>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemField">
+					<field>ИмяВидаРасчета</field>
+				</item>
+				<item xsi:type="SelectedItemField">
+					<field>Результат</field>
+				</item>
+			</selection>
+		</column>
+		<row>
+			<groupItems>
+				<item xsi:type="GroupItemField">
+					<field>Организация</field>
+					<groupType>Items</groupType>
+					<periodAdditionType>None</periodAdditionType>
+					<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+					<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+				</item>
+			</groupItems>
+			<order>
+				<item xsi:type="OrderItemAuto"/>
+			</order>
+			<selection>
+				<item xsi:type="SelectedItemAuto"/>
+			</selection>
+			<item>
+				<groupItems>
+					<item xsi:type="GroupItemField">
+						<field>ПодразделениеОрганизации</field>
+						<groupType>Hierarchy</groupType>
+						<periodAdditionType>None</periodAdditionType>
+						<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+						<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+					</item>
+				</groupItems>
+				<order>
+					<item xsi:type="OrderItemAuto"/>
+				</order>
+				<selection>
+					<item xsi:type="SelectedItemAuto"/>
+				</selection>
+				<item>
+					<groupItems>
+						<item xsi:type="GroupItemField">
+							<field>Должность.АУП</field>
+							<groupType>Items</groupType>
+							<periodAdditionType>None</periodAdditionType>
+							<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+							<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+						</item>
+					</groupItems>
+					<order>
+						<item xsi:type="OrderItemAuto"/>
+					</order>
+					<selection>
+						<item xsi:type="SelectedItemAuto"/>
+					</selection>
+					<item>
+						<groupItems>
+							<item xsi:type="GroupItemField">
+								<field>Сотрудник.ВидЗанятости</field>
+								<groupType>Items</groupType>
+								<periodAdditionType>None</periodAdditionType>
+								<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+								<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+							</item>
+						</groupItems>
+						<order>
+							<item xsi:type="OrderItemAuto"/>
+						</order>
+						<selection>
+							<item xsi:type="SelectedItemAuto"/>
+						</selection>
+						<item>
+							<groupItems>
+								<item xsi:type="GroupItemField">
+									<field>Сотрудник.Физлицо.Пол</field>
+									<groupType>Items</groupType>
+									<periodAdditionType>None</periodAdditionType>
+									<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+									<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+								</item>
+							</groupItems>
+							<order>
+								<item xsi:type="OrderItemAuto"/>
+							</order>
+							<selection>
+								<item xsi:type="SelectedItemAuto"/>
+							</selection>
+							<item>
+								<groupItems>
+									<item xsi:type="GroupItemField">
+										<field>Сотрудник</field>
+										<groupType>Items</groupType>
+										<periodAdditionType>None</periodAdditionType>
+										<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+										<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+									</item>
+									<item xsi:type="GroupItemField">
+										<field>Должность</field>
+										<groupType>Items</groupType>
+										<periodAdditionType>None</periodAdditionType>
+										<periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionBegin>
+										<periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</periodAdditionEnd>
+									</item>
+								</groupItems>
+								<order>
+									<item xsi:type="OrderItemAuto"/>
+								</order>
+								<selection>
+									<item xsi:type="SelectedItemField">
+										<field>СистемныеПоля.НомерПоПорядку</field>
+									</item>
+									<item xsi:type="SelectedItemAuto"/>
+								</selection>
+								<outputParameters>
+									<dcscor:item xsi:type="SettingsParameterValue">
+										<dcscor:parameter>РасположениеИтогов</dcscor:parameter>
+										<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">Begin</dcscor:value>
+									</dcscor:item>
+								</outputParameters>
+							</item>
+						</item>
+					</item>
+				</item>
+			</item>
+		</row>
+	</item>
+</Settings>﻿<?xml version="1.0" encoding="UTF-8"?>
+<SchemaFile xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema"/>
+</SchemaFile>
